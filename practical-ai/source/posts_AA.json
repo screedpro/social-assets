@@ -1,0 +1,525 @@
+[
+ {
+  "id": "AA02",
+  "series": 6,
+  "num": 2,
+  "title_short": "Agents and automation 2",
+  "page": "AA2 Pam's day",
+  "page_title": "Agents and automation 2: Pam's day",
+  "q": "What does an AI agent do all day?",
+  "sub": "A morning with Pam, our AI agent.",
+  "s2": {
+   "h": "The same small jobs, every day",
+   "b": "Yesterday's pours to invoice, a quote to turn into a purchase order, a contact to update.",
+   "x": [
+    "pills",
+    [
+     "Invoices",
+     "Purchase orders",
+     "Contacts"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "A message, a draft, a yes",
+   "b": "The team messages Pam in Microsoft Teams. She drafts the work and asks before anything goes out.",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Morning Pam, please draft an invoice for ABC Tiling for yesterday's pour.",
+      "right"
+     ],
+     [
+      "Pam",
+      "Here it is, in Xero as a draft. Do you want me to send it?",
+      "left"
+     ],
+     [
+      "You",
+      "Yes, send it.",
+      "right"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to start",
+   "steps": [
+    "Pick the job you'd message an assistant about every morning.",
+    "Write down how you like it done, step by step.",
+    "Have it draft first. You approve every send."
+   ]
+  },
+  "s5": {
+   "sub": "Picture your own morning.",
+   "prompt": "Here's what I do every morning in the office. Which of these jobs could an agent draft for me, and which should I keep doing myself?",
+   "note": "Next in the series: agent or scheduled task?"
+  },
+  "caption": "What does an AI agent do all day?\n\nOur team messages Pam in Teams: draft this invoice, raise that purchase order. She drafts it in Xero and asks before anything is sent. A person says yes every time."
+ },
+ {
+  "id": "AA03",
+  "series": 6,
+  "num": 3,
+  "title_short": "Agents and automation 3",
+  "page": "AA3 Agent or scheduled task",
+  "page_title": "Agents and automation 3: Agent or scheduled task?",
+  "q": "Do you need an agent or just a timer?",
+  "sub": "Most jobs only need a scheduled task.",
+  "s2": {
+   "h": "Not every job needs an agent",
+   "b": "Agents sound impressive, but plenty of jobs just need doing at the same time every day.",
+   "x": [
+    "pills",
+    [
+     "Same time daily",
+     "Same steps",
+     "Same list"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Know which one you need",
+   "x": [
+    "cards",
+    [
+     [
+      "Scheduled task",
+      "Runs at a set time, like an alarm. The 6 am inbox list, the Friday debtors report."
+     ],
+     [
+      "Agent",
+      "Has a job and waits to be asked or for something to arrive, like an apprentice on call."
+     ],
+     [
+      "The test",
+      "If it only needs a clock, use a task. If it needs to react, use an agent."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to choose",
+   "steps": [
+    "Write the job down in one sentence.",
+    "Does it start at a set time? Make it a scheduled task.",
+    "Does it start when something happens? That's an agent."
+   ]
+  },
+  "s5": {
+   "sub": "Let Claude sort your list.",
+   "prompt": "Here are the jobs I'd like off my plate. For each one, tell me if it needs a scheduled task, an agent or just me, and why.",
+   "note": "Ask for the strategy, not just the task."
+  },
+  "caption": "Do you need an agent or just a timer?\n\nA scheduled task runs at a set time, like an alarm. An agent has a job and reacts when something arrives. Most tradies should start with scheduled tasks."
+ },
+ {
+  "id": "AA04",
+  "series": 6,
+  "num": 4,
+  "title_short": "Agents and automation 4",
+  "page": "AA4 Ten scheduled tasks",
+  "page_title": "Agents and automation 4: Ten scheduled tasks for a tiling business",
+  "q": "What could run itself while you're on the tools?",
+  "sub": "Ten scheduled tasks for a tiling business.",
+  "s2": {
+   "h": "Jobs you forget until too late",
+   "b": "Chasing debtors, checking tomorrow's sites, following up quotes. Easy to do, easy to forget.",
+   "x": [
+    "pills",
+    [
+     "Debtors",
+     "Follow-ups",
+     "Renewals"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Ten to start with",
+   "x": [
+    "grid2",
+    [
+     "6 am inbox list",
+     "Tomorrow's sites and crews",
+     "Quotes to follow up",
+     "Overdue invoices to chase",
+     "Bills due this week",
+     "Weekly cash update",
+     "Timesheets vs job records",
+     "Licence and ticket expiries",
+     "BAS, rego, insurance dates",
+     "Friday tool register check"
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set them up",
+   "steps": [
+    "Pick the three you'd use first.",
+    "Write each one as a prompt, with a day and a time.",
+    "Have each one end with a list or drafts for you to check."
+   ]
+  },
+  "s5": {
+   "sub": "Start with the money one.",
+   "prompt": "Every Monday at 7, check Xero for overdue invoices. Draft a polite reminder for each one, oldest first, and don't send anything until I approve.",
+   "note": "Claude drafts the reminders. You send them."
+  },
+  "caption": "What could run itself while you're on the tools?\n\nHere are ten scheduled tasks every tiling business could use, from the 6 am inbox list to Monday's overdue invoices. Each one ends with a list or drafts for you to check."
+ },
+ {
+  "id": "AA05",
+  "series": 6,
+  "num": 5,
+  "title_short": "Agents and automation 5",
+  "page": "AA5 What wakes an agent up",
+  "page_title": "Agents and automation 5: What wakes an agent up",
+  "q": "How does an agent know when to start?",
+  "sub": "Every agent needs something to wake it up.",
+  "s2": {
+   "h": "An agent waits for a signal",
+   "b": "An agent doesn't sit there thinking. It waits until something tells it there's work to do.",
+   "x": [
+    "pills",
+    [
+     "Waiting",
+     "Woken",
+     "Working"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Four things that wake it up",
+   "b": "Like a site bell: when it rings, the crew knows to start. Agents call it a trigger.",
+   "x": [
+    "listcard",
+    "Triggers",
+    [
+     [
+      "An email",
+      "A supplier invoice lands"
+     ],
+     [
+      "A time",
+      "6 am every weekday"
+     ],
+     [
+      "A message",
+      "\"Morning Pam, please...\""
+     ],
+     [
+      "A form",
+      "A website enquiry comes in"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to choose a trigger",
+   "steps": [
+    "Ask what should start the job: an email, a time, a message or a form.",
+    "Give the agent one trigger to begin with.",
+    "Have it draft, then tell you what it's done."
+   ]
+  },
+  "s5": {
+   "sub": "Name the job, find the trigger.",
+   "prompt": "I want an agent to handle new enquiries from my website form. What should wake it up, what should it do first, and what must it never do without me?",
+   "note": "Pam wakes up when the team messages her in Teams."
+  },
+  "caption": "How does an agent know when to start?\n\nSomething wakes it up: an email arriving, a time of day, a message from you or a form filled in. Pick one trigger to begin with, and have the agent draft first."
+ },
+ {
+  "id": "AA06",
+  "series": 6,
+  "num": 6,
+  "title_short": "Agents and automation 6",
+  "page": "AA6 Do you still need Zapier",
+  "page_title": "Agents and automation 6: Do you still need Zapier?",
+  "q": "Paying for Zapier? Do you still need it?",
+  "sub": "A fair look at Zapier and Claude.",
+  "s2": {
+   "h": "Apps that don't talk",
+   "b": "Your forms, CRM, email and Xero all hold part of the job. Something has to pass it along.",
+   "x": [
+    "pills",
+    [
+     "Forms",
+     "CRM",
+     "Xero"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Both have a place",
+   "x": [
+    "cards",
+    [
+     [
+      "Zapier is great at",
+      "Simple, fixed steps that run the same way every time, across thousands of apps."
+     ],
+     [
+      "Claude is great at",
+      "Jobs that need reading and judgement: a messy email, a job sheet, a question back."
+     ],
+     [
+      "Keep Zapier if",
+      "Your zaps run well and nobody touches them. If it isn't broken, leave it."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to decide",
+   "steps": [
+    "List your zaps and what each one does.",
+    "Mark the ones that break on messy emails or odd cases.",
+    "Try Claude on those first. Keep the rest."
+   ]
+  },
+  "s5": {
+   "sub": "Paste in your list of zaps.",
+   "prompt": "Here are my Zapier zaps. For each one, tell me whether to keep it, let Claude do it, or have them work together, and why.",
+   "note": "Claude can work alongside Zapier too."
+  },
+  "caption": "Paying for Zapier? Do you still need it?\n\nZapier is great at fixed steps that run the same way every time. Claude is better where a job needs reading and judgement. Keep the zaps that work, and try Claude on the ones that break."
+ },
+ {
+  "id": "AA07",
+  "series": 6,
+  "num": 7,
+  "title_short": "Agents and automation 7",
+  "page": "AA7 No data lake",
+  "page_title": "Agents and automation 7: You don't need a data lake",
+  "q": "Told you need a data lake before you can use AI?",
+  "sub": "You don't. Start with the apps you have.",
+  "s2": {
+   "h": "Big words, big quotes",
+   "b": "Data lake, warehouse, platform. Expensive projects that sound like you must start from scratch.",
+   "x": [
+    "pills",
+    [
+     "Data lake",
+     "Warehouse",
+     "Platform"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Connect what you already use",
+   "b": "You don't pour a new slab to hang a door. Claude reads your apps where they are, through connectors.",
+   "x": [
+    "strip",
+    [
+     [
+      "Xero",
+      "Invoices and bills"
+     ],
+     [
+      "Email",
+      "What's coming in"
+     ],
+     [
+      "Your CRM",
+      "Clients and quotes"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to start",
+   "steps": [
+    "Connect the apps you use every day.",
+    "Ask a question that needs two of them at once.",
+    "Fix messy data as you find it, one list at a time."
+   ]
+  },
+  "s5": {
+   "sub": "A question across two apps.",
+   "prompt": "Look at my CRM and Xero. Which clients have quotes out with me but also owe me money? List them, oldest debt first. Don't change anything.",
+   "note": "Next in the series: getting Claudes to talk to each other."
+  },
+  "caption": "Told you need a data lake before you can use AI?\n\nYou don't. Connect Claude to the apps you already use, like Xero, email and your CRM, and ask questions across them. Tidy the data as you go, one list at a time."
+ },
+ {
+  "id": "AA08",
+  "series": 6,
+  "num": 8,
+  "title_short": "Agents and automation 8",
+  "page": "AA8 Claudes talking",
+  "page_title": "Agents and automation 8: Getting Claudes to talk to each other",
+  "q": "Can one Claude hand a job to another?",
+  "sub": "Yes. Here's how they pass the job along.",
+  "s2": {
+   "h": "One Claude can't do it all",
+   "b": "The Claude on your phone, your agents and your scheduled tasks each do their part. The handover is where jobs drop.",
+   "x": [
+    "pills",
+    [
+     "Your Claude",
+     "Your agents",
+     "Scheduled tasks"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Pass the job like a crew does",
+   "b": "Like a crew passing a job sheet down the line.",
+   "x": [
+    "listcard",
+    "A job passed along",
+    [
+     [
+      "Enquiry",
+      "Form filled in on your website"
+     ],
+     [
+      "Agent",
+      "Drafts a reply and a quote"
+     ],
+     [
+      "You",
+      "Check, change and approve"
+     ],
+     [
+      "Scheduled task",
+      "Follows up in a week"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Pick one place they all read and write, like your CRM.",
+    "Have each one note what it did and what's next.",
+    "Keep the final send or payment with a person."
+   ]
+  },
+  "s5": {
+   "sub": "Map the handover first.",
+   "prompt": "I get enquiries by web form, quote them, then follow up. Show me which steps an agent, a scheduled task and I should each do, and where they hand over.",
+   "note": "One shared list beats ten clever links."
+  },
+  "caption": "Can one Claude hand a job to another?\n\nYes, if they share one place to read and write, like your CRM. Each one notes what it did and what's next, and a person still approves the sends and payments."
+ },
+ {
+  "id": "AA09",
+  "series": 6,
+  "num": 9,
+  "title_short": "Agents and automation 9",
+  "page": "AA9 Agent in Teams",
+  "page_title": "Agents and automation 9: An agent in Microsoft Teams",
+  "q": "Want an agent your team can just message?",
+  "sub": "Put it where your team already talks.",
+  "s2": {
+   "h": "Another app nobody opens",
+   "b": "A clever tool in a new app gets forgotten. The crew already lives in their chats.",
+   "x": [
+    "pills",
+    [
+     "New logins",
+     "New apps",
+     "Forgotten"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Message it like a colleague",
+   "b": "Our team messages Pam in Microsoft Teams, just like they'd message someone in the office.",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Pam, raise a purchase order for the sand on this quote.",
+      "right"
+     ],
+     [
+      "Pam",
+      "Drafted in Xero. Want me to send it to the supplier?",
+      "left"
+     ],
+     [
+      "You",
+      "Not yet, I'll check the price first.",
+      "right"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Write the agent's job description and what it may never do alone.",
+    "Have it set up as a Teams bot. Ask us or your IT person.",
+    "Keep approval on for sends, payments and record changes."
+   ]
+  },
+  "s5": {
+   "sub": "Start with who'll message it.",
+   "prompt": "I want an agent my team can message in Microsoft Teams. Ask me who'll use it, what they'll ask it for and what it must never do without approval, then write its job description.",
+   "note": "Sam, our fleet agent, is in the works."
+  },
+  "caption": "Want an agent your team can just message?\n\nPut it where the crew already talks. Our team messages Pam in Microsoft Teams like a colleague. She drafts the work, and a person approves every send, payment and record change."
+ },
+ {
+  "id": "AA10",
+  "series": 6,
+  "num": 10,
+  "title_short": "Agents and automation 10",
+  "page": "AA10 Set up your own agent",
+  "page_title": "Agents and automation 10: Set up your own agent",
+  "q": "Ready to set up your own agent?",
+  "sub": "Here's how, and we'll help you do it.",
+  "s2": {
+   "h": "Where do you even start",
+   "b": "You've seen what Pam does. Now you want one for your own invoices, quotes or inbox.",
+   "x": [
+    "pills",
+    [
+     "Invoices",
+     "Quotes",
+     "Inbox"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Three things to get ready",
+   "x": [
+    "cards",
+    [
+     [
+      "A job description",
+      "What it does, what wakes it up, and what it never does without you."
+     ],
+     [
+      "The Console",
+      "Where agents live. It's paid by usage, so you pay for the work it does."
+     ],
+     [
+      "Our free agent",
+      "ScreedPro clients get one free on enquiry, and another with every quote or booking."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Write the job description, or ask us for one.",
+    "Set up the Claude Console and add the agent.",
+    "Start it on drafts only, then give it more as you trust it."
+   ]
+  },
+  "s5": {
+   "sub": "Paste this into your Claude.",
+   "prompt": "Here's my agent's job description. Walk me through setting it up in the Claude Console step by step, and keep approval on for anything that sends, pays or changes records.",
+   "note": "Your first agent is free on enquiry. Link in bio."
+  },
+  "caption": "Ready to set up your own agent?\n\nStart with a job description, add the agent in the Claude Console, which is paid by usage, and keep it on drafts until you trust it. ScreedPro clients get one free, and another with every quote or booking."
+ }
+]

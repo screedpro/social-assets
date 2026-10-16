@@ -1,0 +1,518 @@
+[
+ {
+  "id": "SM02",
+  "series": 3,
+  "num": 2,
+  "title_short": "Suppliers and margin 2",
+  "page": "SM2 Bills into Xero",
+  "page_title": "Suppliers and margin 2: Supplier bills into Xero, coded",
+  "q": "Still keying supplier bills into Xero?",
+  "sub": "Claude drafts them, coded, for you to approve.",
+  "s2": {
+   "h": "Every bill typed by hand",
+   "b": "Supplier, date, amount, GST and account code. Every bill, every line, typed in by someone.",
+   "x": [
+    "pills",
+    [
+     "Typing",
+     "Coding",
+     "GST"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Draft bills, already coded",
+   "b": "Claude reads each invoice and drafts the bill in Xero: supplier, lines, account and GST, ready for you to check.",
+   "x": [
+    "listcard",
+    "Draft bill",
+    [
+     [
+      "Supplier",
+      "ABC Tile Supplies"
+     ],
+     [
+      "Account",
+      "Materials"
+     ],
+     [
+      "GST",
+      "GST on expenses"
+     ],
+     [
+      "Status",
+      "Draft, waiting for you"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Give Claude the week's supplier invoices, or let it read the inbox.",
+    "Ask for draft bills in Xero, coded line by line.",
+    "Check the coding, then approve. Nothing is paid yet."
+   ]
+  },
+  "s5": {
+   "sub": "With this week's invoices attached.",
+   "prompt": "Here are this week's supplier invoices. Draft a bill in Xero for each one, code every line, and list any you're unsure about. Leave them all as drafts.",
+   "note": "Next in the series: teach Claude your coding."
+  },
+  "caption": "Still keying supplier bills into Xero one at a time?\n\nClaude reads each invoice and drafts the bill in Xero, coded line by line. You check the coding and approve."
+ },
+ {
+  "id": "SM03",
+  "series": 3,
+  "num": 3,
+  "title_short": "Suppliers and margin 3",
+  "page": "SM3 Teach your coding",
+  "page_title": "Suppliers and margin 3: Teach Claude your coding from last year's bills",
+  "q": "Does Claude code bills differently to you?",
+  "sub": "Teach it from last year's bills.",
+  "s2": {
+   "h": "Every business codes differently",
+   "b": "Is that grinder disc a consumable or a tool? Claude guesses until it knows how you do it.",
+   "x": [
+    "pills",
+    [
+     "Consumables",
+     "Tools",
+     "Materials"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Learn from last year",
+   "b": "Claude reads last year's bills and writes your rules into a skill, like telling an apprentice: this is how we do it.",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Read last year's bills and write down how I code each supplier.",
+      "right"
+     ],
+     [
+      "Claude",
+      "Done. 40 suppliers, and 6 I'm unsure about. Can we go through them?",
+      "left"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Ask Claude to read last year's bills in Xero.",
+    "Go through the ones it's unsure about.",
+    "Save the rules as a skill. Fix it when it gets one wrong."
+   ]
+  },
+  "s5": {
+   "sub": "Read only. Nothing changes in Xero.",
+   "prompt": "Read my supplier bills in Xero from the last 12 months. Write down how I code each supplier and item, list anything inconsistent, and turn it into a coding skill. Don't change anything.",
+   "note": "Next in the series: price-creep alerts."
+  },
+  "caption": "Does Claude code your bills differently to how you would?\n\nTeach it from last year's bills. Claude reads them, writes your rules into a skill and asks about the odd ones out. It's how you'd train an apprentice: this is how we do it."
+ },
+ {
+  "id": "SM04",
+  "series": 3,
+  "num": 4,
+  "title_short": "Suppliers and margin 4",
+  "page": "SM4 Price-creep alerts",
+  "page_title": "Suppliers and margin 4: Price-creep alerts",
+  "q": "Did your adhesive just go up again?",
+  "sub": "Let Claude spot the price rises for you.",
+  "s2": {
+   "h": "Prices creep, nobody notices",
+   "b": "A few cents a bag here, a few dollars a box there. It adds up, and it comes straight off your margin.",
+   "x": [
+    "pills",
+    [
+     "Adhesive",
+     "Waterproofing",
+     "Delivery fees"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "An alert when a price moves",
+   "x": [
+    "cards",
+    [
+     [
+      "Compares",
+      "Every new bill against what you paid for the same item last time."
+     ],
+     [
+      "Flags",
+      "Any price rise, new fee or surcharge, with the supplier and the amount."
+     ],
+     [
+      "Drafts",
+      "A polite email asking the supplier to explain, for you to check and send."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Connect Xero so Claude can see your bills.",
+    "Ask it to check each new bill against last time's price.",
+    "Read the alerts weekly. Approve any email before it goes."
+   ]
+  },
+  "s5": {
+   "sub": "Start with the last six months.",
+   "prompt": "Compare my supplier bills in Xero over the last six months. List every item whose price went up, by how much and when, and any new fees. Draft a query to the biggest one, but don't send it.",
+   "note": "Next in the series: find where margin leaks."
+  },
+  "caption": "Did your adhesive just go up again?\n\nPrices creep a few cents at a time, and nobody notices until the margin's gone. Claude checks every new bill against what you paid last time and flags the rises. Any email to a supplier waits for you to approve."
+ },
+ {
+  "id": "SM05",
+  "series": 3,
+  "num": 5,
+  "title_short": "Suppliers and margin 5",
+  "page": "SM5 Margin leaks",
+  "page_title": "Suppliers and margin 5: Find where margin leaks",
+  "q": "Flat out all year, so where's the profit?",
+  "sub": "Ask Claude where your margin is leaking.",
+  "s2": {
+   "h": "Busy isn't the same as profit",
+   "b": "Some jobs pay and some don't, and the P&L won't tell you which.",
+   "x": [
+    "pills",
+    [
+     "Variations",
+     "Return trips",
+     "Wastage"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Where margin usually leaks",
+   "x": [
+    "grid2",
+    [
+     "Variations not billed",
+     "Return trips",
+     "Wastage over allowance",
+     "Price rises not passed on",
+     "Small jobs at big-job rates",
+     "Delivery fees absorbed",
+     "Discounts given away",
+     "Slow payers"
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Give Claude last year's quotes, invoices and supplier bills.",
+    "Ask it to compare quoted against actual for each job.",
+    "Ask for the strategy: what should I change first?"
+   ]
+  },
+  "s5": {
+   "sub": "Ask for the strategy, not just the task.",
+   "prompt": "Here are last year's quotes, invoices and supplier bills. Compare quoted against actual cost for each job, show me where I'm losing margin, and give me the three changes that would help most.",
+   "note": "Next in the series: quote with today's costs."
+  },
+  "caption": "Flat out all year, so where's the profit?\n\nGive Claude last year's quotes, invoices and bills and ask where the margin went: variations not billed, return trips, price rises not passed on. Then ask for the strategy: what should you change first?"
+ },
+ {
+  "id": "SM06",
+  "series": 3,
+  "num": 6,
+  "title_short": "Suppliers and margin 6",
+  "page": "SM6 Today's costs",
+  "page_title": "Suppliers and margin 6: Quote with today's costs",
+  "q": "Quoting off last year's price list?",
+  "sub": "Quote with what you're paying today.",
+  "s2": {
+   "h": "Old prices, thinner margin",
+   "b": "You quote in March off last year's price list, the job runs in June, and the supplier's gone up twice.",
+   "x": [
+    "pills",
+    [
+     "Old price list",
+     "Long lead times",
+     "Thin margin"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Today's costs in every quote",
+   "b": "Claude checks your latest supplier bills before it drafts the quote, so materials go in at what you're paying now.",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Quote 120 m² of tiling at Smith Street.",
+      "right"
+     ],
+     [
+      "Claude",
+      "Draft's ready. Adhesive's up since your last quote, so I've used today's price.",
+      "left"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Keep your supplier bills in Xero up to date.",
+    "Ask Claude to price materials from your latest bills.",
+    "Check the draft quote, then you send it."
+   ]
+  },
+  "s5": {
+   "sub": "With the plans or job details.",
+   "prompt": "Draft a quote for this job. Price materials from my latest supplier bills in Xero, not my old price list, show me what's changed since my last quote, and give me two options. Don't send it.",
+   "note": "Next in the series: one RFQ pack to five suppliers."
+  },
+  "caption": "Quoting off last year's price list?\n\nClaude checks your latest supplier bills before it drafts a quote, so materials go in at what you're paying today, and it shows you what's changed. You check the quote and you send it."
+ },
+ {
+  "id": "SM07",
+  "series": 3,
+  "num": 7,
+  "title_short": "Suppliers and margin 7",
+  "page": "SM7 RFQ pack",
+  "page_title": "Suppliers and margin 7: One RFQ pack to five suppliers",
+  "q": "Ringing round five suppliers for a price?",
+  "sub": "Send one pack and let Claude compare.",
+  "s2": {
+   "h": "Five calls, five formats",
+   "b": "Every supplier quotes differently, and comparing them means a spreadsheet at 9 pm.",
+   "x": [
+    "pills",
+    [
+     "Phone tag",
+     "Different formats",
+     "Late nights"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "One pack, five suppliers",
+   "b": "Claude writes the request for quote once, drafts an email to each supplier and lines up the replies as they come in.",
+   "x": [
+    "strip",
+    [
+     [
+      "One pack",
+      "Specs, quantities, dates"
+     ],
+     [
+      "5 drafts",
+      "One email per supplier"
+     ],
+     [
+      "Compared",
+      "Like for like"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Give Claude the job's materials list and dates.",
+    "Check the pack and the five draft emails, then send.",
+    "Forward the replies and ask for a like-for-like table."
+   ]
+  },
+  "s5": {
+   "sub": "With the job's materials list.",
+   "prompt": "Write a request for quote for these materials, delivered to site by the 14th. Draft an email to each of my five suppliers. When replies come in, compare them like for like. Don't send anything.",
+   "note": "Next in the series: do you still need ApprovalMax?"
+  },
+  "caption": "Ringing round five suppliers for a price?\n\nClaude writes one request for quote, drafts an email to each supplier for you to check and send, then lines the replies up like for like."
+ },
+ {
+  "id": "SM08",
+  "series": 3,
+  "num": 8,
+  "title_short": "Suppliers and margin 8",
+  "page": "SM8 ApprovalMax",
+  "page_title": "Suppliers and margin 8: Do you still need ApprovalMax?",
+  "q": "Do you still need ApprovalMax?",
+  "sub": "Maybe, maybe not. Here's how to tell.",
+  "s2": {
+   "h": "Approvals still matter",
+   "b": "Someone has to check a bill before it's paid. The question is which tool you need to do it.",
+   "x": [
+    "pills",
+    [
+     "Who approves",
+     "How many steps",
+     "Audit trail"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Two ways to approve",
+   "b": "Either way, Claude drafts and a person approves.",
+   "x": [
+    "cards",
+    [
+     [
+      "Claude plus Xero",
+      "Claude drafts and codes the bill; a person checks and approves it in Xero. Often enough for a small business."
+     ],
+     [
+      "Keep ApprovalMax",
+      "Need several levels of approval, limits per person or a full audit trail? It does that well."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to decide",
+   "steps": [
+    "List who approves bills now, and how many steps it takes.",
+    "Ask Claude if drafts plus approval in Xero would cover it.",
+    "Need multi-level approvals or an audit trail? Keep ApprovalMax."
+   ]
+  },
+  "s5": {
+   "sub": "Ask for the strategy, not just the task.",
+   "prompt": "Here's how bills get approved in my business: [who, how many steps, what limits]. Is Claude drafting plus a person approving in Xero enough, or do I need ApprovalMax? Give me the trade-offs.",
+   "note": "Next in the series: payment dates set for you."
+  },
+  "caption": "Do you still need ApprovalMax?\n\nFor a small business, Claude drafting the bill and a person approving it in Xero may be enough. If you need several levels of approval or a full audit trail, keep ApprovalMax: it does that job well."
+ },
+ {
+  "id": "SM09",
+  "series": 3,
+  "num": 9,
+  "title_short": "Suppliers and margin 9",
+  "page": "SM9 Payment dates",
+  "page_title": "Suppliers and margin 9: Payment dates set for you",
+  "q": "Paying suppliers whenever you remember?",
+  "sub": "Let Claude draft the payment run.",
+  "s2": {
+   "h": "Too early, or too late",
+   "b": "Pay too early and cash runs short. Pay late and you lose the discount and the supplier's goodwill.",
+   "x": [
+    "pills",
+    [
+     "Due dates",
+     "Early discounts",
+     "Cash on hand"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "A draft payment run each week",
+   "b": "Claude lists what's due, what has a discount and what can wait. A person approves and pays. Claude never pays.",
+   "x": [
+    "listcard",
+    "This week's run",
+    [
+     [
+      "Pay Friday",
+      "ABC Tile Supplies, due Monday"
+     ],
+     [
+      "Take discount",
+      "Waterproofing, 2% if paid now"
+     ],
+     [
+      "Can wait",
+      "Hire company, due month end"
+     ],
+     [
+      "Cash after",
+      "From your Xero bank feed"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Connect Xero so Claude can see your bills and bank feed.",
+    "Ask for a draft payment run every Wednesday.",
+    "A person checks it, approves it and pays from the bank."
+   ]
+  },
+  "s5": {
+   "sub": "Claude drafts. You pay.",
+   "prompt": "Look at my unpaid bills and bank balance in Xero. Draft this week's payment run: what's due, what has an early-payment discount and what can wait. Don't pay anything.",
+   "note": "Never give Claude your bank login. The Xero feed is enough."
+  },
+  "caption": "Paying suppliers whenever you remember?\n\nEach week Claude drafts the payment run from Xero: what's due, what has an early-payment discount and what can wait. A person checks it, approves it and pays. Claude never pays."
+ },
+ {
+  "id": "SM10",
+  "series": 3,
+  "num": 10,
+  "title_short": "Suppliers and margin 10",
+  "page": "SM10 Statements reconciled",
+  "page_title": "Suppliers and margin 10: Supplier statements reconciled",
+  "q": "Does the supplier's statement match your books?",
+  "sub": "Claude ticks it off line by line.",
+  "s2": {
+   "h": "The month-end statement",
+   "b": "A page of invoices, credits and payments, and somewhere in it a bill you never got or a credit never applied.",
+   "x": [
+    "pills",
+    [
+     "Missing bills",
+     "Missing credits",
+     "Double-ups"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Every line ticked off",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Here's ABC Tile Supplies' statement. Does it match Xero?",
+      "right"
+     ],
+     [
+      "Claude",
+      "All but three: a bill we don't have, a credit not applied, one paid twice.",
+      "left"
+     ],
+     [
+      "You",
+      "Draft an email asking for the missing bill.",
+      "right"
+     ],
+     [
+      "Claude",
+      "Here's the draft. It won't go until you approve it.",
+      "left"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Forward each supplier statement as it arrives.",
+    "Ask Claude to match every line to your bills in Xero.",
+    "Check the differences. You approve any fix or email."
+   ]
+  },
+  "s5": {
+   "sub": "With the statement attached.",
+   "prompt": "Here's this month's statement from [supplier]. Match every line to my bills and payments in Xero, list the differences, and draft an email about anything missing. Don't change anything in Xero.",
+   "note": "Ten statements, one decision: do them all at month end."
+  },
+  "caption": "Does the supplier's statement match your books?\n\nClaude ticks it off line by line against Xero and lists the differences: missing bills, credits not applied, double payments. Any fix in Xero or email to the supplier waits for you to approve."
+ }
+]

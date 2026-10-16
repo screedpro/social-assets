@@ -1,0 +1,512 @@
+[
+ {
+  "id": "SD02",
+  "series": 7,
+  "num": 2,
+  "title_short": "Skills and dashboards 2",
+  "page": "SD2 Deep think",
+  "page_title": "Skills and dashboards 2: A deep-think skill",
+  "q": "Got a big call to make on the business?",
+  "sub": "Use a deep-think skill before you decide.",
+  "s2": {
+   "h": "Big calls, quick answers",
+   "b": "Buy another ute? Chase the big builder? A quick answer to a big question can cost you for years.",
+   "x": [
+    "pills",
+    [
+     "Buy or lease",
+     "The big builder",
+     "The tender"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Make Claude think it through",
+   "b": "A deep-think skill tells Claude to slow down on the big ones: weigh the options and the risks before it recommends anything.",
+   "x": [
+    "strip",
+    [
+     [
+      "Options",
+      "Not just one answer"
+     ],
+     [
+      "Risks",
+      "What could go wrong"
+     ],
+     [
+      "Your call",
+      "It advises, you decide"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to use it",
+   "steps": [
+    "Save the deep-think skill in Claude. It's in our free pack.",
+    "Give it the full picture: the numbers, your worries, the deadline.",
+    "Read the options and risks, then make the call yourself."
+   ]
+  },
+  "s5": {
+   "sub": "Ask for the strategy, not just the answer.",
+   "prompt": "Use my deep-think skill. I'm deciding whether to buy a second ute or lease one. Give me the options, the risks of each, what else you need to know, and your recommendation.",
+   "note": "Next in the series: a brand pack."
+  },
+  "caption": "Got a big call to make on the business?\n\nDon't ask AI for a quick answer. A deep-think skill makes Claude lay out the options, the risks and what it still needs to know before it recommends anything. It advises; you decide."
+ },
+ {
+  "id": "SD03",
+  "series": 7,
+  "num": 3,
+  "title_short": "Skills and dashboards 3",
+  "page": "SD3 Brand pack",
+  "page_title": "Skills and dashboards 3: A brand pack",
+  "q": "Does everything Claude makes look generic?",
+  "sub": "A brand pack makes it look like you.",
+  "s2": {
+   "h": "Off-brand quotes and posts",
+   "b": "Wrong colours, a different font every time, and a tone that doesn't sound like you. Clients notice.",
+   "x": [
+    "pills",
+    [
+     "Wrong colours",
+     "Random fonts",
+     "Not your voice"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Pack your brand into a skill",
+   "x": [
+    "cards",
+    [
+     [
+      "Logo",
+      "Your logo files, and where it goes on a quote, a letter or a post."
+     ],
+     [
+      "Colours and fonts",
+      "Your exact colours and fonts, so every page matches."
+     ],
+     [
+      "Tone",
+      "How you talk to builders and clients, and the words you never use."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to build it",
+   "steps": [
+    "Gather your logo, colours, fonts and a few things you've written.",
+    "Ask Claude to turn them into a brand pack skill.",
+    "Test it on a quote and a post, and fix what's off."
+   ]
+  },
+  "s5": {
+   "sub": "With your logo and a few past quotes attached.",
+   "prompt": "Here's my logo, my colours and three quotes I've sent. Build me a brand pack skill so every quote, letter and post you make looks and sounds like my business.",
+   "note": "Like a finish schedule: every trade works to one spec."
+  },
+  "caption": "Does everything Claude makes look generic?\n\nBuild a brand pack: your logo, colours, fonts and tone in one skill. Then every quote, letter and post Claude makes looks and sounds like your business, not like a template."
+ },
+ {
+  "id": "SD04",
+  "series": 7,
+  "num": 4,
+  "title_short": "Skills and dashboards 4",
+  "page": "SD4 Dashboards",
+  "page_title": "Skills and dashboards 4: Dashboards that look, dashboards that act",
+  "q": "What if your numbers were on one screen?",
+  "sub": "Dashboards that look, and dashboards that act.",
+  "s2": {
+   "h": "Numbers in five places",
+   "b": "Who owes you in Xero, jobs in the calendar, quotes in your inbox. Checking them all takes the morning.",
+   "x": [
+    "pills",
+    [
+     "Xero",
+     "Calendar",
+     "Inbox"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Two kinds of dashboard",
+   "b": "Claude can build both for you. Sample figures shown.",
+   "x": [
+    "cards",
+    [
+     [
+      "Dashboards that look",
+      "Owed $18,400. Six quotes open. Four jobs this week. Read it with your coffee."
+     ],
+     [
+      "Dashboards that act",
+      "A button on each line: chase this, draft that. Claude drafts; you approve."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to start",
+   "steps": [
+    "Start with one that looks: three numbers you check every day.",
+    "Connect the apps those numbers live in.",
+    "Add buttons later, with approval on for anything that sends."
+   ]
+  },
+  "s5": {
+   "sub": "Start with three numbers.",
+   "prompt": "Build me a one-page dashboard: who owes me money, quotes waiting on an answer, and this week's jobs. Pull it from Xero, my email and my calendar. Don't change anything.",
+   "note": "Next in the series: approve straight from a dashboard."
+  },
+  "caption": "What if your numbers were all on one screen?\n\nStart with a dashboard that looks: who owes you, open quotes, this week's jobs. Then add one that acts, with a button on each line to draft the chase-up or the invoice for you to approve."
+ },
+ {
+  "id": "SD05",
+  "series": 7,
+  "num": 5,
+  "title_short": "Skills and dashboards 5",
+  "page": "SD5 Approve from a dashboard",
+  "page_title": "Skills and dashboards 5: Approve straight from a dashboard",
+  "q": "Approving things in five different apps?",
+  "sub": "Approve straight from one dashboard.",
+  "s2": {
+   "h": "Approvals everywhere",
+   "b": "A draft invoice in Xero, a purchase order in your email, a quote in a folder. Each waits until you find it.",
+   "x": [
+    "pills",
+    [
+     "Draft invoices",
+     "Purchase orders",
+     "Quotes"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "One list, your tick",
+   "b": "Claude lines up every draft in one place. You read each one and tick it, or send it back.",
+   "x": [
+    "chat",
+    [
+     [
+      "Claude",
+      "Three drafts ready: two invoices for ABC Tiling, one PO to XYZ Supplies.",
+      "left"
+     ],
+     [
+      "You",
+      "Approve the invoices. Hold the PO till Monday.",
+      "right"
+     ],
+     [
+      "Claude",
+      "Done. The PO is back on your list Monday.",
+      "left"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Have Claude put every draft in one approval list.",
+    "Show the key details on each line: who, what, how much.",
+    "Approve each one yourself. Nothing goes without your tick."
+   ]
+  },
+  "s5": {
+   "sub": "Build the list first.",
+   "prompt": "Build me an approval dashboard: every draft invoice, purchase order and quote waiting on me, with who, what and how much. Nothing sends until I tick it.",
+   "note": "A person still approves. The dashboard just brings it to you."
+  },
+  "caption": "Approving things in five different apps?\n\nHave Claude line up every draft invoice, purchase order and quote in one dashboard. You read each one and tick it, or send it back. Claude drafts; you still approve."
+ },
+ {
+  "id": "SD06",
+  "series": 7,
+  "num": 6,
+  "title_short": "Skills and dashboards 6",
+  "page": "SD6 Rolling out Claude",
+  "page_title": "Skills and dashboards 6: Rolling out Claude to your team",
+  "q": "Want the whole office using Claude?",
+  "sub": "Roll it out on a Team plan.",
+  "s2": {
+   "h": "Everyone on their own",
+   "b": "One person on a personal plan, another on a free app, and nobody shares what works.",
+   "x": [
+    "pills",
+    [
+     "Different apps",
+     "Nothing shared",
+     "Work goes missing"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "One plan, shared know-how",
+   "x": [
+    "cards",
+    [
+     [
+      "Team plan",
+      "One account for the business, a seat for each person, and an admin who runs it."
+     ],
+     [
+      "Shared skills",
+      "Load skills like quoting or your brand pack once, and everyone works the same way."
+     ],
+     [
+      "Shared projects",
+      "Keep job files and instructions where the right people can use them."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to roll it out",
+   "steps": [
+    "Start with two or three people and one job each.",
+    "Load your skills so everyone quotes and writes the same way.",
+    "Have each person connect their own email and apps."
+   ]
+  },
+  "s5": {
+   "sub": "Ask Claude for the rollout plan.",
+   "prompt": "I want my office team using Claude. Give me a simple rollout plan: who starts first, which jobs to try, which skills to load, and how we check it's working.",
+   "note": "Next in the series: \"Who am I?\" and permissions."
+  },
+  "caption": "Want the whole office using Claude, not just you?\n\nPut the business on a Team plan, load your skills once so everyone works the same way, and start with two or three people and one job each. Ask Claude for the rollout plan, not just the next task."
+ },
+ {
+  "id": "SD07",
+  "series": 7,
+  "num": 7,
+  "title_short": "Skills and dashboards 7",
+  "page": "SD7 Who am I",
+  "page_title": "Skills and dashboards 7: \"Who am I?\": permissions",
+  "q": "Can Claude see everything in your business?",
+  "sub": "Only what the person using it can see.",
+  "s2": {
+   "h": "Who's asking matters",
+   "b": "The office manager can see the books. The apprentice shouldn't. So what can Claude see when each one asks?",
+   "x": [
+    "pills",
+    [
+     "Office manager",
+     "Site crew",
+     "Apprentice"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Claude borrows your keys",
+   "b": "Each person connects their own apps, so Claude gets exactly that person's access. Like site keys: you only get the ones your job needs.",
+   "x": [
+    "strip",
+    [
+     [
+      "Yours",
+      "Your access only"
+     ],
+     [
+      "Theirs",
+      "Their access only"
+     ],
+     [
+      "Need only",
+      "Least access for the job"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Have each person connect apps with their own login.",
+    "Give each login only what that person's job needs.",
+    "Keep approval on for anything that sends, pays or changes records."
+   ]
+  },
+  "s5": {
+   "sub": "Check who Claude is acting as.",
+   "prompt": "Who am I signed in as in each app you're connected to, and what can you see and change in each? List any access I probably don't need.",
+   "note": "Less access, less to go wrong."
+  },
+  "caption": "Can Claude see everything in your business? Only what the person using it can.\n\nEach person connects their own apps, so Claude gets exactly their access. Give each login only what the job needs, like site keys, and keep approval on for anything that sends, pays or changes records."
+ },
+ {
+  "id": "SD08",
+  "series": 7,
+  "num": 8,
+  "title_short": "Skills and dashboards 8",
+  "page": "SD8 Draft but can't send",
+  "page_title": "Skills and dashboards 8: Draft but can't send",
+  "q": "Worried an agent will send the wrong thing?",
+  "sub": "Set it up to draft, not send.",
+  "s2": {
+   "h": "One wrong email",
+   "b": "The wrong price to a builder, a payment to the wrong supplier. An agent that can send can get it wrong fast.",
+   "x": [
+    "pills",
+    [
+     "Wrong price",
+     "Wrong supplier",
+     "No taking it back"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Give it a pencil, not a pen",
+   "b": "Set the agent up so it can write drafts but has no way to send or pay. A person checks and sends.",
+   "x": [
+    "listcard",
+    "Agent permissions",
+    [
+     [
+      "Draft emails",
+      "Yes"
+     ],
+     [
+      "Send emails",
+      "No, a person sends"
+     ],
+     [
+      "Draft bills",
+      "Yes"
+     ],
+     [
+      "Pay anything",
+      "Never"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Only give it tools that draft, in email and Xero, not send.",
+    "Leave out any tool that sends, pays or deletes.",
+    "Have a person check every draft, then send it."
+   ]
+  },
+  "s5": {
+   "sub": "Write it into the job description.",
+   "prompt": "Write the rules for my invoicing agent: what it can draft, what it can never send or pay, and how it tells me a draft is ready for me to check.",
+   "note": "Like our Pam: she drafts, and our team checks."
+  },
+  "caption": "Worried an AI agent will send the wrong thing?\n\nSet it up so it can draft but can't send or pay. It writes the emails and bills; a person checks them and hits send. Like a drawing: nothing gets built until someone signs it off."
+ },
+ {
+  "id": "SD09",
+  "series": 7,
+  "num": 9,
+  "title_short": "Skills and dashboards 9",
+  "page": "SD9 Digital brains",
+  "page_title": "Skills and dashboards 9: Most digital brains are hype",
+  "q": "Been pitched a digital brain for your business?",
+  "sub": "Here's what actually works.",
+  "s2": {
+   "h": "Big promise, empty box",
+   "b": "Most digital brains are a box you have to fill and keep filling. If your records are a mess, so is the brain.",
+   "x": [
+    "pills",
+    [
+     "Big promises",
+     "Empty box",
+     "Messy records"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "What actually works",
+   "x": [
+    "cards",
+    [
+     [
+      "Good records",
+      "Jobs, contacts and invoices kept tidy in the apps you already use."
+     ],
+     [
+      "Skills",
+      "How you do each job, written down once, so Claude does it your way."
+     ],
+     [
+      "Connectors",
+      "Claude reads your real records live, not a copy that goes stale."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to start",
+   "steps": [
+    "Tidy one set of records first, like your Xero contacts.",
+    "Write a skill for one job you do every week.",
+    "Connect the apps your records live in."
+   ]
+  },
+  "s5": {
+   "sub": "Ask before you buy.",
+   "prompt": "Someone's selling me a digital brain for my tiling business. Here's what it does. Can I get the same with good records, skills and connectors in Claude? What would it add?",
+   "note": "Next in the series: a knowledge graph for your business."
+  },
+  "caption": "Been pitched a digital brain for your business?\n\nSome are useful, but most are a box you have to fill. What works is plainer: tidy records, a skill for each job, and connectors so Claude reads the real thing. Start there before you buy anything."
+ },
+ {
+  "id": "SD10",
+  "series": 7,
+  "num": 10,
+  "title_short": "Skills and dashboards 10",
+  "page": "SD10 Knowledge graph",
+  "page_title": "Skills and dashboards 10: A knowledge graph for your business",
+  "q": "What's a knowledge graph? Do you need one?",
+  "sub": "A map of how your business fits together.",
+  "s2": {
+   "h": "It's all in your head",
+   "b": "Which builder runs which site, who the foreman is, who tiled the last job. Nobody else knows.",
+   "x": [
+    "pills",
+    [
+     "Builders",
+     "Sites",
+     "Who did what"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Join the dots",
+   "b": "A knowledge graph is a map of what links to what. Like a set of plans: every room, wall and pipe, and how they connect.",
+   "x": [
+    "cards",
+    [
+     [
+      "Things",
+      "Builders, sites, suppliers, jobs and people."
+     ],
+     [
+      "Links",
+      "ABC Builders runs Smith Street. Bob tiled it. XYZ Supplies sent the adhesive."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to start",
+   "steps": [
+    "Ask Claude to map last year's jobs: who, where and what.",
+    "Keep it in Airtable or your CRM, not another new app.",
+    "Ask it questions before you quote or chase work."
+   ]
+  },
+  "s5": {
+   "sub": "Start with the jobs you've done.",
+   "prompt": "Here are last year's jobs. Map who links to what: builders, sites, foremen, suppliers and who did the work. Then tell me which builders I should be chasing for more.",
+   "note": "Ask for the strategy, not just the map."
+  },
+  "caption": "What's a knowledge graph, and do you need one?\n\nIt's a map of how your business fits together: which builder runs which site, who did the work, who supplied what. Like a set of plans, it shows how everything connects, so Claude can tell you who to chase next."
+ }
+]

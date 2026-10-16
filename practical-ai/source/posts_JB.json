@@ -1,0 +1,345 @@
+[
+ {
+  "id": "JB05",
+  "series": 1,
+  "num": 5,
+  "title_short": "Jargon buster 5",
+  "page": "JB5 Skills",
+  "page_title": "Jargon buster 5: What's a skill? Tips and limits",
+  "q": "Keep explaining the same job to AI?",
+  "sub": "A skill is how you teach it once.",
+  "s2": {
+   "h": "Same job, same explaining",
+   "b": "Every chat you tell Claude how you quote, how you word an email, what to check. Then you do it all again.",
+   "x": [
+    "pills",
+    [
+     "Every chat",
+     "Same rules",
+     "Missed steps"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Show it once, like an apprentice",
+   "b": "A skill is like telling a new apprentice \"this is how we do it\". Claude picks it up whenever the job comes round.",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Here's how we quote a bathroom. Turn it into a skill.",
+      "right"
+     ],
+     [
+      "Claude",
+      "Done. Save it, and I'll use it for every bathroom quote.",
+      "left"
+     ],
+     [
+      "You",
+      "Quote the Smith Street ensuite.",
+      "right"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "Tips and limits",
+   "steps": [
+    "Keep each skill to one job, like quoting or invoice coding.",
+    "Say when to use it, so Claude knows. Name it if it's missed.",
+    "A skill is know-how, not access. It still needs your apps connected."
+   ]
+  },
+  "s5": {
+   "sub": "After you've done a job well together.",
+   "prompt": "We just did that quote the way I like it. Turn how we did it into a skill: the steps, what to check, and what never to do without asking me.",
+   "note": "Next in the series: Markdown files and CLAUDE.md."
+  },
+  "caption": "Keep explaining the same job to AI?\n\nA skill is like showing an apprentice \"this is how we do it\", once. Keep each skill to one job, say when to use it, and remember it's know-how, not access: Claude still needs your apps connected."
+ },
+ {
+  "id": "JB06",
+  "series": 1,
+  "num": 6,
+  "title_short": "Jargon buster 6",
+  "page": "JB6 Markdown and CLAUDE.md",
+  "page_title": "Jargon buster 6: Markdown files and CLAUDE.md",
+  "q": "What's with all the .md files?",
+  "sub": "Markdown, and the file Claude reads first.",
+  "s2": {
+   "h": "Files you can't make sense of",
+   "b": "Skills, notes and instructions all end in .md, and Claude Code reads a file called CLAUDE.md.",
+   "x": [
+    "pills",
+    [
+     ".md files",
+     "CLAUDE.md",
+     "Hashes and dashes"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "The site notes on the wall",
+   "x": [
+    "grid2",
+    [
+     "Markdown: plain text",
+     "# marks a heading",
+     "- marks a list item",
+     "Opens in any app",
+     "Easy for Claude to read",
+     "CLAUDE.md: site notes",
+     "Read before every job",
+     "What the project is",
+     "How we do things here",
+     "What never to touch"
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to use them",
+   "steps": [
+    "Read a .md file like any note. The marks are just headings and lists.",
+    "In Claude Code, keep a CLAUDE.md in each project folder.",
+    "Put the rules there once, like site notes on the wall."
+   ]
+  },
+  "s5": {
+   "sub": "In Claude Code, in your project folder.",
+   "prompt": "Write a CLAUDE.md for this project: what it is, how we do things, and what you must never change without asking me. Keep it short and plain.",
+   "note": "Next in the series: what's a webhook?"
+  },
+  "caption": "What's with all the .md files?\n\nMarkdown is just plain text with a few marks for headings and lists. CLAUDE.md is the site notes on the wall: Claude Code reads it before every job, so you write the rules once instead of every time."
+ },
+ {
+  "id": "JB07",
+  "series": 1,
+  "num": 7,
+  "title_short": "Jargon buster 7",
+  "page": "JB7 Webhooks",
+  "page_title": "Jargon buster 7: What's a webhook?",
+  "q": "Someone told you to use a webhook?",
+  "sub": "It's a doorbell between your apps.",
+  "s2": {
+   "h": "Checking every five minutes",
+   "b": "Is the enquiry in yet? Has the client paid? Apps waste time checking, just like you ringing the supplier again.",
+   "x": [
+    "pills",
+    [
+     "Any news?",
+     "Still nothing?",
+     "How about now?"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "The app rings when it happens",
+   "b": "A webhook is like the supplier ringing when the truck's ten minutes out. One app tells another the moment something happens.",
+   "x": [
+    "strip",
+    [
+     [
+      "Happens",
+      "A new enquiry lands"
+     ],
+     [
+      "Rings",
+      "The app sends a webhook"
+     ],
+     [
+      "Runs",
+      "The next step starts"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "Where you'll meet one",
+   "steps": [
+    "Look for \"webhooks\" in your CRM or forms app settings.",
+    "Point it at the tool that does the next step.",
+    "If that step sends or changes records, a person approves."
+   ]
+  },
+  "s5": {
+   "sub": "Before you set one up.",
+   "prompt": "When a new enquiry lands in my CRM, I want the next step to start straight away. Does my CRM have webhooks, and what's the simplest way to use one?",
+   "note": "Next in the series: n8n, the mesh in your screed."
+  },
+  "caption": "Someone told you to use a webhook? It's a doorbell between your apps.\n\nInstead of checking every five minutes, one app rings the next the moment something happens, like the supplier calling when the truck's ten minutes out. Anything that sends or changes records still gets a person's OK."
+ },
+ {
+  "id": "JB08",
+  "series": 1,
+  "num": 8,
+  "title_short": "Jargon buster 8",
+  "page": "JB8 n8n",
+  "page_title": "Jargon buster 8: n8n: the mesh in your screed",
+  "q": "Heard of n8n but no idea what it does?",
+  "sub": "It's the mesh in your screed.",
+  "s2": {
+   "h": "Apps that don't talk",
+   "b": "The enquiry is in the CRM, the job is in a spreadsheet and the invoice is in Xero. You're the one carrying it across.",
+   "x": [
+    "pills",
+    [
+     "CRM",
+     "Spreadsheet",
+     "Xero"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Hidden, but it holds it together",
+   "b": "Like mesh in a screed, n8n sits out of sight and ties your apps together.",
+   "x": [
+    "cards",
+    [
+     [
+      "Workflows",
+      "Step-by-step jobs: when this happens, do that, then that. It catches webhooks too."
+     ],
+     [
+      "Claude builds them",
+      "Describe the job in plain English and Claude can draft the workflow for you to check."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to start",
+   "steps": [
+    "Pick one job you carry between two apps by hand.",
+    "Ask Claude to design the workflow, step by step.",
+    "Keep approval on any step that sends, pays or changes records."
+   ]
+  },
+  "s5": {
+   "sub": "Ask for the strategy, not just the task.",
+   "prompt": "Every enquiry I get, I copy from my CRM into a spreadsheet and then into Xero. What's the best way to automate that, and should n8n do it or Claude?",
+   "note": "We use n8n at ScreedPro. Next: GitHub."
+  },
+  "caption": "Heard of n8n but no idea what it does?\n\nIt's the mesh in your screed: out of sight, tying your apps together. n8n runs step-by-step workflows between apps, and Claude can draft them in plain English. Keep approval on any step that sends, pays or changes records."
+ },
+ {
+  "id": "JB09",
+  "series": 1,
+  "num": 9,
+  "title_short": "Jargon buster 9",
+  "page": "JB9 GitHub",
+  "page_title": "Jargon buster 9: GitHub: a draft before you go live",
+  "q": "What's GitHub got to do with a tiler?",
+  "sub": "It's a draft before you go live.",
+  "s2": {
+   "h": "One change breaks the lot",
+   "b": "Claude tweaks your website or a small tool, it goes live straight away, and nobody can say what changed.",
+   "x": [
+    "pills",
+    [
+     "Live straight away",
+     "No undo",
+     "What changed?"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Dry-lay it before you stick it",
+   "b": "GitHub keeps every version. If your site runs from GitHub, Claude makes changes as a draft, you check, then they go live.",
+   "x": [
+    "listcard",
+    "Website change",
+    [
+     [
+      "Draft",
+      "New contact page"
+     ],
+     [
+      "Checked by",
+      "You"
+     ],
+     [
+      "Goes live",
+      "Once you approve"
+     ],
+     [
+      "Undo",
+      "Every old version kept"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to start",
+   "steps": [
+    "Keep your site's files on GitHub, with a host that publishes from it.",
+    "Ask Claude Code to make each change as a draft for you to check.",
+    "Approve it to go live. Roll back if anything's wrong."
+   ]
+  },
+  "s5": {
+   "sub": "In Claude Code, with your site's files.",
+   "prompt": "Change the phone number on my website contact page. Make it a draft I can check first, tell me what you changed, and don't put it live until I approve.",
+   "note": "Next in the series: which model, when?"
+  },
+  "caption": "What's GitHub got to do with a tiler?\n\nIt's dry-laying before you stick. GitHub keeps every version of your website or tool, so Claude makes changes as a draft, you check them, and only then do they go live. Something wrong? Roll back."
+ },
+ {
+  "id": "JB10",
+  "series": 1,
+  "num": 10,
+  "title_short": "Jargon buster 10",
+  "page": "JB10 Which model",
+  "page_title": "Jargon buster 10: Which model, when?",
+  "q": "Fable, Opus, Sonnet, Haiku: which do you need?",
+  "sub": "Pick the model like you'd pick the pump.",
+  "s2": {
+   "h": "Four names on the menu",
+   "b": "Claude comes in different models. Like pumps, you don't send the big one to a small bathroom.",
+   "x": [
+    "pills",
+    [
+     "Haiku",
+     "Sonnet",
+     "Opus",
+     "Fable"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Right size for the job",
+   "x": [
+    "cards",
+    [
+     [
+      "Haiku",
+      "The small, quick one. Good for simple, repeated jobs like sorting emails."
+     ],
+     [
+      "Sonnet",
+      "The everyday workhorse. Quotes, invoices, emails and most of your work."
+     ],
+     [
+      "Opus and Fable",
+      "The big ones, for hard thinking: strategy, tricky problems and big decisions."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to choose",
+   "steps": [
+    "Leave it on the default for everyday work.",
+    "Switch to a bigger model for the big decisions.",
+    "Ask Claude which suits a job if you're not sure."
+   ]
+  },
+  "s5": {
+   "sub": "Before a big job.",
+   "prompt": "I need to work out how to price next year's work across three builders. Which Claude model should I use for this, and why? Then help me plan it.",
+   "note": "That's the Jargon buster done. Now you speak AI."
+  },
+  "caption": "Fable, Opus, Sonnet, Haiku: which one do you need?\n\nPick the model like you'd pick the pump. Leave it on the default for everyday work, switch to a bigger one for the big decisions, and ask Claude if you're not sure. That's the Jargon buster series done."
+ }
+]

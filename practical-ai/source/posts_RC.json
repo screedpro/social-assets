@@ -1,0 +1,515 @@
+[
+ {
+  "id": "RC02",
+  "series": 5,
+  "num": 2,
+  "title_short": "Running the crew 2",
+  "page": "RC2 Who's going where",
+  "page_title": "Running the crew 2: Who's going where tomorrow",
+  "q": "Who's on which job tomorrow?",
+  "sub": "Tomorrow's crew plan, sorted tonight.",
+  "s2": {
+   "h": "The 9 pm phone shuffle",
+   "b": "Three jobs, two crews, screed booked for 7 am, and you're texting everyone one by one at night.",
+   "x": [
+    "pills",
+    [
+     "Late texts",
+     "Wrong site",
+     "Double-booked"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Tomorrow's plan in one go",
+   "b": "Tell Claude tomorrow's jobs and who's free. It drafts a plan and a message for each crew, for you to check before anything goes.",
+   "x": [
+    "strip",
+    [
+     [
+      "Who",
+      "Crew on each job"
+     ],
+     [
+      "Where",
+      "Site and start time"
+     ],
+     [
+      "What",
+      "Gear and materials"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Each afternoon, tell Claude tomorrow's jobs and who's free.",
+    "Ask for a plan per crew: site, start time, gear and site contact.",
+    "Check it, fix anything, then send the messages yourself."
+   ]
+  },
+  "s5": {
+   "sub": "Talk it in on the drive home.",
+   "prompt": "Tomorrow: Smith Street bathroom, 7 am, screed booked. Jones Rd kitchen, 8 am. Bob, Ali and Jack are free. Draft a plan for each crew and a text for each person. Don't send anything.",
+   "note": "Next in the series: talk instead of filling in site forms."
+  },
+  "caption": "Who's on which job tomorrow?\n\nTell Claude tomorrow's jobs and who's free. It drafts a plan for each crew, with site, start time and gear, plus a message for each person. You check it and send. One decision, the whole crew sorted."
+ },
+ {
+  "id": "RC03",
+  "series": 5,
+  "num": 3,
+  "title_short": "Running the crew 3",
+  "page": "RC3 Talk, don't fill in forms",
+  "page_title": "Running the crew 3: Talk instead of filling in site forms",
+  "q": "Hate filling in site forms?",
+  "sub": "Talk it in. Claude fills it out.",
+  "s2": {
+   "h": "Forms in the ute at 5 pm",
+   "b": "Prestarts, job notes and defects, typed with your thumbs at the end of the day, or not at all.",
+   "x": [
+    "pills",
+    [
+     "Prestarts",
+     "Job notes",
+     "Defects"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Say it, and it's written up",
+   "b": "Talk to Claude and add photos. It turns what you say into your job record, in the same layout every time.",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Smith Street done. 42 square tiled, grout tomorrow. Cracked laundry tile, builder told.",
+      "right"
+     ],
+     [
+      "Claude",
+      "Job record drafted with today's date and your photos. Save it?",
+      "left"
+     ],
+     [
+      "You",
+      "Yes, save it.",
+      "right"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Show Claude the form you use now and ask for a template.",
+    "At the end of each job, talk it through and add photos.",
+    "Check the record before it's saved or sent."
+   ]
+  },
+  "s5": {
+   "sub": "With your current form attached.",
+   "prompt": "This is my end-of-job form. From now on I'll talk you through it and add photos. Fill in the form from what I say, ask about anything missing, and show me before you save it.",
+   "note": "Next in the series: safety documents."
+  },
+  "caption": "Hate filling in site forms?\n\nTalk it in instead. Talk to Claude and add a few photos at the end of the job, and it fills in your form in the same layout every time. You check the record before it's saved or sent."
+ },
+ {
+  "id": "RC04",
+  "series": 5,
+  "num": 4,
+  "title_short": "Running the crew 4",
+  "page": "RC4 Safety documents",
+  "page_title": "Running the crew 4: Safety documents",
+  "q": "Spending your nights writing SWMS?",
+  "sub": "Claude drafts. A competent person signs.",
+  "s2": {
+   "h": "Every job needs the paperwork",
+   "b": "A SWMS for each high-risk task, a safety pack for the builder, and site details that change every job.",
+   "x": [
+    "pills",
+    [
+     "SWMS",
+     "Safety packs",
+     "Site details"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Claude drafts, you sign off",
+   "x": [
+    "cards",
+    [
+     [
+      "Starts from yours",
+      "Give Claude your existing SWMS and it drafts new ones in the same layout."
+     ],
+     [
+      "Fills in the site",
+      "The address, the tasks, the hazards you've listed and the builder's requirements."
+     ],
+     [
+      "A person signs off",
+      "A competent person on the job checks every hazard and control, then signs."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it safely",
+   "steps": [
+    "Give Claude your current SWMS and the builder's requirements.",
+    "Tell it the site, the tasks and the hazards you can see.",
+    "A competent person reviews, corrects and signs before work starts."
+   ]
+  },
+  "s5": {
+   "sub": "With your existing SWMS attached.",
+   "prompt": "Using my attached SWMS as the template, draft one for a screed and tile job at [site]. List any hazards you've assumed so I can check them. It's a draft for me to review and sign.",
+   "note": "A draft saves time. People on site make it safe."
+  },
+  "caption": "Spending your nights writing SWMS?\n\nGive Claude your existing SWMS and the site details, and it drafts the new one in the same layout. A competent person on the job still reviews every hazard and control and signs it off. Paperwork doesn't make a site safe; people do."
+ },
+ {
+  "id": "RC05",
+  "series": 5,
+  "num": 5,
+  "title_short": "Running the crew 5",
+  "page": "RC5 Timesheets and wages",
+  "page_title": "Running the crew 5: Timesheets and weekly wages",
+  "q": "Chasing timesheets before every pay run?",
+  "sub": "Check them against the jobs first.",
+  "s2": {
+   "h": "Timesheets that don't add up",
+   "b": "Missing days, hours on the wrong job, a timesheet that says Smith Street when the job sheet says Jones Rd.",
+   "x": [
+    "pills",
+    [
+     "Missing days",
+     "Wrong job",
+     "Handed in late"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Gaps flagged before the pay run",
+   "b": "Claude checks each timesheet against your job records and lists what doesn't match. It doesn't work out pay.",
+   "x": [
+    "listcard",
+    "Before the pay run",
+    [
+     [
+      "Missing",
+      "Tom, Tuesday"
+     ],
+     [
+      "Mismatch",
+      "Ali: Smith Street or Jones Rd?"
+     ],
+     [
+      "Matched",
+      "Everyone else"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Export the week's timesheets and job records.",
+    "Ask Claude to compare them and list every gap or mismatch.",
+    "Sort out the gaps. Whoever does payroll approves the pay run."
+   ]
+  },
+  "s5": {
+   "sub": "Before the pay run, not after.",
+   "prompt": "Here are this week's timesheets and job sheets. Compare them and list any missing days, hours on a job with no job sheet, or sites that don't match. Don't change anything.",
+   "note": "Claude checks the records. Pay rates stay with your payroll person."
+  },
+  "caption": "Chasing timesheets before every pay run?\n\nHave Claude check the week's timesheets against your job records and list the gaps: missing days, hours on the wrong job. You sort them out, and whoever does payroll approves the pay run. Claude checks the records, not the pay."
+ },
+ {
+  "id": "RC06",
+  "series": 5,
+  "num": 6,
+  "title_short": "Running the crew 6",
+  "page": "RC6 Replace your forms app",
+  "page_title": "Running the crew 6: Replace your forms app",
+  "q": "Paying for a forms app you barely use?",
+  "sub": "When Claude can do the job, and when it can't.",
+  "s2": {
+   "h": "Another login for the crew",
+   "b": "One app for prestarts, another for job notes, and half the crew still texts you photos instead.",
+   "x": [
+    "pills",
+    [
+     "Another login",
+     "Fixed forms",
+     "Texted photos"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Keep it or swap it",
+   "b": "Forms apps are good at what they do. Work out what you use yours for before you cancel anything.",
+   "x": [
+    "cards",
+    [
+     [
+      "You might not need it",
+      "If it's mostly job notes, photos and simple checklists, talking to Claude can cover it."
+     ],
+     [
+      "Keep it if",
+      "You need offline sign-off on site, your builders want its reports, or the crew already use it well."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to decide",
+   "steps": [
+    "List every form your crew fills in and who reads it.",
+    "Ask Claude which ones it could handle from what you tell it.",
+    "Trial one form for a month before you cancel anything."
+   ]
+  },
+  "s5": {
+   "sub": "With a list of your forms.",
+   "prompt": "Here's every form my crew fills in on our forms app, and who reads each one. Which could you handle from what we tell you and photos, which should stay in the app, and why?",
+   "note": "Ask for the strategy, not just the task."
+  },
+  "caption": "Paying for a forms app you barely use?\n\nIf it's mostly job notes, photos and checklists, talking to Claude might cover it. Keep the app if you need offline sign-off or your builders want its reports. Ask Claude which forms it could take on, and trial one before cancelling."
+ },
+ {
+  "id": "RC07",
+  "series": 5,
+  "num": 7,
+  "title_short": "Running the crew 7",
+  "page": "RC7 New starter checklist",
+  "page_title": "Running the crew 7: A new starter checklist",
+  "q": "New starter on Monday?",
+  "sub": "Have the gear and paperwork ready first.",
+  "s2": {
+   "h": "Day one and nothing's ready",
+   "b": "No boots in their size, no induction booked, no logins, and you're sorting it on site at 7 am.",
+   "x": [
+    "pills",
+    [
+     "Gear",
+     "Inductions",
+     "Logins"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "One checklist, every starter",
+   "x": [
+    "grid2",
+    [
+     "Boots and PPE sizes",
+     "Tools and kit issued",
+     "Site inductions booked",
+     "White card sighted",
+     "Other tickets sighted",
+     "Uniform ordered",
+     "Phone and email set up",
+     "App and Claude logins",
+     "Tool register updated",
+     "Emergency contact form"
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Ask Claude to draft a checklist from what you do now.",
+    "For each new starter, copy it and tick it off.",
+    "Check every item is done before their first day."
+   ]
+  },
+  "s5": {
+   "sub": "Start from what you already do.",
+   "prompt": "Draft me a new starter checklist for my tiling crew: PPE and sizes, tools to issue, inductions to book, tickets to sight and accounts to set up. Make it something I can tick off.",
+   "note": "Admin only. Contracts and pay stay with your adviser."
+  },
+  "caption": "New starter on Monday?\n\nHave Claude draft a checklist from what you already do: PPE sizes, tools to issue, inductions to book, tickets to sight and logins to set up. Copy it for each new starter and tick it off before day one."
+ },
+ {
+  "id": "RC08",
+  "series": 5,
+  "num": 8,
+  "title_short": "Running the crew 8",
+  "page": "RC8 Toolbox talks and training",
+  "page_title": "Running the crew 8: Toolbox talks and training",
+  "q": "Toolbox talk done, but who was there?",
+  "sub": "Record it, then turn it into notes and a quiz.",
+  "s2": {
+   "h": "Good talks, no record",
+   "b": "A solid toolbox talk on the tailgate, and no record of who attended or what was covered.",
+   "x": [
+    "pills",
+    [
+     "Who attended",
+     "What was said",
+     "Where's the sheet"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Record it, keep the notes",
+   "b": "Record the talk on your phone and copy the transcript. Claude writes it up, logs who attended and makes a short quiz.",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Here's today's toolbox talk transcript. Bob, Ali and Jack were there.",
+      "right"
+     ],
+     [
+      "Claude",
+      "Notes, attendance and a five-question quiz drafted. Save to the training log?",
+      "left"
+     ],
+     [
+      "You",
+      "Yes, save it.",
+      "right"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Record it with the crew's okay, then copy your phone's transcript.",
+    "Ask for one-page notes, attendance and a short quiz.",
+    "Check it, then save it to your training records."
+   ]
+  },
+  "s5": {
+   "sub": "With the transcript pasted in.",
+   "prompt": "Here's the transcript of today's toolbox talk. Write one-page notes of what was covered, list who attended: Bob, Ali and Jack. Add a five-question quiz for anyone who missed it.",
+   "note": "Next in the series: licences and tickets in one register."
+  },
+  "caption": "Toolbox talk done, but who was there?\n\nRecord the talk on your phone and paste in the transcript. Claude writes up one-page notes, logs who attended and makes a short quiz for anyone who missed it. You check it and save it to your training records."
+ },
+ {
+  "id": "RC09",
+  "series": 5,
+  "num": 9,
+  "title_short": "Running the crew 9",
+  "page": "RC9 Licences and tickets",
+  "page_title": "Running the crew 9: Licences and tickets in one register",
+  "q": "Whose ticket runs out this month?",
+  "sub": "Every licence and ticket in one register.",
+  "s2": {
+   "h": "Tickets in the glovebox",
+   "b": "White cards, EWP and forklift tickets, driver's licences. Copies everywhere, expiry dates nowhere.",
+   "x": [
+    "pills",
+    [
+     "White cards",
+     "EWP tickets",
+     "Licences"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "One register, with reminders",
+   "b": "Snap each card. Claude adds it to a register and reminds you before anything expires.",
+   "x": [
+    "listcard",
+    "Due in the next 60 days",
+    [
+     [
+      "Jack",
+      "EWP ticket, 12 Nov"
+     ],
+     [
+      "Ali",
+      "Driver's licence, 3 Dec"
+     ],
+     [
+      "Bob",
+      "Forklift licence, 20 Dec"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Photograph every licence and ticket, front and back.",
+    "Ask Claude to build the register: who, what, number, expiry.",
+    "Set a monthly scheduled task to list what's due in 60 days."
+   ]
+  },
+  "s5": {
+   "sub": "With photos of the cards.",
+   "prompt": "Here are photos of my crew's licences and tickets. Build a register with name, ticket, number and expiry date, and list anything that expires in the next 60 days.",
+   "note": "Keep the register private. It holds personal details."
+  },
+  "caption": "Whose ticket runs out this month?\n\nSnap every licence and ticket, and have Claude build one register: who, what, number and expiry. Then set a monthly scheduled task to list everything due in the next 60 days, so nobody turns up on site with an expired ticket."
+ },
+ {
+  "id": "RC10",
+  "series": 5,
+  "num": 10,
+  "title_short": "Running the crew 10",
+  "page": "RC10 Morning dashboard",
+  "page_title": "Running the crew 10: Your morning dashboard",
+  "q": "Want the crew's whole day on one screen?",
+  "sub": "Jobs, crews, gear and tickets at a glance.",
+  "s2": {
+   "h": "Five apps before smoko",
+   "b": "Calendar, texts, the tool register, the ticket register and the job list, all checked one at a time.",
+   "x": [
+    "pills",
+    [
+     "Jobs",
+     "Crews",
+     "Registers"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "One screen, every morning",
+   "b": "Claude builds a dashboard from your job list and registers. Sample figures shown.",
+   "x": [
+    "strip",
+    [
+     [
+      "4 jobs",
+      "On today"
+     ],
+     [
+      "2 tools",
+      "Out over a week"
+     ],
+     [
+      "1 ticket",
+      "Expiring this month"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Ask Claude to build a dashboard you can keep.",
+    "Give it your job list, tool register and ticket register.",
+    "Each morning, ask Claude to refresh it before you head out."
+   ]
+  },
+  "s5": {
+   "sub": "Pulls this whole series together.",
+   "prompt": "Build me a morning dashboard for my crew: today's jobs and who's on them, tools out more than a week, tickets expiring this month, and any job records still missing.",
+   "note": "Ten things, not one: one screen instead of five apps."
+  },
+  "caption": "Want the crew's whole day on one screen?\n\nHave Claude build a morning dashboard from your job list, tool register and ticket register: who's where, what gear is out, which tickets are due. One screen with your coffee instead of five apps."
+ }
+]

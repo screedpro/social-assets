@@ -1,0 +1,470 @@
+[
+ {
+  "id": "AC03",
+  "series": 2,
+  "num": 3,
+  "title_short": "Accounting 3",
+  "page": "AC3 Purchase orders",
+  "page_title": "Accounting 3: Purchase orders in a batch",
+  "q": "Still raising purchase orders one by one?",
+  "sub": "Raise the week's orders in one go.",
+  "s2": {
+   "h": "Orders scribbled on a docket",
+   "b": "Sand, adhesive and hire gear, each ordered by phone or text, and nothing to match the bill against later.",
+   "x": [
+    "pills",
+    [
+     "Phone orders",
+     "No PO numbers",
+     "Bills don't match"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Draft every order at once",
+   "x": [
+    "cards",
+    [
+     [
+      "From your jobs",
+      "Give Claude next week's jobs. It works out what each one needs and who to order it from."
+     ],
+     [
+      "Drafted for you",
+      "Each order is drafted for you to check, with the job name in the reference, ready to raise in Xero."
+     ],
+     [
+      "You approve",
+      "Check the orders, fix anything, then approve and send them to the supplier."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "List next week's jobs and what each one needs.",
+    "Ask for draft orders, one per supplier, with the job name on each.",
+    "Check the drafts, then approve and send them yourself."
+   ]
+  },
+  "s5": {
+   "sub": "With next week's jobs listed.",
+   "prompt": "Here are next week's jobs. Draft a purchase order for each supplier with the job name in the reference, list anything you're unsure about, and don't send anything until I approve.",
+   "note": "Our Pam drafts our purchase orders the same way."
+  },
+  "caption": "Still raising purchase orders one at a time?\n\nGive Claude next week's jobs. It drafts every purchase order, one per supplier, and waits for you to approve and send. Ten orders, one decision, and an order to match each bill against."
+ },
+ {
+  "id": "AC04",
+  "series": 2,
+  "num": 4,
+  "title_short": "Accounting 4",
+  "page": "AC4 Bank reconciliation",
+  "page_title": "Accounting 4: Bank reconciliation: Claude drafts, you approve",
+  "q": "Bank reconciliation piling up again?",
+  "sub": "Claude does the matching. You approve.",
+  "s2": {
+   "h": "Three weeks of unmatched lines",
+   "b": "Every bank line needs a bill or invoice to match, and the pile only grows while you're on site.",
+   "x": [
+    "pills",
+    [
+     "Unmatched lines",
+     "Missing bills",
+     "Month-end panic"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Claude matches, you click OK",
+   "b": "Export the unreconciled lines from Xero. Claude finds the bill or invoice for each one and lists what it can't match.",
+   "x": [
+    "strip",
+    [
+     [
+      "Matches",
+      "Lines to bills"
+     ],
+     [
+      "Queries",
+      "What it can't place"
+     ],
+     [
+      "You check",
+      "Then reconcile in Xero"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Export your unreconciled bank lines from Xero and give them to Claude.",
+    "Answer its queries: what each odd payment was for.",
+    "Check its matches and reconcile in Xero yourself."
+   ]
+  },
+  "s5": {
+   "sub": "With the lines exported from Xero.",
+   "prompt": "Here are my unreconciled bank lines from Xero. Match each one to a bill or invoice in Xero, list the ones you can't match with your best guess, and don't change anything.",
+   "note": "Next in the series: a daily cash update from your bank feed."
+  },
+  "caption": "Bank reconciliation piling up again?\n\nExport the unreconciled lines from Xero. Claude matches each line to a bill or invoice and lists the ones it can't place. You answer the queries and reconcile in Xero. Claude drafts, you approve, every time."
+ },
+ {
+  "id": "AC05",
+  "series": 2,
+  "num": 5,
+  "title_short": "Accounting 5",
+  "page": "AC5 Daily cash update",
+  "page_title": "Accounting 5: A daily cash update from your bank feed",
+  "q": "Want to know your cash before you start?",
+  "sub": "A morning update from your Xero bank feed.",
+  "s2": {
+   "h": "Logging in to check the bank",
+   "b": "Opening the banking app before every big order, and still not knowing what's due out this week.",
+   "x": [
+    "pills",
+    [
+     "Bank balance",
+     "Bills due",
+     "Who's paid"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "A cash update every morning",
+   "b": "Claude reads your bank accounts in Xero, where your bank feed lands, and sends a short note. Never give Claude your bank login.",
+   "x": [
+    "listcard",
+    "Cash this morning",
+    [
+     [
+      "In the bank",
+      "Across all accounts"
+     ],
+     [
+      "Came in",
+      "Yesterday's payments"
+     ],
+     [
+      "Going out",
+      "Bills due this week"
+     ],
+     [
+      "Chase",
+      "Who's overdue"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Connect Xero. Your bank feed is already in it.",
+    "Ask for a short cash note, set as a scheduled task for 6 am.",
+    "Never share your bank login or password. Xero is enough."
+   ]
+  },
+  "s5": {
+   "sub": "Read only, from Xero.",
+   "prompt": "Every morning at 6, check my bank accounts in Xero. Tell me the balance in each account, what came in yesterday, bills due this week and who's overdue. Don't change anything.",
+   "note": "Reads your Xero feed only. No bank logins, ever."
+  },
+  "caption": "Want to know where your cash sits before the day starts?\n\nClaude reads your Xero bank feed and sends a short note every morning: what's in, what's going out and who's overdue. It all comes from Xero, so you never give Claude your bank login."
+ },
+ {
+  "id": "AC06",
+  "series": 2,
+  "num": 6,
+  "title_short": "Accounting 6",
+  "page": "AC6 Debtors and creditors",
+  "page_title": "Accounting 6: Debtors, creditors and cash flow",
+  "q": "Who owes you, and who do you owe?",
+  "sub": "Ask for the strategy, not just the list.",
+  "s2": {
+   "h": "Plenty of work, never any cash",
+   "b": "Builders paying at 60 days, suppliers wanting 30, and a big job next month you'll pay for before you're paid.",
+   "x": [
+    "pills",
+    [
+     "Debtors",
+     "Creditors",
+     "Cash flow"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "See the weeks ahead",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "What does cash look like for the next eight weeks?",
+      "right"
+     ],
+     [
+      "Claude",
+      "Tight in week 5. Three builders are overdue, and I've drafted chasers to check.",
+      "left"
+     ],
+     [
+      "You",
+      "What are my options for week 5?",
+      "right"
+     ],
+     [
+      "Claude",
+      "Three options, with what each one means for you. Your call.",
+      "left"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Ask who owes you and who you owe, oldest first.",
+    "Ask for the weeks ahead, and where cash gets tight.",
+    "Have it draft chasers. Read and send them yourself."
+   ]
+  },
+  "s5": {
+   "sub": "Read only. The chasers are drafts.",
+   "prompt": "From Xero, show who owes me and who I owe, oldest first, and my cash for the next eight weeks. Where's it tight, what are my options? Draft chasers for overdue clients. Send nothing.",
+   "note": "Big money decisions stay with you and your accountant."
+  },
+  "caption": "Who owes you, and who do you owe?\n\nClaude reads both from Xero and lays out the weeks ahead, so you see a tight week coming. Ask for the options, not just the list. It drafts the chasers; you read them and decide what goes."
+ },
+ {
+  "id": "AC07",
+  "series": 2,
+  "num": 7,
+  "title_short": "Accounting 7",
+  "page": "AC7 Merge duplicate contacts",
+  "page_title": "Accounting 7: Merge duplicate contacts in Xero",
+  "q": "Same builder in Xero three times?",
+  "sub": "Find the duplicates, then merge them once.",
+  "s2": {
+   "h": "ABC Tiling, three times over",
+   "b": "ABC Tiling, ABC Tiling Pty Ltd and A.B.C. Tiling. Invoices split three ways, and nobody's sure who owes what.",
+   "x": [
+    "pills",
+    [
+     "Duplicates",
+     "Split history",
+     "Old emails"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "A merge list, ready to check",
+   "b": "Claude reads every contact in Xero, groups the likely duplicates and says which one to keep. You do the merging.",
+   "x": [
+    "strip",
+    [
+     [
+      "Finds",
+      "Likely duplicates"
+     ],
+     [
+      "Suggests",
+      "Which one to keep"
+     ],
+     [
+      "You merge",
+      "In Xero, yourself"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Ask Claude for a list of likely duplicate contacts.",
+    "Check each group: same ABN, same email, same phone.",
+    "Merge the ones you agree with in Xero yourself."
+   ]
+  },
+  "s5": {
+   "sub": "Read only. You do the merging.",
+   "prompt": "Go through my Xero contacts and list likely duplicates, grouped, with the one to keep and why. Check ABN, email and phone. Don't change or merge anything.",
+   "note": "Next in the series: checking ABNs on the Business Register."
+  },
+  "caption": "Same builder in Xero three times over?\n\nClaude reads every contact, groups the likely duplicates and tells you which one to keep. You check the list and merge them in Xero. One clean contact, one clear history of who owes what."
+ },
+ {
+  "id": "AC08",
+  "series": 2,
+  "num": 8,
+  "title_short": "Accounting 8",
+  "page": "AC8 Check ABNs",
+  "page_title": "Accounting 8: Check ABNs on the Australian Business Register",
+  "q": "Is that new client's ABN even active?",
+  "sub": "Check it on the Business Register first.",
+  "s2": {
+   "h": "A new client, an unknown ABN",
+   "b": "A cancelled ABN, the wrong name on the invoice, or GST charged by someone who isn't registered. Easy to miss.",
+   "x": [
+    "pills",
+    [
+     "Cancelled ABNs",
+     "Wrong names",
+     "GST status"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Every ABN checked in one go",
+   "b": "Claude looks up each ABN on the Australian Business Register's ABN Lookup and flags anything that doesn't match.",
+   "x": [
+    "listcard",
+    "ABN check",
+    [
+     [
+      "Client",
+      "ABC Tiling"
+     ],
+     [
+      "ABN",
+      "Active"
+     ],
+     [
+      "GST",
+      "Registered"
+     ],
+     [
+      "Name",
+      "Matches your Xero contact"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Ask Claude to pull your contacts' ABNs from Xero.",
+    "Have it check each one on ABN Lookup.",
+    "Fix the contacts yourself, or approve its drafted changes."
+   ]
+  },
+  "s5": {
+   "sub": "Ten things, not one: check the lot.",
+   "prompt": "Take every client and supplier in Xero with an ABN. Check each on ABN Lookup and list any that are cancelled, not registered for GST or under a different name. Don't change anything.",
+   "note": "Next in the series: credit checks before you supply."
+  },
+  "caption": "Is that new client's ABN even active?\n\nClaude checks every ABN in your Xero on the Australian Business Register and lists any that are cancelled, not registered for GST or under another name. You decide what to fix. Do the lot once, then each new client."
+ },
+ {
+  "id": "AC09",
+  "series": 2,
+  "num": 9,
+  "title_short": "Accounting 9",
+  "page": "AC9 Credit checks",
+  "page_title": "Accounting 9: Credit checks before you supply",
+  "q": "Will this new builder actually pay you?",
+  "sub": "Run the checks before you start the job.",
+  "s2": {
+   "h": "Start first, chase later",
+   "b": "A new builder, a big job, no checks. Sixty days later the invoice is still unpaid and nobody answers the phone.",
+   "x": [
+    "pills",
+    [
+     "No checks",
+     "Slow payers",
+     "Bad debts"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "A credit check before you supply",
+   "x": [
+    "grid2",
+    [
+     "ABN active and matching",
+     "Registered for GST",
+     "Company details",
+     "How long they've traded",
+     "Trade references",
+     "Payment history in Xero",
+     "Your credit bureau report",
+     "Signed credit application",
+     "A credit limit you set",
+     "Notes for the team"
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Write down the checks you want on every new client.",
+    "Give Claude the client's details and ask for the checks.",
+    "Read the summary and set the credit limit yourself."
+   ]
+  },
+  "s5": {
+   "sub": "For each new client, before you supply.",
+   "prompt": "New client: ABC Tiling, ABN attached. Check the ABN and GST status, how long they've traded and anything public I should know, then summarise. I'll decide the terms.",
+   "note": "Claude gathers the facts. The credit decision is yours."
+  },
+  "caption": "Will this new builder actually pay you?\n\nBefore you start the job, Claude runs your checks: ABN, GST, how long they've traded and what's on the public record, then gives you a short summary. You decide the terms and the credit limit."
+ },
+ {
+  "id": "AC10",
+  "series": 2,
+  "num": 10,
+  "title_short": "Accounting 10",
+  "page": "AC10 Compliance register",
+  "page_title": "Accounting 10: Never miss a BAS, rego or insurance date",
+  "q": "Ever been caught out by a BAS or rego date?",
+  "sub": "Never miss a BAS, rego or insurance date.",
+  "s2": {
+   "h": "Every date at a different time",
+   "b": "BAS, payroll tax, vehicle rego, insurance, licences, ASIC. They all fall due at different times, and missing one costs money.",
+   "x": [
+    "pills",
+    [
+     "BAS",
+     "Rego",
+     "Insurance"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "One register of every due date",
+   "x": [
+    "cards",
+    [
+     [
+      "Reads your inbox",
+      "Reminders from your accountant, the ATO, ASIC and your insurers."
+     ],
+     [
+      "Builds the register",
+      "Every obligation, its due date and how often it comes round, in Airtable or a spreadsheet."
+     ],
+     [
+      "Reminds you early",
+      "A note before each one is due, so there's time to act."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Connect Claude to your email.",
+    "Ask it to build the register in Airtable or a spreadsheet.",
+    "Set a weekly scheduled task to list what's coming up."
+   ]
+  },
+  "s5": {
+   "sub": "Then keep it running every week.",
+   "prompt": "Go through the last 12 months of emails from my accountant, the ATO, ASIC and my insurers. Build me a register of every compliance obligation, its due date and how often it comes round.",
+   "note": "Claude reminds you. You or your accountant lodge and pay."
+  },
+  "caption": "Ever been caught out by a BAS, rego or insurance date?\n\nClaude reads the reminders from your accountant, the ATO, ASIC and your insurers, builds one register of every due date and reminds you before each one. You still lodge and pay; it makes sure you don't forget."
+ }
+]

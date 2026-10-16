@@ -1,0 +1,519 @@
+[
+ {
+  "id": "WW02",
+  "series": 4,
+  "num": 2,
+  "title_short": "Winning work 2",
+  "page": "WW2 Voice note in the car",
+  "page_title": "Winning work 2: Voice note in the car, CRM updated",
+  "q": "Forget to log calls after site visits?",
+  "sub": "Talk in the car. Claude updates the CRM.",
+  "s2": {
+   "h": "Site notes never reach the CRM",
+   "b": "You leave site with a name, a price and a follow-up. By tonight, half of it's gone.",
+   "x": [
+    "pills",
+    [
+     "Names",
+     "Prices",
+     "Follow-ups"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Say it, Claude logs it",
+   "b": "Talk to Claude on the way home, hands-free. It turns it into CRM notes, a follow-up task and a draft email.",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "Just left ABC Builders. Dave wants a price for 400 m² by Friday.",
+      "right"
+     ],
+     [
+      "Claude",
+      "Note and Thursday follow-up ready for your CRM, plus a draft to Dave. Save them?",
+      "left"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Connect your CRM to Claude, with approval on for changes.",
+    "Talk hands-free, or once you've parked.",
+    "Check the note and the draft, then approve."
+   ]
+  },
+  "s5": {
+   "sub": "Say it out loud after the site visit.",
+   "prompt": "Just left Smith Street. Dave at ABC Builders wants a price for 400 square metres by Friday. Update my CRM, add a follow-up for Thursday and draft an email to Dave. Show me first.",
+   "note": "Claude drafts the update. You approve it."
+  },
+  "caption": "Forget to log calls after a site visit?\n\nTalk to Claude on the way home, hands-free. Claude turns it into CRM notes, a follow-up task and a draft email, and waits for you to check before anything is saved or sent."
+ },
+ {
+  "id": "WW03",
+  "series": 4,
+  "num": 3,
+  "title_short": "Winning work 3",
+  "page": "WW3 Wake up old clients",
+  "page_title": "Winning work 3: Wake up old clients",
+  "q": "Old clients gone quiet?",
+  "sub": "Wake them up: one list, ten drafts.",
+  "s2": {
+   "h": "Quiet clients cost you work",
+   "b": "Tilers and builders you did good work for last year haven't called, and nobody's had time to ask why.",
+   "x": [
+    "pills",
+    [
+     "No call back",
+     "No follow-up",
+     "Lost to a rival"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Find them, draft the hello",
+   "b": "Claude finds clients you haven't worked for in a year and drafts a personal note to each, mentioning the last job.",
+   "x": [
+    "listcard",
+    "Gone quiet",
+    [
+     [
+      "ABC Tiling",
+      "Last job 14 months ago"
+     ],
+     [
+      "XYZ Builders",
+      "Quoted twice, no job"
+     ],
+     [
+      "Smith Floors",
+      "Last job 11 months ago"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Ask Claude for clients with no job in 12 months.",
+    "Have it draft a short, personal note to each one.",
+    "Check every draft, then send them yourself."
+   ]
+  },
+  "s5": {
+   "sub": "Ten clients, one decision.",
+   "prompt": "Look through my CRM and Xero for clients I haven't invoiced in 12 months. List them with their last job, and draft a short, friendly note to each. Don't send anything.",
+   "note": "Claude drafts. You send."
+  },
+  "caption": "Old clients gone quiet?\n\nAsk Claude for everyone you haven't worked for in a year, with their last job and a short personal note to each. Check the drafts and send them yourself. Ten clients, one decision."
+ },
+ {
+  "id": "WW04",
+  "series": 4,
+  "num": 4,
+  "title_short": "Winning work 4",
+  "page": "WW4 Clean up your contacts",
+  "page_title": "Winning work 4: Clean up your contacts",
+  "q": "Contacts in your phone, CRM and Xero all differ?",
+  "sub": "One clean contact list, without losing a weekend.",
+  "s2": {
+   "h": "Contacts all over the place",
+   "b": "Your phone, email, CRM and Xero each have a different version of the same builder, and half are out of date.",
+   "x": [
+    "pills",
+    [
+     "Duplicates",
+     "Old numbers",
+     "Missing emails"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Claude finds the mess",
+   "b": "Claude compares your lists, finds the duplicates and gaps, and proposes fixes for you to approve.",
+   "x": [
+    "strip",
+    [
+     [
+      "Finds",
+      "Duplicates"
+     ],
+     [
+      "Fills",
+      "Missing details"
+     ],
+     [
+      "Proposes",
+      "Merges you approve"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Connect your CRM and Xero, or export each list.",
+    "Ask for a list of duplicates and gaps, not changes.",
+    "Approve the fixes in one batch, then let Claude make them."
+   ]
+  },
+  "s5": {
+   "sub": "Start read only.",
+   "prompt": "Compare my CRM contacts with my Xero contacts. List duplicates, missing phone numbers and emails, and anyone in one but not the other. Suggest fixes but don't change anything.",
+   "note": "Next in the series: a map of who works with whom."
+  },
+  "caption": "Contacts in your phone, CRM and Xero all different?\n\nAsk Claude to compare your CRM and Xero, list the duplicates and gaps, and suggest fixes. Approve them in one batch. Clean contacts make every other job easier."
+ },
+ {
+  "id": "WW05",
+  "series": 4,
+  "num": 5,
+  "title_short": "Winning work 5",
+  "page": "WW5 Who works with whom",
+  "page_title": "Winning work 5: A map of who works with whom",
+  "q": "Which builders use the tilers you know?",
+  "sub": "A map of who works with whom.",
+  "s2": {
+   "h": "It's all in your head",
+   "b": "You know which builder used which tiler on which job. Nobody else does, and you forget half of it.",
+   "x": [
+    "pills",
+    [
+     "Builders",
+     "Tilers",
+     "Projects"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Three lists, linked",
+   "x": [
+    "cards",
+    [
+     [
+      "Builders",
+      "Every builder, with the projects they've run and the trades they used."
+     ],
+     [
+      "Tilers",
+      "Every tiler and installer, with the builders and jobs they've worked on."
+     ],
+     [
+      "Projects",
+      "Each job, linked to its builder, its tiler and your quote."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Ask Claude to build three linked lists in Airtable or your CRM.",
+    "Give it your past quotes and invoices to fill them in.",
+    "Before you quote a new job, ask who you already know on it."
+   ]
+  },
+  "s5": {
+   "sub": "Before you quote the next big job.",
+   "prompt": "Here are two years of my quotes and invoices. Build linked lists of builders, tilers and projects: who worked with whom, on what. Then tell me which tilers have worked for ABC Builders.",
+   "note": "Claude builds the lists. You check them."
+  },
+  "caption": "Which builders use the tilers you know?\n\nHave Claude build a map from your past quotes and invoices: builders, tilers and projects, linked. Before you quote a new job, ask who you already know on it."
+ },
+ {
+  "id": "WW06",
+  "series": 4,
+  "num": 6,
+  "title_short": "Winning work 6",
+  "page": "WW6 Tender register",
+  "page_title": "Winning work 6: A tender register with reminders",
+  "q": "Missed a tender closing date?",
+  "sub": "A tender register that reminds you.",
+  "s2": {
+   "h": "Tenders slip through",
+   "b": "Invitations arrive from portals and builders by email, and the closing date is buried in a PDF.",
+   "x": [
+    "pills",
+    [
+     "Email invites",
+     "Dates in PDFs",
+     "Missed deadlines"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Every tender, one register",
+   "b": "Claude reads each invitation, logs it and reminds you before it closes.",
+   "x": [
+    "listcard",
+    "Tender register",
+    [
+     [
+      "Project",
+      "Smith Street apartments"
+     ],
+     [
+      "Builder",
+      "ABC Builders"
+     ],
+     [
+      "Closes",
+      "Friday 2 pm"
+     ],
+     [
+      "Status",
+      "Drawings in, price due"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Ask Claude to build the register in Airtable or a spreadsheet.",
+    "Have it read your tender emails and log each one.",
+    "Set a scheduled task to remind you three days out."
+   ]
+  },
+  "s5": {
+   "sub": "Run it over last month's emails.",
+   "prompt": "Go through my emails from the last month and find every tender invitation. Build a register: project, builder, closing date and what they need. Remind me three days before each closes.",
+   "note": "Claude logs and reminds. You decide what to price."
+  },
+  "caption": "Missed a tender closing date?\n\nHave Claude read your tender emails and build one register: project, builder, closing date and what's needed. A scheduled task reminds you three days out, so you choose what to price."
+ },
+ {
+  "id": "WW07",
+  "series": 4,
+  "num": 7,
+  "title_short": "Winning work 7",
+  "page": "WW7 Quote options",
+  "page_title": "Winning work 7: Quote options clients value",
+  "q": "Losing quotes on price?",
+  "sub": "Give clients options, not one number.",
+  "s2": {
+   "h": "One price, one comparison",
+   "b": "A single number gets compared on price alone. The client never sees what else you could do for them.",
+   "x": [
+    "pills",
+    [
+     "Price only",
+     "No options",
+     "No reason to pick"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Ask for the strategy, not the task",
+   "x": [
+    "cards",
+    [
+     [
+      "Not this",
+      "\"Write my quote for this job.\""
+     ],
+     [
+      "Ask this",
+      "\"What's the best way to quote this job, with options the client will value?\""
+     ],
+     [
+      "What you get",
+      "Options like a faster finish, staged work or extra prep, each priced for you to check."
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Give Claude the drawings, your rates and what the client said.",
+    "Ask what the client values most, and for two or three options.",
+    "Check the prices and wording, then send the quote yourself."
+   ]
+  },
+  "s5": {
+   "sub": "Ask for the strategy first.",
+   "prompt": "Here are the drawings and my rates for this job. What's the best way to quote it, with two or three options the client will value? Explain and price each one. Don't send anything.",
+   "note": "Next in the series: have Claude set up your CRM."
+  },
+  "caption": "Losing quotes on price?\n\nDon't ask Claude to write your quote. Ask for the best way to quote the job, with options the client will value. You check the prices and send it yourself."
+ },
+ {
+  "id": "WW08",
+  "series": 4,
+  "num": 8,
+  "title_short": "Winning work 8",
+  "page": "WW8 Set up your CRM",
+  "page_title": "Winning work 8: Have Claude set up your CRM",
+  "q": "Still running work from a notebook?",
+  "sub": "Let Claude set up your CRM with you.",
+  "s2": {
+   "h": "A CRM feels like a project",
+   "b": "Fields, pipelines, tags. Most tradies sign up, get stuck in the setup and go back to the notebook.",
+   "x": [
+    "pills",
+    [
+     "Fields",
+     "Pipelines",
+     "Tags"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "What Claude can set up",
+   "x": [
+    "grid2",
+    [
+     "Contacts and companies",
+     "Builders and projects",
+     "Enquiry to quote to job",
+     "Follow-up tasks",
+     "Tags for client types",
+     "Quote reminders",
+     "Your old lists, imported",
+     "A weekly pipeline report"
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Tell Claude how a job runs, from first call to final invoice.",
+    "Have it design the pipeline: a job board, one column per stage.",
+    "Approve each change, then have it bring in your old lists."
+   ]
+  },
+  "s5": {
+   "sub": "Before you sign up for anything.",
+   "prompt": "I'm a tiler. Here's how a job runs, from first call to final invoice. Recommend a CRM, then design the setup: stages, fields and tags. Walk me through it before changing anything.",
+   "note": "We use HighLevel as our CRM at ScreedPro."
+  },
+  "caption": "Still running work from a notebook?\n\nTell Claude how a job runs, from first call to final invoice, and let it design your CRM: stages, fields, tags and reminders. Approve each change, then have it bring in your old lists."
+ },
+ {
+  "id": "WW09",
+  "series": 4,
+  "num": 9,
+  "title_short": "Winning work 9",
+  "page": "WW9 Posts followers want",
+  "page_title": "Winning work 9: Posts your followers want",
+  "q": "No idea what to post?",
+  "sub": "Ask Claude what your followers respond to.",
+  "s2": {
+   "h": "Posting into the void",
+   "b": "A photo of a finished floor, a few likes, then nothing. You don't know what works, so you stop.",
+   "x": [
+    "pills",
+    [
+     "Random posts",
+     "Few likes",
+     "Given up"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "Ask for the strategy, not the post",
+   "x": [
+    "chat",
+    [
+     [
+      "You",
+      "What will tilers and builders actually respond to?",
+      "right"
+     ],
+     [
+      "Claude",
+      "Practical tips. A series that answers one question they have, a post a day.",
+      "left"
+     ],
+     [
+      "You",
+      "Like this one?",
+      "right"
+     ],
+     [
+      "Claude",
+      "Exactly like this one: one question, ten posts.",
+      "left"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to do it",
+   "steps": [
+    "Tell Claude who your followers are and what you do.",
+    "Ask what they'd value, and for a series, not one post.",
+    "Check each post, then schedule it yourself."
+   ]
+  },
+  "s5": {
+   "sub": "Strategy first, posts second.",
+   "prompt": "My followers are builders, homeowners and other trades. What will they respond to? Suggest a series of ten posts that answers one question they have, then draft the first one.",
+   "note": "Next in the series: write in your voice."
+  },
+  "caption": "No idea what to post?\n\nDon't ask Claude to write a post. Ask what your followers will respond to. This series is an example: one question, ten practical posts. You check and schedule each one."
+ },
+ {
+  "id": "WW10",
+  "series": 4,
+  "num": 10,
+  "title_short": "Winning work 10",
+  "page": "WW10 Write in your voice",
+  "page_title": "Winning work 10: Write in your voice",
+  "q": "Does AI make you sound like a robot?",
+  "sub": "Teach Claude to write like you.",
+  "s2": {
+   "h": "It doesn't sound like you",
+   "b": "Polite, wordy and full of phrases you'd never use. Clients can tell it isn't you.",
+   "x": [
+    "pills",
+    [
+     "Too wordy",
+     "Too formal",
+     "Not you"
+    ]
+   ]
+  },
+  "s3": {
+   "h": "A skill for your voice",
+   "b": "Claude writes down how you write. Then every draft follows it.",
+   "x": [
+    "strip",
+    [
+     [
+      "10 emails",
+      "You've already sent"
+     ],
+     [
+      "1 skill",
+      "How you write"
+     ],
+     [
+      "All drafts",
+      "Sound like you"
+     ]
+    ]
+   ]
+  },
+  "s4": {
+   "h": "How to set it up",
+   "steps": [
+    "Pick ten emails and messages you're happy with.",
+    "Ask Claude to turn them into a voice skill.",
+    "Use it for every draft, and correct it when it's off."
+   ]
+  },
+  "s5": {
+   "sub": "With ten of your own emails attached.",
+   "prompt": "Here are ten emails I've written. Work out how I write: length, words I use, words I never use, how I sign off. Save it as a skill and use it for my drafts.",
+   "note": "Claude drafts in your voice. You still hit send."
+  },
+  "caption": "Does AI make you sound like a robot?\n\nGive Claude ten emails you've sent and ask it to write down how you write, as a skill. Every draft after that sounds like you. You still read it and hit send."
+ }
+]
