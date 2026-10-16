@@ -1,0 +1,180 @@
+<style>
+.spai{--black:#0a0a0a;--ink:#161616;--tile:#121212;--slab:#f2f2f0;--lede:#3d3d3a;--muted:#5f5f5b;--line:#e2e2de;--orange:#FF4D00;
+ font-family:'Helvetica Neue',Helvetica,Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+.spai *{box-sizing:border-box}
+.spai a{color:inherit}
+.spai .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.spai h1,.spai h2,.spai h3{font-weight:500;letter-spacing:-0.03em;line-height:1.05;margin:0}
+.spai h1{font-size:clamp(40px,7vw,76px)}
+.spai h2{font-size:clamp(30px,4.6vw,48px)}
+.spai h3{font-size:22px;letter-spacing:-0.015em;line-height:1.2}
+.spai .tri{display:inline-block;width:0.36em;height:0.22em;margin-left:0.06em;background:var(--orange);clip-path:polygon(0 100%,50% 0,100% 100%)}
+.spai .nw{white-space:nowrap}
+.spai p{margin:0}
+.spai .lede{font-size:clamp(18px,2.2vw,22px);color:var(--lede);max-width:720px}
+.spai .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.spai .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:999px;font-size:17px;font-weight:500;text-decoration:none;border:1px solid currentColor}
+.spai .btn-primary{background:var(--orange);border-color:var(--orange);color:#fff}
+.spai .hero{background:var(--tile);color:#fff;padding:28px 0 72px}
+.spai .hero .lede{color:rgba(255,255,255,0.82)}
+.spai .hero .btn:not(.btn-primary){color:#fff;border-color:rgba(255,255,255,0.4)}
+.spai .logo{display:block;height:28px;width:auto;margin-bottom:64px}
+.spai .hero h1{max-width:860px;margin-bottom:24px}
+.spai section{padding:72px 0;border-top:1px solid var(--line)}
+.spai .hero+section{border-top:0}
+.spai .sec-head{margin-bottom:32px;max-width:760px}
+.spai .sec-head p{margin-top:16px;font-size:18px;color:var(--lede)}
+.spai .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.spai .card{background:var(--slab);border-radius:16px;padding:28px}
+.spai .card h3{margin-bottom:10px}
+.spai .card p{color:var(--lede)}
+.spai .small{font-size:15px;color:var(--muted);margin-top:20px}
+.spai .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}
+.spai .list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.spai .list li{padding:14px 0;border-bottom:1px solid var(--line)}
+.spai .list b{display:block;font-weight:500}
+.spai .list span{color:var(--muted);font-size:15px}
+.spai .series{border-top:1px solid var(--line)}
+.spai details{border-bottom:1px solid var(--line)}
+.spai summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;position:relative}
+.spai summary::-webkit-details-marker{display:none}
+.spai summary::after{content:"+";position:absolute;right:4px;top:18px;font-size:26px;line-height:1;color:var(--muted)}
+.spai details[open] summary::after{content:"\2013"}
+.spai summary .n{color:var(--muted);font-size:15px;display:block}
+.spai summary .t{font-size:22px;font-weight:500;letter-spacing:-0.015em}
+.spai summary .q{display:block;color:var(--lede);font-size:16px;margin-top:2px}
+.spai ol{margin:0 0 24px;padding-left:24px;columns:2 280px;column-gap:40px}
+.spai ol li{padding:4px 0;break-inside:avoid}
+.spai .enquire{background:var(--slab)}
+.spai .steps{margin:24px 0 32px;padding-left:22px}
+.spai .steps li{padding:4px 0}
+.spai .formbox{background:#fff;border-radius:16px;padding:8px;max-width:760px}
+.spai .formbox iframe{width:100%;border:none;border-radius:12px;min-height:1050px}
+.spai footer{background:var(--black);color:rgba(255,255,255,0.72);padding:48px 0;font-size:15px}
+.spai footer a{color:#fff}
+.spai footer .row{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+.spai footer .links{display:flex;flex-wrap:wrap;gap:20px}
+@media (max-width:600px){.spai section{padding:56px 0}.spai .hero{padding-bottom:56px}.spai .logo{margin-bottom:48px}.spai .btn{width:100%}}
+</style>
+
+<div class="spai">
+
+<header class="hero">
+ <div class="wrap">
+  <img class="logo" src="https://assets.cdn.filesafe.space/JsGBFCYC6i1Zm8rvjnNv/media/6ad2174e86f4a10b2f9ddf8c.png" alt="ScreedPro">
+  <h1>Practical AI for ScreedPro <span class="nw">clients<span class="tri"></span></span></h1>
+  <p class="lede">We built ScreedPro on technology, to change the way floors are prepared. Now we're using AI to run our own business, and sharing what works with our clients: new tips daily, eight series, no jargon.</p>
+  <div class="btns">
+   <a class="btn btn-primary" href="#enquire">Get your free AI skill</a>
+   <a class="btn" href="https://www.instagram.com/screed_pro/" target="_blank" rel="noopener">Follow on Instagram</a>
+   <a class="btn" href="https://www.facebook.com/789389444740360" target="_blank" rel="noopener">Follow on Facebook</a>
+  </div>
+ </div>
+</header>
+
+<section>
+ <div class="wrap">
+  <div class="sec-head">
+   <h2>Your first AI skill or agent is <span class="nw">free<span class="tri"></span></span></h2>
+   <p>They're built from the skills and agents we use at ScreedPro every day, with our own details taken out, ready for a tiling or flooring business.</p>
+  </div>
+  <div class="cards">
+   <div class="card"><h3>When you enquire</h3><p>One free skill or agent setup of your choice.</p></div>
+   <div class="card"><h3>With every quote or booking</h3><p>Another one, free, whenever we quote or book a job for you.</p></div>
+   <div class="card"><h3>Your sales manager</h3><p>Your ScreedPro sales manager looks after you, as always. If you'd like more help setting up AI, they'll put you in touch with us.</p></div>
+  </div>
+  <p class="small">For ScreedPro clients. Skills work in Claude. Agents run in your own Claude Console, which is paid by usage.</p>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="sec-head"><h2>Pick a skill or an <span class="nw">agent<span class="tri"></span></span></h2></div>
+  <div class="two">
+   <div>
+    <h3 style="margin-bottom:16px">Skills</h3>
+    <ul class="list">
+     <li><b>Quoting</b><span>Quotes in your layout, wording and rates</span></li>
+     <li><b>Proposals and tender responses</b><span>Tender answers built from your past jobs</span></li>
+     <li><b>Invoice coding and month-end</b><span>Bills coded the way your bookkeeper would</span></li>
+     <li><b>Purchase orders</b><span>Clean purchase orders and RFQs to suppliers</span></li>
+     <li><b>Credit checks</b><span>A consistent check before you supply</span></li>
+     <li><b>Xero contact cleanup</b><span>Rules for tidy, de-duplicated contacts</span></li>
+     <li><b>Safety packs and SWMS</b><span>Site-specific safety documents, drafted</span></li>
+     <li><b>Timesheets and weekly wages</b><span>Timesheets checked before pay run</span></li>
+     <li><b>Write in your voice</b><span>Emails and posts that sound like you</span></li>
+     <li><b>Deep think</b><span>A slower, more careful mode for big decisions</span></li>
+    </ul>
+   </div>
+   <div>
+    <h3 style="margin-bottom:16px">Agents</h3>
+    <ul class="list">
+     <li><b>Accounts payable</b><span>Reads supplier invoices and drafts coded bills in Xero</span></li>
+     <li><b>Accounts receivable</b><span>Drafts invoices from job sheets and chases overdue accounts</span></li>
+     <li><b>Xero contact manager</b><span>Merges duplicate contacts and fills in missing details</span></li>
+     <li><b>Credit and ABN checks</b><span>Checks new clients' ABNs and credit before you supply</span></li>
+     <li><b>Xero reconciliation</b><span>Matches bank lines to bills and invoices, lists the queries</span></li>
+     <li><b>CRM cleanup</b><span>Tidies contacts, builders and projects into one list</span></li>
+     <li><b>Quoting</b><span>Drafts quotes with options from your rates and the job</span></li>
+     <li><b>Purchase orders</b><span>Drafts purchase orders and RFQs to suppliers</span></li>
+     <li><b>Screed estimating</b><span>Works out volumes, loads and days from area and thickness</span></li>
+     <li><b>Email monitoring</b><span>Watches an inbox, files and flags, sends a morning list</span></li>
+    </ul>
+   </div>
+  </div>
+  <p class="small">Every agent drafts and waits for your approval before anything is sent or paid.</p>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="sec-head">
+   <h2>Explore the full <span class="nw">series<span class="tri"></span></span></h2>
+   <p>Eight series of ten posts, running side by side on Instagram, from the basics up. Each series starts with what you need first.</p>
+  </div>
+  <div class="series">
+<details open><summary><span class="n">Series 1</span><span class="t">Getting started</span><span class="q">Want to use AI for more than a chatbot?</span></summary><ol><li>Why we&#x27;re sharing this</li><li>Which Claude plan do you need?</li><li>Set up your first project</li><li>Talk, don&#x27;t type: dictation and voice mode</li><li>Connect your email, calendar and files</li><li>Snap a receipt</li><li>Snap a business card</li><li>Ten things, not one</li><li>Ask for the strategy, not the task</li><li>Your first skill</li></ol></details>
+<details><summary><span class="n">Series 2</span><span class="t">Jargon buster</span><span class="q">Sick of the AI jargon?</span></summary><ol><li>Claude.ai, Claude Code and the Console</li><li>Connectors, APIs and MCPs</li><li>What&#x27;s an artifact?</li><li>Tokens, plans and paying as you go</li><li>What&#x27;s a skill? Tips and limits</li><li>Markdown files and CLAUDE.md</li><li>What&#x27;s a webhook?</li><li>n8n: the mesh in your screed</li><li>GitHub: a draft before you go live</li><li>Which model, when?</li></ol></details>
+<details><summary><span class="n">Series 3</span><span class="t">Accounting</span><span class="q">Wish AI could do your invoicing?</span></summary><ol><li>Connect Xero to Claude, including several Xero files</li><li>A week of invoices in one go</li><li>Purchase orders in a batch</li><li>Bank reconciliation: Claude drafts, you approve</li><li>A daily cash update from your bank feed</li><li>Debtors, creditors and cash flow</li><li>Merge duplicate contacts in Xero</li><li>Check ABNs on the Australian Business Register</li><li>Credit checks before you supply</li><li>Never miss a BAS, rego or insurance date</li></ol></details>
+<details><summary><span class="n">Series 4</span><span class="t">Suppliers and margin</span><span class="q">Where&#x27;s your margin leaking?</span></summary><ol><li>A listening post on your accounts inbox</li><li>Supplier bills into Xero, coded</li><li>Teach Claude your coding from last year&#x27;s bills</li><li>Price-creep alerts</li><li>Find where margin leaks</li><li>Quote with today&#x27;s costs</li><li>One RFQ pack to five suppliers</li><li>Do you still need ApprovalMax?</li><li>Payment dates set for you</li><li>Supplier statements reconciled</li></ol></details>
+<details><summary><span class="n">Series 5</span><span class="t">Winning work</span><span class="q">Want more work without more admin?</span></summary><ol><li>Stop reading every email</li><li>Voice note in the car, CRM updated</li><li>Wake up old clients</li><li>Clean up your contacts</li><li>A map of who works with whom</li><li>A tender register with reminders</li><li>Quote options clients value</li><li>Have Claude set up your CRM</li><li>Posts your followers want</li><li>Write in your voice</li></ol></details>
+<details><summary><span class="n">Series 6</span><span class="t">Running the crew</span><span class="q">Who&#x27;s got the laser level?</span></summary><ol><li>A tool register from a photo</li><li>Who&#x27;s going where tomorrow</li><li>Talk instead of filling in site forms</li><li>Safety documents</li><li>Timesheets and weekly wages</li><li>Replace your forms app</li><li>A new starter checklist</li><li>Toolbox talks and training</li><li>Licences and tickets in one register</li><li>Your morning dashboard</li></ol></details>
+<details><summary><span class="n">Series 7</span><span class="t">Agents and automation</span><span class="q">Want your own Pam?</span></summary><ol><li>Meet Pam</li><li>Pam&#x27;s day (a blurred Teams recording)</li><li>Agent or scheduled task?</li><li>Ten scheduled tasks for a tiling business</li><li>What wakes an agent up</li><li>Do you still need Zapier?</li><li>You don&#x27;t need a data lake</li><li>Getting Claudes to talk to each other</li><li>An agent in Microsoft Teams</li><li>Set up your own agent</li></ol></details>
+<details><summary><span class="n">Series 8</span><span class="t">Skills and dashboards</span><span class="q">Ready for the next level?</span></summary><ol><li>Ten skills for a tiling business</li><li>A deep-think skill</li><li>A brand pack</li><li>Dashboards that look, dashboards that act</li><li>Approve straight from a dashboard</li><li>Rolling out Claude to your team</li><li>&quot;Who am I?&quot;: permissions</li><li>Draft but can&#x27;t send</li><li>Most digital brains are hype</li><li>A knowledge graph for your business</li></ol></details>
+  </div>
+  <div class="btns">
+   <a class="btn" href="https://www.instagram.com/screed_pro/" target="_blank" rel="noopener">See the posts on Instagram</a>
+  </div>
+ </div>
+</section>
+
+<section class="enquire" id="enquire">
+ <div class="wrap">
+  <div class="sec-head">
+   <h2>Ask for your free skill or <span class="nw">agent<span class="tri"></span></span></h2>
+   <p>Use our normal enquiry form.</p>
+  </div>
+  <ol class="steps">
+   <li>Fill in your details, including your ABN.</li>
+   <li>Choose the ScreedPro office nearest you.</li>
+   <li>In "How can we help you?", tell us which skill or agent you'd like, and any job you'd like quoted.</li>
+  </ol>
+  <div class="formbox">
+   <iframe src="https://api.leadconnectorhq.com/widget/form/PZ8nKFrCftmyC9mZyBBh" id="inline-PZ8nKFrCftmyC9mZyBBh" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-activation-type="alwaysActivated" data-deactivation-type="neverDeactivate" data-form-name="ScreedPro enquiry" data-form-id="PZ8nKFrCftmyC9mZyBBh" title="ScreedPro enquiry"></iframe>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap row">
+  <span>Practical AI for ScreedPro clients</span>
+  <span class="links">
+   <a href="https://www.instagram.com/screed_pro/" target="_blank" rel="noopener">Instagram</a>
+   <a href="https://www.facebook.com/789389444740360" target="_blank" rel="noopener">Facebook</a>
+   <a href="https://www.screedpro.com" target="_blank" rel="noopener">screedpro.com</a>
+  </span>
+ </div>
+</footer>
+
+</div>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
