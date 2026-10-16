@@ -7,39 +7,62 @@
   "page": "AA2 Pam's day",
   "page_title": "Agents and automation 2: Pam's day",
   "q": "What does an AI agent do all day?",
-  "sub": "A morning with Pam, our AI agent.",
+  "sub": "A morning with Pam, and what she runs on.",
   "s2": {
-   "h": "The same small jobs, every day",
-   "b": "Yesterday's pours to invoice, a quote to turn into a purchase order, a contact to update.",
+   "h": "What Pam is built on",
+   "b": "Like a crew: a foreman who thinks, the gear, the hands, and a phone anyone can ring.",
    "x": [
-    "pills",
+    "listcard",
+    "Pam's stack",
     [
-     "Invoices",
-     "Purchase orders",
-     "Contacts"
+     [
+      "Brain",
+      "Claude, in a Console agent harness"
+     ],
+     [
+      "Connector",
+      "Our own MCP: Xero, CRM, jobs"
+     ],
+     [
+      "Hands",
+      "n8n rails that do the work"
+     ],
+     [
+      "Front door",
+      "Microsoft agent in Azure, in Teams"
+     ]
     ]
    ]
   },
   "s3": {
    "h": "A message, a draft, a yes",
-   "b": "The team messages Pam in Microsoft Teams. She drafts the work and asks before anything goes out.",
    "x": [
     "chat",
     [
      [
       "You",
-      "Morning Pam, please draft an invoice for ABC Tiling for yesterday's pour.",
+      "Morning Pam. Invoice ABC Tiling for yesterday's pours, and raise a PO for the sand.",
       "right"
      ],
      [
       "Pam",
-      "Here it is, in Xero as a draft. Do you want me to send it?",
+      "Both drafted in Xero. ABC Tiling: 2 pours, 38 m³, their PO number from the docket.",
+      "left"
+     ],
+     [
+      "Pam",
+      "Heads up: the sand price is 4% above last month's quote. Want me to hold the PO?",
       "left"
      ],
      [
       "You",
-      "Yes, send it.",
+      "Good catch. Send the invoice, hold the PO.",
       "right"
+     ],
+     [
+      "Pam",
+      "Invoice sent. PO is parked in Xero for you to check.",
+      "left"
      ]
     ]
    ]
@@ -57,7 +80,7 @@
    "prompt": "Here's what I do every morning in the office. Which of these jobs could an agent draft for me, and which should I keep doing myself?",
    "note": "Next in the series: agent or scheduled task?"
   },
-  "caption": "What does an AI agent do all day?\n\nOur team messages Pam in Teams: draft this invoice, raise that purchase order. She drafts it in Xero and asks before anything is sent. A person says yes every time."
+  "caption": "What does an AI agent do all day?\n\nPam lives in our Teams. Under the hood: Claude in a Console agent harness, our own MCP into Xero and the CRM, n8n rails as her hands, and a Microsoft agent in Azure so the team can message her. She drafts; a person says yes every time."
  },
  {
   "id": "AA03",
