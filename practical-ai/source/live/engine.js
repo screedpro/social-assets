@@ -99,6 +99,18 @@ function approvalPill(stage, text, kind) {
   pill(wrap, text, kind || 'orange');
   return wrap;
 }
+/* shrink a window to its content and centre it (with its pill) in the stage */
+function settle(H, box, win, pillWrap, fill, clear) {
+  box.style.bottom = 'auto'; win.style.bottom = 'auto'; win.style.position = 'relative';
+  if (fill) fill();
+  var nat = win.offsetHeight;
+  if (clear) clear();
+  var pad = pillWrap ? 96 : 0, h = Math.min(nat, H - pad);
+  win.style.height = h + 'px';
+  var y0 = Math.max(0, (H - h - pad) / 2);
+  box.style.top = y0 + 'px'; box.style.height = h + 'px';
+  if (pillWrap) { pillWrap.style.bottom = 'auto'; pillWrap.style.top = (y0 + h + 34) + 'px'; }
+}
 function Edges(stage) {
   var svg = svgEl('svg', { width: '100%', height: '100%', style: 'position:absolute; inset:0; overflow:visible; z-index:1' }, stage);
   var list = [];
@@ -397,7 +409,7 @@ S.table = function (stage, sp, W, H) {
   var tot = lens.reduce(function (a, b) { return a + b; }, 0);
   var fs = rows.length > 6 || n > 4 ? 22 : 25;
   var grid = 'display:grid; grid-template-columns:' + lens.map(function (l) { return (l / tot * 100).toFixed(2) + '%'; }).join(' ') + '; align-items:center';
-  var tbl = mk('div', 'position:absolute; inset:0; display:flex; flex-direction:column; padding:0 26px', win.body);
+  var tbl = mk('div', 'position:relative; display:flex; flex-direction:column; padding:0 26px 6px', win.body);
   mk('div', grid + '; padding:16px 0; border-bottom:2px solid ' + C.line + '; font-size:' + (fs - 3) + 'px; color:' + C.mute + '; font-weight:500', tbl, cols.map(function (c) { return '<span style="padding-right:12px">' + esc(c) + '</span>'; }).join(''));
   var rowEls = rows.map(function (r, i) {
     var e = mk('div', grid + '; padding:' + (rows.length > 6 ? 13 : 17) + 'px 0; border-bottom:1px solid ' + C.line + '; font-size:' + fs + 'px; color:' + C.text + '; border-radius:10px', tbl);
@@ -406,8 +418,11 @@ S.table = function (stage, sp, W, H) {
   });
   var hl = sp.highlight, note = null;
   if (hl) { note = mk('div', 'margin-top:20px; align-self:flex-start', tbl); pill(note, hl.note, hl.kind || 'orange'); }
-  if (sp.footer) { var ft = mk('div', 'margin-top:auto; padding:16px 0 20px; font-size:22px; color:' + C.mute, tbl, esc(sp.footer)); }
+  if (sp.footer) { var ft = mk('div', 'padding:18px 0 16px; font-size:22px; color:' + C.mute, tbl, esc(sp.footer)); }
+  if (!sp.footer) mk('div', 'height:' + (hl ? 22 : 10) + 'px', tbl);
   var bdg = sp.badge ? approvalPill(stage, sp.badge, sp.badgeKind || 'orange') : null;
+  settle(H, wrap, win.win, bdg, function () { rowEls.forEach(function (r) { r.cells.forEach(function (c) { c.s.textContent = c.text; }); }); },
+    function () { rowEls.forEach(function (r) { r.cells.forEach(function (c) { c.s.textContent = ''; }); }); });
   var per = rows.length > 5 ? 0.6 : 0.8, t0 = 0.6, tH = t0 + rows.length * per + 0.3, tEnd = tH + (hl ? 1.0 : 0);
   return {
     T: tEnd + (bdg ? 0.8 : 0) + 2.8,
@@ -427,7 +442,7 @@ S.table = function (stage, sp, W, H) {
 /* doc: {app, title, sub, meta:[[k,v]], lines:[], tag, button, done} */
 S.doc = function (stage, sp, W, H) {
   var win = windowCard(stage, { app: sp.app || 'doc', title: sp.title, sub: sp.sub, right: sp.right });
-  var body = mk('div', 'position:absolute; inset:0; padding:22px 30px; display:flex; flex-direction:column; gap:10px', win.body);
+  var body = mk('div', 'position:relative; padding:22px 30px 34px; display:flex; flex-direction:column; gap:10px', win.body);
   var tag = mk('div', 'position:absolute; right:26px; top:22px', win.body); pill(tag, sp.tag || 'Drafted by Claude', 'light', 'font-size:21px; padding:8px 18px');
   var meta = (sp.meta || []).map(function (m) {
     var r = mk('div', 'display:flex; gap:16px; font-size:25px; padding:6px 0; border-bottom:1px solid ' + C.line + (sp.tag !== '' ? '; padding-right:260px' : ''), body);
@@ -443,9 +458,13 @@ S.doc = function (stage, sp, W, H) {
     var s = mk('span', '', e); var r = mk('span', 'visibility:hidden', e, esc(txt));
     return { s: s, r: r, text: txt };
   });
-  var bar = mk('div', 'position:absolute; left:0; right:0; bottom:0; padding:20px 30px; border-top:1px solid ' + C.line + '; display:flex; gap:16px; justify-content:flex-end; background:#fff', win.body);
+  var bar = mk('div', 'position:relative; padding:20px 30px; border-top:1px solid ' + C.line + '; display:flex; gap:16px; justify-content:flex-end; background:#fff', win.body);
   var b1 = mk('div', 'border:2px solid ' + C.line + '; border-radius:14px; padding:14px 26px; font-size:25px; color:' + C.text, bar, esc(sp.secondary || 'Edit'));
   var b2 = mk('div', 'border-radius:14px; padding:14px 28px; font-size:25px; font-weight:500; color:#fff; background:' + C.dark + '; display:flex; align-items:center; gap:10px', bar, '<span>' + esc(sp.button || 'Approve') + '</span>');
+  win.win.style.inset = 'auto'; win.win.style.left = '0'; win.win.style.right = '0';
+  var nat = win.win.offsetHeight, dh = Math.min(H, Math.max(nat, H * 0.62));
+  win.win.style.height = dh + 'px'; win.win.style.top = ((H - dh) / 2) + 'px';
+  body.style.flex = '1';
   var cur = cursor(stage);
   var t0 = 0.5, tm = t0 + meta.length * 0.6;
   var lt = []; var acc = tm + 0.2; lines.forEach(function (l) { var d = Math.min(1.6, Math.max(0.35, l.text.split(' ').length * 0.08)); lt.push([acc, acc + d]); acc += d + 0.1; });
@@ -458,7 +477,7 @@ S.doc = function (stage, sp, W, H) {
       lines.forEach(function (l, i) { var p = prog(t, lt[i][0], lt[i][1]); var w = l.text.split(' '); var n = p >= 1 ? w.length : Math.floor(p * w.length); l.s.textContent = w.slice(0, n).join(' '); l.r.textContent = n < w.length ? (n ? ' ' : '') + w.slice(n).join(' ') : ''; });
       var bb = b2.getBoundingClientRect(), sb = stage.getBoundingClientRect();
       var bx = bb.left - sb.left + bb.width * 0.55, by = bb.top - sb.top + bb.height * 0.45;
-      if (t < tC) cur.style.visibility = 'hidden'; else moveCursor(cur, W * 0.45, H * 0.55, bx, by, prog(t, tC, tClick - 0.15));
+      if (t < tC) cur.style.visibility = 'hidden'; else if (t < tClick + 0.3) moveCursor(cur, W * 0.45, H * 0.55, bx, by, prog(t, tC, tClick - 0.15)); else moveCursor(cur, bx, by, bx - 260, by - 150, prog(t, tClick + 0.3, tClick + 0.9));
       var done = t >= tClick;
       b2.style.background = done ? C.green : C.dark;
       b2.innerHTML = done ? iconSvg('check', 26, '#fff') + '<span>' + esc(sp.done || 'Approved by you') + '</span>' : '<span>' + esc(sp.button || 'Approve') + '</span>';
@@ -511,7 +530,7 @@ S.dash = function (stage, sp, W, H) {
         var val = typeof ti.value === 'number' ? ti.value * p : null; o.v.textContent = val == null ? (p > 0.5 ? ti.value : '') : (ti.prefix || '') + (ti.dec ? val.toFixed(ti.dec) : Math.round(val).toLocaleString('en-AU')) + (ti.suffix || ''); });
       barEls.forEach(function (o, i) { var p = ease(prog(t, 1.0 + i * 0.12, 2.2 + i * 0.12)); o.b.style.height = (o.h * 82 * p) + '%'; o.lab.style.opacity = p > 0.9 ? 1 : 0; });
       if (aEl) { fade(aEl, prog(t, tA, tA + 0.5), 12); var bb = aBtn.getBoundingClientRect(), sb = stage.getBoundingClientRect();
-        if (t < tA + 0.5) cur.style.visibility = 'hidden'; else moveCursor(cur, W * 0.5, H * 0.45, bb.left - sb.left + bb.width * 0.5, bb.top - sb.top + bb.height * 0.5, prog(t, tA + 0.5, tClick - 0.1));
+        var cx2 = bb.left - sb.left + bb.width * 0.5, cy2 = bb.top - sb.top + bb.height * 0.5; if (t < tA + 0.5) cur.style.visibility = 'hidden'; else if (t < tClick + 0.3) moveCursor(cur, W * 0.5, H * 0.45, cx2, cy2, prog(t, tA + 0.5, tClick - 0.1)); else moveCursor(cur, cx2, cy2, cx2 - 300, cy2 - 160, prog(t, tClick + 0.3, tClick + 0.9));
         var done = t >= tClick; aBtn.style.background = done ? C.green : C.dark; aBtn.textContent = done ? (al.done || 'Drafted for you to check') : (al.button || 'Draft it'); }
     }
   };
@@ -522,9 +541,9 @@ S.compare = function (stage, sp, W, H) {
   var bottomPad = sp.verdict ? 96 : 0;
   var avail = H - bottomPad - 60;
   var L = sp.left, R = sp.right;
-  var lH = Math.max(200, avail * (L.weight || 0.38)), rH = avail - lH;
+  var lH = 0, rH = 0;
   function box(o, y, h, hi) {
-    var e = mk('div', 'position:absolute; left:0; right:0; top:' + y + 'px; height:' + h + 'px; box-sizing:border-box; background:#fff; border:' + (hi ? '3px solid ' + C.orange : '2px solid ' + C.line) + '; border-radius:24px; padding:22px 28px; display:flex; flex-direction:column; gap:12px; overflow:hidden', stage);
+    var e = mk('div', 'position:absolute; left:0; right:0; top:' + y + 'px; box-sizing:border-box; background:#fff; border:' + (hi ? '3px solid ' + C.orange : '2px solid ' + C.line) + '; border-radius:24px; padding:22px 28px; display:flex; flex-direction:column; gap:12px; overflow:hidden', stage);
     e.innerHTML = '<div style="display:flex; align-items:center; gap:14px">' + (o.icon ? badge(o.icon, 46) : '') + '<span style="font-size:30px; font-weight:500; color:' + C.ink + '">' + esc(o.title) + '</span>' + (o.sub ? '<span style="margin-left:auto; font-size:22px; color:' + C.mute + '">' + esc(o.sub) + '</span>' : '') + '</div>';
     var list = mk('div', o.layout === 'grid' ? 'display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 16px' : 'display:flex; flex-direction:column; gap:10px', e);
     var its = (o.items || []).map(function (s) {
@@ -535,10 +554,17 @@ S.compare = function (stage, sp, W, H) {
     });
     return { e: e, its: its };
   }
-  var a = box(L, 0, lH, false);
-  var arrow = mk('div', 'position:absolute; left:50%; top:' + (lH + 6) + 'px; margin-left:-24px; width:48px; height:48px; color:' + C.orange, stage, '<svg width="48" height="48" viewBox="0 0 24 24"><path d="M12 4v14M6 12l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6"/></svg>');
-  var b = box(R, lH + 60, rH, true);
+  var a = box(L, 0, 0, false);
+  var b = box(R, 0, 0, true);
+  var hA = a.e.offsetHeight + 24, hB = b.e.offsetHeight + 24;
+  var scale = Math.min(1.25, avail / (hA + hB));
+  if (scale > 1) { hA *= scale; hB *= scale; } else { hA = Math.min(hA, avail * 0.45); hB = avail - hA; }
+  var y0 = Math.max(0, (avail - hA - hB) / 2);
+  a.e.style.top = y0 + 'px'; a.e.style.height = hA + 'px';
+  b.e.style.top = (y0 + hA + 60) + 'px'; b.e.style.height = hB + 'px';
+  var arrow = mk('div', 'position:absolute; left:50%; top:' + (y0 + hA + 6) + 'px; margin-left:-24px; width:48px; height:48px; color:' + C.orange, stage, '<svg width="48" height="48" viewBox="0 0 24 24"><path d="M12 4v14M6 12l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6"/></svg>');
   var v = sp.verdict ? approvalPill(stage, sp.verdict, sp.verdictKind || 'dark') : null;
+  if (v) { v.style.bottom = 'auto'; v.style.top = (y0 + hA + 60 + hB + 34) + 'px'; }
   var tA = 0.6, per = function (n) { return n > 4 ? 0.35 : 0.8; };
   var tB = tA + 0.4 + a.its.length * per(a.its.length) + 0.4, tV = tB + 0.5 + b.its.length * per(b.its.length) + 0.3;
   return {
@@ -581,7 +607,7 @@ S.checklist = function (stage, sp, W, H) {
   var bottomPad = sp.done ? 96 : 0;
   var wrap = mk('div', 'position:absolute; left:0; right:0; top:0; bottom:' + bottomPad + 'px', stage);
   var win = windowCard(wrap, { app: sp.app || 'list', title: sp.title, sub: sp.sub, right: sp.right });
-  var list = mk('div', 'position:absolute; inset:0; padding:12px 28px; display:flex; flex-direction:column', win.body);
+  var list = mk('div', 'position:relative; padding:8px 28px 14px; display:flex; flex-direction:column', win.body);
   var n = sp.items.length, fs = n > 6 ? 24 : 27;
   var its = sp.items.map(function (it) {
     var e = mk('div', 'display:flex; align-items:center; gap:18px; padding:' + (n > 6 ? 12 : 16) + 'px 0; border-bottom:1px solid ' + C.line, list);
@@ -590,7 +616,9 @@ S.checklist = function (stage, sp, W, H) {
     if (it.who) mk('span', 'font-size:20px; color:' + C.mute + '; background:' + C.slab + '; border-radius:999px; padding:4px 14px; white-space:nowrap', e, esc(it.who));
     return { e: e, bx: bx, tx: tx };
   });
+  if (its.length) its[its.length - 1].e.style.borderBottom = 'none';
   var dn = sp.done ? approvalPill(stage, sp.done, sp.doneKind || 'green') : null;
+  settle(H, wrap, win.win, dn);
   var per = n > 6 ? 0.42 : 0.6, tTick = 0.5 + n * 0.22 + 0.3, tEnd = tTick + n * per;
   return {
     T: tEnd + 3.0,
@@ -613,7 +641,7 @@ S.hub = function (stage, sp, W, H) {
   var rx = W / 2 - sw / 2, ry = (H - bottomPad) / 2 - sh / 2 - 10;
   var c = boxNode(stage, { x: cx, y: cy, w: 310, h: 140, label: sp.centre.label, sub: sp.centre.sub, icon: sp.centre.icon || 'claude', style: 'dark', fs: 38, sfs: 24, iconSize: 70 });
   var sp2 = sp.spokes.map(function (s, i) {
-    var ang = -Math.PI / 2 + i * 2 * Math.PI / n;
+    var ang = -Math.PI / 2 + (n === 4 || n === 2 ? Math.PI / n : 0) + i * 2 * Math.PI / n;
     var x = cx + rx * Math.cos(ang), y = cy + ry * Math.sin(ang);
     var e = boxNode(stage, { x: x, y: y, w: sw, h: sh, label: s.label, sub: s.sub, icon: s.icon, fs: n <= 4 ? 31 : 28, sfs: n <= 4 ? 23 : 21, iconSize: n <= 4 ? 62 : 54 });
     var ed = E.add('M' + cx + ' ' + cy + ' L' + x + ' ' + y, { color: '#c4c4bf' });

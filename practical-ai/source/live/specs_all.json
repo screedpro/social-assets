@@ -1,0 +1,3427 @@
+{
+ "JB01": {
+  "h": "What each one is for",
+  "label": "Jargon buster, post 1 of 10",
+  "spec": {
+   "type": "hub",
+   "centre": {
+    "label": "Claude",
+    "sub": "Three ways in",
+    "icon": "claude"
+   },
+   "spokes": [
+    {
+     "label": "Claude.ai",
+     "sub": "Everyday work, phone and PC",
+     "icon": "phone"
+    },
+    {
+     "label": "Claude Code",
+     "sub": "Builds a website or tool",
+     "icon": "web"
+    },
+    {
+     "label": "Console",
+     "sub": "Agents with a job, like Pam",
+     "icon": "console"
+    }
+   ],
+   "caption": "Most tradies only need Claude.ai"
+  }
+ },
+ "JB02": {
+  "h": "They're all plugs",
+  "label": "Jargon buster, post 2 of 10",
+  "spec": {
+   "type": "hub",
+   "centre": {
+    "label": "Claude",
+    "sub": "Plugged in",
+    "icon": "claude"
+   },
+   "spokes": [
+    {
+     "label": "Xero",
+     "icon": "xero",
+     "via": "Connector"
+    },
+    {
+     "label": "Outlook",
+     "icon": "outlook",
+     "via": "Connector"
+    },
+    {
+     "label": "Your CRM",
+     "icon": "crm",
+     "via": "MCP"
+    },
+    {
+     "label": "SharePoint",
+     "icon": "sharepoint",
+     "via": "Connector"
+    },
+    {
+     "label": "Airtable",
+     "icon": "airtable",
+     "via": "Connector"
+    },
+    {
+     "label": "Your own app",
+     "icon": "api",
+     "via": "MCP"
+    }
+   ],
+   "caption": "Each plug connects Claude to one app"
+  }
+ },
+ "JB08": {
+  "h": "Hidden, but it holds it together",
+  "label": "Jargon buster, post 8 of 10",
+  "spec": {
+   "type": "n8n",
+   "title": "New enquiry to job",
+   "nodes": [
+    {
+     "id": "t",
+     "label": "New enquiry",
+     "sub": "in the CRM",
+     "kind": "trigger",
+     "col": 0,
+     "row": 0.5
+    },
+    {
+     "id": "ai",
+     "label": "Claude tidies it",
+     "sub": "name, site, m²",
+     "kind": "ai",
+     "col": 1,
+     "row": 0.5
+    },
+    {
+     "id": "if",
+     "label": "Existing client?",
+     "kind": "if",
+     "col": 2,
+     "row": 0.5
+    },
+    {
+     "id": "sheet",
+     "label": "Add to job list",
+     "icon": "airtable",
+     "col": 3,
+     "row": 0
+    },
+    {
+     "id": "xero",
+     "label": "New contact",
+     "sub": "in Xero",
+     "icon": "xero",
+     "col": 3,
+     "row": 1
+    },
+    {
+     "id": "teams",
+     "label": "Tell the office",
+     "icon": "teams",
+     "col": 4,
+     "row": 0.5
+    }
+   ],
+   "edges": [
+    [
+     "t",
+     "ai"
+    ],
+    [
+     "ai",
+     "if"
+    ],
+    [
+     "if",
+     "sheet",
+     "yes"
+    ],
+    [
+     "if",
+     "xero",
+     "no"
+    ],
+    [
+     "sheet",
+     "teams"
+    ],
+    [
+     "xero",
+     "teams"
+    ]
+   ],
+   "result": "Runs on every enquiry, out of sight"
+  }
+ },
+ "GS07": {
+  "h": "Snap the pile",
+  "label": "Getting started, post 7 of 10",
+  "spec": {
+   "type": "scan",
+   "item": "card",
+   "count": 12,
+   "itemTitle": "Sam Rossi",
+   "itemLines": [
+    "Site Manager",
+    "ABC Builders",
+    "0400 123 456",
+    "sam@abcbuilders.com.au"
+   ],
+   "fields": [
+    [
+     "Name",
+     "Sam Rossi"
+    ],
+    [
+     "Company",
+     "ABC Builders"
+    ],
+    [
+     "Phone",
+     "0400 123 456"
+    ],
+    [
+     "Email",
+     "sam@abcbuilders.com.au"
+    ],
+    [
+     "Met at",
+     "Smith Street site"
+    ]
+   ],
+   "targets": [
+    {
+     "icon": "crm",
+     "label": "CRM",
+     "line": "New contact: Sam Rossi, ABC Builders",
+     "tag": "Added"
+    },
+    {
+     "icon": "xero",
+     "label": "Xero",
+     "line": "Contact ready to add",
+     "tag": "You approve"
+    }
+   ],
+   "badge": "12 cards, one clean list"
+  }
+ },
+ "RC01": {
+  "h": "Snap it, log it",
+  "label": "Running the crew, post 1 of 10",
+  "spec": {
+   "type": "scan",
+   "item": "photo",
+   "photoIcon": "tool",
+   "itemTitle": "Laser level",
+   "fieldsTitle": "Claude logs it",
+   "fields": [
+    [
+     "Tool",
+     "Laser level"
+    ],
+    [
+     "With",
+     "Bob"
+    ],
+    [
+     "Site",
+     "Smith Street"
+    ],
+    [
+     "Since",
+     "Monday"
+    ]
+   ],
+   "targets": [
+    {
+     "icon": "airtable",
+     "label": "Tool register",
+     "line": "Laser level: Bob, Smith Street, since Monday",
+     "tag": "Logged"
+    }
+   ]
+  }
+ },
+ "GS02": {
+  "h": "What each one is for",
+  "label": "Getting started, post 2 of 10",
+  "spec": {
+   "type": "stack",
+   "layers": [
+    {
+     "label": "Free",
+     "sub": "Try it out",
+     "icon": "spark"
+    },
+    {
+     "label": "Pro",
+     "sub": "One person, every day",
+     "icon": "you",
+     "hi": true,
+     "tag": "Start here"
+    },
+    {
+     "label": "Max",
+     "sub": "One person, heavy use",
+     "icon": "bolt"
+    },
+    {
+     "label": "Team",
+     "sub": "Your staff, you control who sees what",
+     "icon": "lock"
+    },
+    {
+     "label": "Console",
+     "sub": "Pay as you go, for agents like our Pam",
+     "icon": "console"
+    }
+   ],
+   "caption": "Start on Pro. Move up as you need",
+   "captionKind": "dark"
+  }
+ },
+ "GS03": {
+  "h": "Give it a project",
+  "label": "Getting started, post 3 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Instructions",
+     "sub": "how we quote",
+     "icon": "doc"
+    },
+    {
+     "label": "Rate sheet",
+     "sub": "your prices",
+     "icon": "list"
+    },
+    {
+     "label": "Past quotes",
+     "sub": "five good ones",
+     "icon": "folder"
+    }
+   ],
+   "hub": {
+    "label": "Quoting project",
+    "icon": "claude",
+    "status": [
+     "New chat: Job 118",
+     "Reads your files",
+     "Quote drafted"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Job 118 quote",
+     "sub": "42 m², Smith Street",
+     "icon": "doc",
+     "result": "Drafted your way. No re-explaining"
+    }
+   ],
+   "badge": "You check it before it goes",
+   "badgeKind": "orange"
+  }
+ },
+ "GS04": {
+  "h": "Talk, and it types",
+  "label": "Getting started, post 4 of 10",
+  "spec": {
+   "type": "chat",
+   "app": "claude",
+   "agent": "Claude",
+   "agentSub": "Dictated on the drive home",
+   "msgs": [
+    [
+     "You",
+     "Smith Street's done, builder wants the bathroom Friday, and we need six bags of grout",
+     "right"
+    ],
+    [
+     "Claude",
+     "Here's your job note, with the follow-ups.",
+     "left",
+     {
+      "app": "doc",
+      "title": "Job note: Smith Street",
+      "rows": [
+       [
+        "Done",
+        "Floor tiling"
+       ],
+       [
+        "Friday",
+        "Bathroom"
+       ],
+       [
+        "Order",
+        "6 bags of grout"
+       ]
+      ]
+     }
+    ],
+    [
+     "Claude",
+     "A text to the builder is drafted. Check it, then you send it.",
+     "left"
+    ]
+   ]
+  }
+ },
+ "GS05": {
+  "h": "Connect your apps",
+  "label": "Getting started, post 5 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Email",
+     "sub": "Outlook or Gmail",
+     "icon": "outlook"
+    },
+    {
+     "label": "Calendar",
+     "sub": "this week",
+     "icon": "calendar"
+    },
+    {
+     "label": "Files",
+     "sub": "SharePoint or Drive",
+     "icon": "sharepoint"
+    }
+   ],
+   "hub": {
+    "label": "Claude",
+    "icon": "claude",
+    "status": [
+     "Connected",
+     "Checking your week",
+     "Done"
+    ]
+   },
+   "targets": [
+    {
+     "label": "This week",
+     "sub": "one list",
+     "icon": "list",
+     "result": "6 jobs, 2 promises still to do"
+    }
+   ],
+   "badge": "Claude looks things up. You send",
+   "badgeKind": "orange"
+  }
+ },
+ "GS06": {
+  "h": "Snap it, Claude logs it",
+  "label": "Getting started, post 6 of 10",
+  "spec": {
+   "type": "table",
+   "app": "claude",
+   "title": "Receipts",
+   "sub": "Receipts project · this week",
+   "cols": [
+    "Supplier",
+    "Amount",
+    "GST",
+    "For"
+   ],
+   "rows": [
+    [
+     "ABC Hardware",
+     "$86.90",
+     "$7.90",
+     "Job 118"
+    ],
+    [
+     "Tile Depot",
+     "$1,265.00",
+     "$115.00",
+     "Job 121"
+    ],
+    [
+     "Fuel stop",
+     "$142.00",
+     "$12.91",
+     "Ute"
+    ],
+    [
+     "Faded docket",
+     "Unclear",
+     "Unclear",
+     "Check"
+    ],
+    [
+     "Trade Supplies",
+     "$64.35",
+     "$5.85",
+     "Job 118"
+    ],
+    [
+     "Hire Co",
+     "$220.00",
+     "$20.00",
+     "Job 121"
+    ]
+   ],
+   "highlight": {
+    "row": 3,
+    "note": "Hard to read. Claude flags it for you",
+    "kind": "orange"
+   },
+   "footer": "6 receipts this week, 1 to check",
+   "badge": "One list, ready for tax time",
+   "badgeKind": "dark"
+  }
+ },
+ "GS08": {
+  "h": "Ask for ten, not one",
+  "label": "Getting started, post 8 of 10",
+  "spec": {
+   "type": "table",
+   "app": "claude",
+   "title": "Quote follow-ups",
+   "sub": "Last month · one ask, 10 quotes",
+   "cols": [
+    "Client",
+    "Quote",
+    "Follow-up"
+   ],
+   "rows": [
+    [
+     "ABC Tiling",
+     "Q-101 · $4,180",
+     "Drafted"
+    ],
+    [
+     "ABC Builders",
+     "Q-104 · $12,600",
+     "Drafted"
+    ],
+    [
+     "Bayside Homes",
+     "Q-107 · $6,900",
+     "Accepted"
+    ],
+    [
+     "Coastal Reno",
+     "Q-109 · $3,250",
+     "Drafted"
+    ],
+    [
+     "Hill St Units",
+     "Q-112 · $18,400",
+     "Drafted"
+    ],
+    [
+     "Northside Build",
+     "Q-115 · $5,600",
+     "Drafted"
+    ]
+   ],
+   "highlight": {
+    "row": 2,
+    "note": "Already accepted. Skipped",
+    "kind": "green"
+   },
+   "footer": "10 quotes, 9 follow-ups drafted",
+   "badge": "Nothing sends until you approve",
+   "badgeKind": "orange"
+  }
+ },
+ "GS09": {
+  "h": "Ask for the strategy",
+  "label": "Getting started, post 9 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "The task",
+    "icon": "chat",
+    "items": [
+     "Write a quote for this bathroom job."
+    ],
+    "quote": true,
+    "weight": 0.4
+   },
+   "right": {
+    "title": "The strategy",
+    "icon": "brain",
+    "items": [
+     "What's the best way to quote this job, with options the client will value?",
+     "Give me three options and tell me which you'd lead with.",
+     "Then write the quote that way."
+    ],
+    "quote": true
+   },
+   "verdict": "Claude suggests. You decide the price",
+   "verdictKind": "orange"
+  }
+ },
+ "GS10": {
+  "h": "Teach it once with a skill",
+  "label": "Getting started, post 10 of 10",
+  "spec": {
+   "type": "doc",
+   "app": "skill",
+   "title": "Our quoting skill",
+   "sub": "Written by Claude from five quotes",
+   "lines": [
+    "# What we always include",
+    "- Prep, level check, tiling, grout and clean-up",
+    "- Exclusions, and how long the price holds",
+    "# How we word it",
+    "- Short and plain. Use the client's first name",
+    "# How we lay it out",
+    "- One page. Total up top, options below"
+   ],
+   "tag": "Drafted by Claude",
+   "button": "Save the skill",
+   "done": "Skill saved",
+   "meta": [
+    [
+     "Used for",
+     "Every quote"
+    ]
+   ]
+  }
+ },
+ "JB03": {
+  "h": "Make it something you keep",
+  "label": "Jargon buster, post 3 of 10",
+  "spec": {
+   "type": "checklist",
+   "app": "list",
+   "title": "Crew checklist: tiling job",
+   "sub": "An artifact · open, edit, share",
+   "items": [
+    {
+     "text": "Before: substrate dry, level and clean",
+     "who": "Crew"
+    },
+    {
+     "text": "Before: tiles, grout and spacers on site",
+     "who": "Crew"
+    },
+    {
+     "text": "During: falls checked to the waste",
+     "who": "Lead"
+    },
+    {
+     "text": "During: photos of the waterproofing",
+     "who": "Lead"
+    },
+    {
+     "text": "After: grout clean, area swept",
+     "who": "Crew"
+    },
+    {
+     "text": "After: photos sent to the office",
+     "who": "Lead"
+    },
+    {
+     "text": "After: offcuts and empty bags off site",
+     "who": "Crew"
+    }
+   ],
+   "done": "Saved, and shared with the crew"
+  }
+ },
+ "JB04": {
+  "h": "Two ways to pay",
+  "label": "Jargon buster, post 4 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "A plan",
+    "sub": "Pro, Max, Team",
+    "icon": "card",
+    "items": [
+     "A monthly fee",
+     "With a usage limit",
+     "For the work you do yourself"
+    ],
+    "weight": 0.44
+   },
+   "right": {
+    "title": "Pay as you go",
+    "sub": "The Console",
+    "icon": "console",
+    "items": [
+     "Pay for every token used",
+     "Words read and written both count",
+     "For agents that run on their own",
+     "Like our Pam"
+    ]
+   },
+   "verdict": "A plan for you. The Console for agents",
+   "verdictKind": "dark"
+  }
+ },
+ "AC01": {
+  "h": "Connect Xero to Claude",
+  "label": "Accounting, post 1 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Xero",
+     "sub": "contacts, invoices, bills",
+     "icon": "xero"
+    }
+   ],
+   "hub": {
+    "label": "Claude",
+    "icon": "claude",
+    "status": [
+     "Connecting",
+     "Reading your Xero",
+     "Ready"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Who owes you",
+     "sub": "oldest first",
+     "icon": "list",
+     "result": "$48,200 owed, 3 overdue"
+    },
+    {
+     "label": "Invoice drafts",
+     "sub": "for you to check",
+     "icon": "doc",
+     "result": "Ready to add. You approve"
+    }
+   ],
+   "badge": "Read only. You approve every change",
+   "badgeKind": "orange"
+  }
+ },
+ "AC02": {
+  "h": "Draft the week in one go",
+  "label": "Accounting, post 2 of 10",
+  "spec": {
+   "type": "scan",
+   "item": "docket",
+   "count": 9,
+   "itemTitle": "Job sheet: Job 118",
+   "itemLines": [
+    "ABC Tiling",
+    "Smith Street",
+    "Floor screed 42 m²",
+    "Done: Thu 15 Oct"
+   ],
+   "fieldsTitle": "Claude reads all 9",
+   "fields": [
+    [
+     "Client",
+     "ABC Tiling"
+    ],
+    [
+     "Job",
+     "118, Smith Street"
+    ],
+    [
+     "Work",
+     "Floor screed, 42 m²"
+    ],
+    [
+     "Amount",
+     "$4,180 + GST"
+    ]
+   ],
+   "targets": [
+    {
+     "icon": "xero",
+     "label": "Xero",
+     "line": "9 draft invoices, added by a custom connector",
+     "tag": "Draft"
+    },
+    {
+     "icon": "list",
+     "label": "Questions",
+     "line": "2 sheets are missing the m². Check those",
+     "tag": "Check"
+    }
+   ],
+   "badge": "Nothing sends until you approve",
+   "badgeKind": "orange"
+  }
+ },
+ "WW01": {
+  "h": "A morning list of what needs you",
+  "label": "Winning work, post 1 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Your inbox",
+     "sub": "186 since yesterday",
+     "icon": "outlook"
+    }
+   ],
+   "hub": {
+    "label": "Claude",
+    "icon": "claude",
+    "status": [
+     "6:00 am",
+     "Reading 186 emails",
+     "Your list is ready"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Reply today",
+     "icon": "mail",
+     "result": "3, incl. the builder"
+    },
+    {
+     "label": "Still waiting",
+     "icon": "clock",
+     "result": "4 quote follow-ups"
+    },
+    {
+     "label": "Filed",
+     "icon": "folder",
+     "result": "179 archived"
+    }
+   ],
+   "badge": "Claude files and drafts. You reply",
+   "badgeKind": "orange"
+  }
+ },
+ "SM01": {
+  "h": "Set up a listening post",
+  "label": "Suppliers and margin, post 1 of 10",
+  "spec": {
+   "type": "n8n",
+   "title": "Accounts inbox",
+   "nodes": [
+    {
+     "id": "t",
+     "label": "New email",
+     "sub": "accounts inbox",
+     "kind": "trigger",
+     "col": 0,
+     "row": 1
+    },
+    {
+     "id": "ai",
+     "label": "Claude reads it",
+     "kind": "ai",
+     "col": 1,
+     "row": 1
+    },
+    {
+     "id": "if",
+     "label": "What is it?",
+     "kind": "if",
+     "col": 2,
+     "row": 1
+    },
+    {
+     "id": "a",
+     "label": "Draft bill",
+     "sub": "in Xero",
+     "icon": "xero",
+     "col": 4,
+     "row": 0
+    },
+    {
+     "id": "b",
+     "label": "Thank-you",
+     "sub": "draft in Outlook",
+     "icon": "outlook",
+     "col": 4,
+     "row": 1
+    },
+    {
+     "id": "c",
+     "label": "Ask a person",
+     "sub": "in Teams",
+     "icon": "teams",
+     "col": 4,
+     "row": 2
+    }
+   ],
+   "edges": [
+    [
+     "t",
+     "ai"
+    ],
+    [
+     "ai",
+     "if"
+    ],
+    [
+     "if",
+     "a",
+     "bill"
+    ],
+    [
+     "if",
+     "b",
+     "paid"
+    ],
+    [
+     "if",
+     "c",
+     "other"
+    ]
+   ],
+   "result": "Drafts only. A person approves",
+   "resultKind": "orange"
+  }
+ },
+ "AA01": {
+  "h": "Meet Pam",
+  "label": "Agents and automation, post 1 of 10",
+  "spec": {
+   "type": "stack",
+   "layers": [
+    {
+     "label": "Custom MCP",
+     "sub": "Her reach into Xero, the CRM and files",
+     "icon": "mcp"
+    },
+    {
+     "label": "n8n rails",
+     "sub": "Her hands: the set steps she runs",
+     "icon": "n8n"
+    },
+    {
+     "label": "Console agent harness",
+     "sub": "Her job description and skills",
+     "icon": "console"
+    },
+    {
+     "label": "Microsoft agent",
+     "sub": "In Azure, so the team can message her",
+     "icon": "teams"
+    },
+    {
+     "label": "Pam",
+     "sub": "Drafts invoices and POs for us to check",
+     "icon": "pam",
+     "hi": true,
+     "tag": "Custom-built"
+    }
+   ],
+   "caption": "Pam drafts. A person checks",
+   "captionKind": "orange"
+  }
+ },
+ "SD01": {
+  "h": "Ten skills to start with",
+  "label": "Skills and dashboards, post 1 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "Out of the box",
+    "icon": "claude",
+    "items": [
+     "Doesn't know how you quote",
+     "Or how you code your bills",
+     "Or how you word your emails"
+    ],
+    "weight": 0.42
+   },
+   "right": {
+    "title": "With your skills",
+    "icon": "skill",
+    "layout": "grid",
+    "items": [
+     "Quoting",
+     "Proposals, tenders",
+     "Invoice coding",
+     "Purchase orders",
+     "Credit checks",
+     "Contact cleanup",
+     "Safety packs",
+     "Timesheet checks",
+     "Write in your voice",
+     "Deep think"
+    ]
+   },
+   "verdict": "First skill free when you enquire",
+   "verdictKind": "dark"
+  }
+ },
+ "JB05": {
+  "h": "Show it once, like an apprentice",
+  "label": "Jargon buster, post 5 of 10",
+  "spec": {
+   "type": "stack",
+   "layers": [
+    {
+     "label": "Your apps, connected",
+     "sub": "Xero, CRM, files: the access",
+     "icon": "plug",
+     "tag": "Access"
+    },
+    {
+     "label": "Skill: bathroom quotes",
+     "sub": "How we do it, what to check, what to ask",
+     "icon": "skill",
+     "tag": "Know-how"
+    },
+    {
+     "label": "Claude",
+     "sub": "Quotes the Smith Street ensuite",
+     "icon": "claude",
+     "hi": true,
+     "tag": "Does the job"
+    }
+   ],
+   "caption": "A skill is know-how, not access"
+  }
+ },
+ "JB06": {
+  "h": "The site notes on the wall",
+  "label": "Jargon buster, post 6 of 10",
+  "spec": {
+   "type": "doc",
+   "app": "doc",
+   "title": "CLAUDE.md",
+   "sub": "Project folder",
+   "lines": [
+    "# Smith Street website",
+    "- What it is: our business website",
+    "# How we do things",
+    "- Australian English, plain words",
+    "- Every change as a draft first",
+    "# Never without asking",
+    "- Prices, phone numbers, the logo"
+   ],
+   "tag": "Drafted by Claude",
+   "button": "Save to project",
+   "done": "Read before every job"
+  }
+ },
+ "JB07": {
+  "h": "The app rings when it happens",
+  "label": "Jargon buster, post 7 of 10",
+  "spec": {
+   "type": "n8n",
+   "title": "Webhook: new enquiry",
+   "nodes": [
+    {
+     "id": "t",
+     "label": "Webhook",
+     "sub": "CRM rings",
+     "kind": "trigger",
+     "col": 0,
+     "row": 0.5
+    },
+    {
+     "id": "ai",
+     "label": "Claude reads it",
+     "sub": "job, site, m²",
+     "kind": "ai",
+     "col": 1,
+     "row": 0.5
+    },
+    {
+     "id": "a",
+     "label": "Add to job list",
+     "icon": "airtable",
+     "col": 2,
+     "row": 0
+    },
+    {
+     "id": "b",
+     "label": "Draft a reply",
+     "sub": "in Outlook",
+     "icon": "outlook",
+     "col": 2,
+     "row": 1
+    },
+    {
+     "id": "c",
+     "label": "Tell the office",
+     "sub": "to check, send",
+     "icon": "teams",
+     "col": 3,
+     "row": 0.5
+    }
+   ],
+   "edges": [
+    [
+     "t",
+     "ai"
+    ],
+    [
+     "ai",
+     "a"
+    ],
+    [
+     "ai",
+     "b"
+    ],
+    [
+     "a",
+     "c"
+    ],
+    [
+     "b",
+     "c"
+    ]
+   ],
+   "result": "No asking every 5 min. It just rings"
+  }
+ },
+ "JB09": {
+  "h": "Dry-lay it before you stick it",
+  "label": "Jargon buster, post 9 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Claude Code",
+     "sub": "changes the phone number",
+     "icon": "claude"
+    }
+   ],
+   "hub": {
+    "label": "GitHub",
+    "icon": "github",
+    "status": [
+     "Draft saved",
+     "Waiting for you",
+     "Approved"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Your website",
+     "sub": "published from GitHub",
+     "icon": "web",
+     "result": "Live. Every old version kept"
+    }
+   ],
+   "badge": "You approve before it goes live",
+   "badgeKind": "orange"
+  }
+ },
+ "JB10": {
+  "h": "Right size for the job",
+  "label": "Jargon buster, post 10 of 10",
+  "spec": {
+   "type": "stack",
+   "layers": [
+    {
+     "label": "Haiku",
+     "sub": "Small and quick: sorting emails",
+     "icon": "bolt",
+     "tag": "Small pump"
+    },
+    {
+     "label": "Sonnet",
+     "sub": "Everyday: quotes, invoices, emails",
+     "icon": "tool",
+     "tag": "Workhorse",
+     "hi": true
+    },
+    {
+     "label": "Opus and Fable",
+     "sub": "Hard thinking: strategy, big decisions",
+     "icon": "brain",
+     "tag": "Big pump"
+    }
+   ],
+   "caption": "Leave the default on. Go bigger for big calls"
+  }
+ },
+ "AC03": {
+  "h": "Draft every order at once",
+  "label": "Accounting, post 3 of 10",
+  "spec": {
+   "type": "doc",
+   "app": "doc",
+   "title": "Purchase order PO-0231",
+   "sub": "Draft 1 of 6, ready to raise in Xero",
+   "meta": [
+    [
+     "To",
+     "ABC Sand Supplies"
+    ],
+    [
+     "Reference",
+     "Job 118, Smith Street"
+    ]
+   ],
+   "lines": [
+    "Hi team, please supply for Job 118:",
+    "- 12 t screed sand",
+    "- 40 bags tile adhesive",
+    "- Mixer hire, 2 days",
+    "Deliver to Smith Street, Mon 7 am",
+    "Total $2,840 + GST"
+   ],
+   "tag": "Drafted by Claude",
+   "button": "Approve",
+   "done": "Approved by you"
+  }
+ },
+ "AC04": {
+  "h": "Claude matches, you click OK",
+  "label": "Accounting, post 4 of 10",
+  "spec": {
+   "type": "table",
+   "app": "xero",
+   "title": "Unreconciled lines",
+   "sub": "Exported from Xero",
+   "cols": [
+    "Bank line",
+    "Amount",
+    "Match"
+   ],
+   "rows": [
+    [
+     "ABC Sand Supplies",
+     "-$2,840",
+     "Bill 2207"
+    ],
+    [
+     "ABC Builders",
+     "+$9,460",
+     "INV-0412"
+    ],
+    [
+     "Fuel card",
+     "-$612",
+     "Bill FC-0918"
+    ],
+    [
+     "Transfer 4471",
+     "-$1,500",
+     "No match"
+    ],
+    [
+     "Hire Co",
+     "-$385",
+     "Bill HC-221"
+    ],
+    [
+     "Hardware store",
+     "-$214",
+     "Receipt 88"
+    ]
+   ],
+   "highlight": {
+    "row": 3,
+    "note": "Can't place it. What was this for?",
+    "kind": "orange"
+   },
+   "footer": "41 of 46 matched, 5 queries",
+   "badge": "You reconcile in Xero"
+  }
+ },
+ "AC05": {
+  "h": "A cash update every morning",
+  "label": "Accounting, post 5 of 10",
+  "spec": {
+   "type": "chat",
+   "app": "claude",
+   "agent": "Claude",
+   "agentSub": "6 am scheduled task · reads Xero only",
+   "msgs": [
+    [
+     "Claude",
+     "Morning. Here's your cash, from the bank feed in Xero.",
+     "left",
+     {
+      "app": "xero",
+      "title": "Cash this morning",
+      "tag": "Read only",
+      "rows": [
+       [
+        "In the bank",
+        "$84,300"
+       ],
+       [
+        "Going out",
+        "$22,150 this week"
+       ],
+       [
+        "Overdue",
+        "3 clients, $9,800"
+       ]
+      ]
+     }
+    ],
+    [
+     "You",
+     "Who's been overdue longest?",
+     "right"
+    ],
+    [
+     "Claude",
+     "ABC Builders, 48 days, $4,600. Want a chaser drafted for you to check?",
+     "left"
+    ]
+   ]
+  }
+ },
+ "AC06": {
+  "h": "See the weeks ahead",
+  "label": "Accounting, post 6 of 10",
+  "spec": {
+   "type": "dash",
+   "title": "Debtors and creditors",
+   "sub": "From Xero · next 8 weeks",
+   "tiles": [
+    {
+     "label": "Owed to you",
+     "value": 48200,
+     "prefix": "$"
+    },
+    {
+     "label": "You owe",
+     "value": 31600,
+     "prefix": "$"
+    },
+    {
+     "label": "Overdue builders",
+     "value": 3,
+     "kind": "alert"
+    }
+   ],
+   "bars": {
+    "title": "Cash by week",
+    "labels": [
+     "W1",
+     "W2",
+     "W3",
+     "W4",
+     "W5",
+     "W6",
+     "W7",
+     "W8"
+    ],
+    "values": [
+     42,
+     38,
+     35,
+     24,
+     9,
+     18,
+     27,
+     33
+    ],
+    "fmt": [
+     "$42k",
+     "$38k",
+     "$35k",
+     "$24k",
+     "$9k",
+     "$18k",
+     "$27k",
+     "$33k"
+    ],
+    "hi": 4
+   },
+   "alert": {
+    "text": "Week 5 is tight. 3 builders overdue",
+    "button": "Draft chasers",
+    "done": "Drafted for you to check"
+   }
+  }
+ },
+ "AC07": {
+  "h": "A merge list, ready to check",
+  "label": "Accounting, post 7 of 10",
+  "spec": {
+   "type": "table",
+   "app": "xero",
+   "title": "Likely duplicates",
+   "sub": "Read from Xero contacts",
+   "cols": [
+    "Contact",
+    "Match on",
+    "Suggest"
+   ],
+   "rows": [
+    [
+     "ABC Tiling Pty Ltd",
+     "ABN, email",
+     "Keep"
+    ],
+    [
+     "ABC Tiling",
+     "ABN, email",
+     "Merge in"
+    ],
+    [
+     "A.B.C. Tiling",
+     "Phone",
+     "Merge in"
+    ],
+    [
+     "ABC Builders",
+     "ABN",
+     "Keep"
+    ],
+    [
+     "ABC Builders WA",
+     "ABN, phone",
+     "Merge in"
+    ],
+    [
+     "ABC Builders Pty Ltd",
+     "ABN, email",
+     "Merge in"
+    ]
+   ],
+   "highlight": {
+    "row": 0,
+    "note": "Has the most invoices. Keep this one",
+    "kind": "dark"
+   },
+   "footer": "6 groups found, nothing changed",
+   "badge": "You merge in Xero yourself"
+  }
+ },
+ "AC08": {
+  "h": "Every ABN checked in one go",
+  "label": "Accounting, post 8 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Xero contacts",
+     "sub": "86 with an ABN",
+     "icon": "xero"
+    },
+    {
+     "label": "ABN Lookup",
+     "sub": "Business Register",
+     "icon": "abr"
+    }
+   ],
+   "hub": {
+    "label": "Claude",
+    "icon": "claude",
+    "status": [
+     "Waiting",
+     "Checking 86 ABNs",
+     "All checked"
+    ]
+   },
+   "targets": [
+    {
+     "label": "All good",
+     "sub": "active, GST, name matches",
+     "icon": "check",
+     "result": "82 contacts fine"
+    },
+    {
+     "label": "To fix",
+     "sub": "flagged for you",
+     "icon": "alert",
+     "result": "2 cancelled, 2 not GST"
+    }
+   ],
+   "badge": "You fix the contacts in Xero",
+   "badgeKind": "orange"
+  }
+ },
+ "AC09": {
+  "h": "A credit check before you supply",
+  "label": "Accounting, post 9 of 10",
+  "spec": {
+   "type": "checklist",
+   "app": "list",
+   "title": "Credit check: ABC Tiling",
+   "sub": "Before the first delivery",
+   "items": [
+    {
+     "text": "ABN active and name matches",
+     "who": "Claude"
+    },
+    {
+     "text": "Registered for GST",
+     "who": "Claude"
+    },
+    {
+     "text": "Trading since 2015",
+     "who": "Claude"
+    },
+    {
+     "text": "Nothing worrying on public record",
+     "who": "Claude"
+    },
+    {
+     "text": "Signed credit application on file",
+     "who": "Office"
+    },
+    {
+     "text": "Two trade references called",
+     "who": "Office"
+    },
+    {
+     "text": "Credit limit and terms set",
+     "who": "You"
+    }
+   ],
+   "done": "Claude gathers facts. You decide"
+  }
+ },
+ "AC10": {
+  "h": "One register of every due date",
+  "label": "Accounting, post 10 of 10",
+  "spec": {
+   "type": "table",
+   "app": "airtable",
+   "title": "Due-date register",
+   "sub": "Built from 12 months of emails",
+   "cols": [
+    "Obligation",
+    "Due",
+    "Comes round"
+   ],
+   "rows": [
+    [
+     "Payroll tax",
+     "7 Nov",
+     "Monthly"
+    ],
+    [
+     "Ute rego, 1ABC123",
+     "14 Nov",
+     "Yearly"
+    ],
+    [
+     "BAS, Sep quarter",
+     "25 Nov",
+     "Quarterly"
+    ],
+    [
+     "Public liability",
+     "30 Nov",
+     "Yearly"
+    ],
+    [
+     "ASIC annual review",
+     "12 Dec",
+     "Yearly"
+    ],
+    [
+     "Truck insurance",
+     "20 Jan",
+     "Yearly"
+    ]
+   ],
+   "highlight": {
+    "row": 0,
+    "note": "Due in 3 weeks. Reminder sent to you",
+    "kind": "orange"
+   },
+   "footer": "Checked every Monday",
+   "badge": "You or your accountant lodge and pay"
+  }
+ },
+ "SM02": {
+  "h": "Draft bills, already coded",
+  "label": "Suppliers and margin, post 2 of 10",
+  "spec": {
+   "type": "scan",
+   "item": "invoice",
+   "count": 12,
+   "itemTitle": "ABC Tile Supplies",
+   "itemLines": [
+    "Tax invoice 2041",
+    "Adhesive x 40 bags",
+    "Grout x 12",
+    "Total $1,240 inc GST"
+   ],
+   "fieldsTitle": "Claude reads and codes it",
+   "fields": [
+    [
+     "Supplier",
+     "ABC Tile Supplies"
+    ],
+    [
+     "Account",
+     "Materials"
+    ],
+    [
+     "GST",
+     "GST on expenses"
+    ],
+    [
+     "Total",
+     "$1,240"
+    ]
+   ],
+   "targets": [
+    {
+     "icon": "xero",
+     "label": "Xero, via n8n",
+     "line": "Draft bill: ABC Tile Supplies, $1,240, coded",
+     "tag": "Draft"
+    }
+   ],
+   "badge": "12 drafts. A person approves in Xero",
+   "badgeKind": "orange"
+  }
+ },
+ "SM03": {
+  "h": "Learn from last year",
+  "label": "Suppliers and margin, post 3 of 10",
+  "spec": {
+   "type": "table",
+   "app": "skill",
+   "title": "Your coding skill",
+   "sub": "From last year's bills",
+   "cols": [
+    "Supplier",
+    "Item",
+    "Account"
+   ],
+   "rows": [
+    [
+     "ABC Tile Supplies",
+     "Adhesive, grout",
+     "Materials"
+    ],
+    [
+     "Hardware store",
+     "Grinder discs",
+     "Consumables"
+    ],
+    [
+     "Tool shop",
+     "Laser level",
+     "Tools"
+    ],
+    [
+     "Hire company",
+     "Mixer hire",
+     "Equipment hire"
+    ],
+    [
+     "XYZ Fuel",
+     "Diesel",
+     "Motor vehicle"
+    ],
+    [
+     "Waterproofing Co",
+     "Membrane",
+     "Materials"
+    ]
+   ],
+   "highlight": {
+    "row": 1,
+    "note": "Coded two ways last year. Which one?",
+    "kind": "orange"
+   },
+   "footer": "40 suppliers learnt, 6 to go through with you"
+  }
+ },
+ "SM04": {
+  "h": "An alert when a price moves",
+  "label": "Suppliers and margin, post 4 of 10",
+  "spec": {
+   "type": "n8n",
+   "title": "Price-creep check",
+   "nodes": [
+    {
+     "id": "t",
+     "label": "New bill",
+     "sub": "in Xero",
+     "kind": "trigger",
+     "col": 0,
+     "row": 0.8
+    },
+    {
+     "id": "ai",
+     "label": "Claude checks",
+     "sub": "with last price",
+     "kind": "ai",
+     "col": 1,
+     "row": 0.8
+    },
+    {
+     "id": "if",
+     "label": "Price up?",
+     "kind": "if",
+     "col": 2,
+     "row": 0.8
+    },
+    {
+     "id": "a",
+     "label": "Alert you",
+     "icon": "teams",
+     "col": 3,
+     "row": 0
+    },
+    {
+     "id": "d",
+     "label": "Draft a query",
+     "sub": "to the supplier",
+     "icon": "outlook",
+     "col": 4,
+     "row": 0
+    },
+    {
+     "id": "n",
+     "label": "Log the price",
+     "icon": "airtable",
+     "col": 3,
+     "row": 1.3
+    }
+   ],
+   "edges": [
+    [
+     "t",
+     "ai"
+    ],
+    [
+     "ai",
+     "if"
+    ],
+    [
+     "if",
+     "a",
+     "yes"
+    ],
+    [
+     "if",
+     "n",
+     "no"
+    ],
+    [
+     "a",
+     "d"
+    ]
+   ],
+   "result": "Query drafted. You check and send",
+   "resultKind": "orange"
+  }
+ },
+ "SM05": {
+  "h": "Where margin usually leaks",
+  "label": "Suppliers and margin, post 5 of 10",
+  "spec": {
+   "type": "dash",
+   "title": "Quoted vs actual",
+   "sub": "Last year, 48 jobs",
+   "tiles": [
+    {
+     "label": "Jobs on target",
+     "value": 37
+    },
+    {
+     "label": "Jobs under",
+     "value": 11,
+     "kind": "alert"
+    },
+    {
+     "label": "Margin lost",
+     "value": 23600,
+     "prefix": "$",
+     "kind": "alert"
+    }
+   ],
+   "bars": {
+    "title": "Margin lost by cause",
+    "labels": [
+     "Variations",
+     "Return trips",
+     "Wastage",
+     "Price rises",
+     "Delivery"
+    ],
+    "values": [
+     9,
+     6,
+     4,
+     3,
+     1.6
+    ],
+    "fmt": [
+     "$9k",
+     "$6k",
+     "$4k",
+     "$3k",
+     "$1.6k"
+    ],
+    "hi": 0
+   },
+   "alert": {
+    "text": "Variations not billed on 7 jobs",
+    "button": "Give me the strategy",
+    "done": "3 changes, for you to decide"
+   }
+  }
+ },
+ "SM06": {
+  "h": "Today's costs in every quote",
+  "label": "Suppliers and margin, post 6 of 10",
+  "spec": {
+   "type": "doc",
+   "app": "doc",
+   "title": "Quote: Smith Street",
+   "sub": "Draft",
+   "meta": [
+    [
+     "To",
+     "Sam Rossi, ABC Builders"
+    ],
+    [
+     "Job",
+     "120 m² floor tiling"
+    ]
+   ],
+   "lines": [
+    "# Materials, at today's prices",
+    "- Adhesive, 48 bags: $1,152 (up 6%)",
+    "- Waterproofing: $640",
+    "- Grout and trims: $410",
+    "- Labour, 120 m² laid and grouted: $7,800",
+    "# Total: $10,002 plus GST",
+    "Materials priced from your latest supplier bills."
+   ],
+   "tag": "Drafted by Claude",
+   "button": "Approve and send",
+   "done": "Sent by you"
+  }
+ },
+ "SM07": {
+  "h": "One pack, five suppliers",
+  "label": "Suppliers and margin, post 7 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Materials list",
+     "sub": "Smith Street",
+     "icon": "doc"
+    },
+    {
+     "label": "Delivery date",
+     "sub": "on site by the 14th",
+     "icon": "calendar"
+    }
+   ],
+   "hub": {
+    "label": "Claude",
+    "icon": "claude",
+    "status": [
+     "Writing the pack",
+     "5 drafts ready",
+     "Comparing replies"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Outlook",
+     "sub": "one per supplier",
+     "icon": "outlook",
+     "result": "5 draft emails, for you to send"
+    },
+    {
+     "label": "Comparison",
+     "sub": "like for like",
+     "icon": "list",
+     "result": "Lowest: XYZ Supplies, $4,180"
+    }
+   ],
+   "badge": "You check and send each email",
+   "badgeKind": "orange"
+  }
+ },
+ "SM08": {
+  "h": "Two ways to approve",
+  "label": "Suppliers and margin, post 8 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "Claude plus Xero",
+    "icon": "check",
+    "items": [
+     "Claude drafts and codes the bill",
+     "One person approves it in Xero",
+     "Often enough for a small office"
+    ],
+    "weight": 0.5
+   },
+   "right": {
+    "title": "Keep ApprovalMax if you need",
+    "icon": "list",
+    "items": [
+     "Several levels of approval",
+     "Limits per person",
+     "A full audit trail",
+     "Rules by supplier or amount"
+    ]
+   },
+   "verdict": "Either way, a person approves",
+   "verdictKind": "orange"
+  }
+ },
+ "SM09": {
+  "h": "A draft payment run each week",
+  "label": "Suppliers and margin, post 9 of 10",
+  "spec": {
+   "type": "table",
+   "app": "xero",
+   "title": "Draft payment run",
+   "sub": "Wednesday, read from Xero",
+   "cols": [
+    "Supplier",
+    "Due",
+    "Plan"
+   ],
+   "rows": [
+    [
+     "ABC Tile Supplies",
+     "Monday",
+     "Pay Friday"
+    ],
+    [
+     "Waterproofing Co",
+     "30th",
+     "Pay now, 2% off"
+    ],
+    [
+     "Hire company",
+     "Month end",
+     "Can wait"
+    ],
+    [
+     "XYZ Fuel",
+     "Friday",
+     "Pay Friday"
+    ],
+    [
+     "Freight company",
+     "Next week",
+     "Next run"
+    ]
+   ],
+   "highlight": {
+    "row": 1,
+    "note": "2% discount if paid this week",
+    "kind": "green"
+   },
+   "footer": "Cash after the run: $31,400, from the Xero bank feed",
+   "badge": "A person approves and pays",
+   "badgeKind": "orange"
+  }
+ },
+ "SM10": {
+  "h": "Matched, and the email drafted",
+  "label": "Suppliers and margin, post 10 of 10",
+  "spec": {
+   "type": "doc",
+   "app": "outlook",
+   "title": "Statement query",
+   "sub": "Draft",
+   "meta": [
+    [
+     "To",
+     "Accounts, ABC Tile Supplies"
+    ],
+    [
+     "Subject",
+     "March statement: 3 items"
+    ]
+   ],
+   "lines": [
+    "Hi team,",
+    "We've matched your March statement to our books. All good except:",
+    "- INV 2056, $860: we don't have this bill",
+    "- Credit CR 118, $210: not yet applied",
+    "- INV 2041, $1,240: paid twice",
+    "Can you send the bill and sort the rest?",
+    "Thanks, Bob"
+   ],
+   "tag": "Drafted by Claude",
+   "button": "Approve and send",
+   "done": "Sent by you"
+  }
+ },
+ "SD02": {
+  "h": "Make Claude think it through",
+  "label": "Skills and dashboards, post 2 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "A quick answer",
+    "icon": "chat",
+    "items": [
+     "Buy the ute. They hold their value."
+    ],
+    "quote": true,
+    "weight": 0.3
+   },
+   "right": {
+    "title": "A deep-think skill",
+    "icon": "brain",
+    "items": [
+     "Options: buy, lease or hire",
+     "Risks: cash flow, quiet months",
+     "Needs: your next 6 months of work",
+     "A recommendation, with reasons"
+    ]
+   },
+   "verdict": "It advises, you decide",
+   "verdictKind": "dark"
+  }
+ },
+ "SD03": {
+  "h": "Pack your brand into a skill",
+  "label": "Skills and dashboards, post 3 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Your logo",
+     "sub": "and where it goes",
+     "icon": "doc"
+    },
+    {
+     "label": "Colours, fonts",
+     "sub": "exact, every time",
+     "icon": "spark"
+    },
+    {
+     "label": "Past quotes",
+     "sub": "how you talk",
+     "icon": "folder"
+    }
+   ],
+   "hub": {
+    "label": "Brand pack",
+    "icon": "skill",
+    "status": [
+     "Reading",
+     "Building the skill",
+     "Saved"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Quotes",
+     "sub": "and letters",
+     "icon": "doc",
+     "result": "Your logo, colours and fonts"
+    },
+    {
+     "label": "Posts",
+     "sub": "Instagram, Facebook",
+     "icon": "camera",
+     "result": "Sounds like you, not a robot"
+    }
+   ],
+   "badge": "Test it on one quote first",
+   "badgeKind": "dark"
+  }
+ },
+ "SD04": {
+  "h": "Two kinds of dashboard",
+  "label": "Skills and dashboards, post 4 of 10",
+  "spec": {
+   "type": "dash",
+   "title": "Morning dashboard",
+   "sub": "Sample figures",
+   "tiles": [
+    {
+     "label": "Owed to you",
+     "value": 18400,
+     "prefix": "$"
+    },
+    {
+     "label": "Quotes open",
+     "value": 6
+    },
+    {
+     "label": "Jobs this week",
+     "value": 4
+    }
+   ],
+   "bars": {
+    "title": "Owed by age",
+    "labels": [
+     "Current",
+     "30",
+     "60",
+     "90+"
+    ],
+    "values": [
+     10.2,
+     5.1,
+     2.3,
+     0.8
+    ],
+    "fmt": [
+     "$10.2k",
+     "$5.1k",
+     "$2.3k",
+     "$0.8k"
+    ],
+    "hi": 2
+   },
+   "alert": {
+    "text": "ABC Tiling, 45 days overdue",
+    "button": "Draft a reminder",
+    "done": "Drafted for you to check"
+   }
+  }
+ },
+ "SD05": {
+  "h": "One list, your tick",
+  "label": "Skills and dashboards, post 5 of 10",
+  "spec": {
+   "type": "table",
+   "app": "dashboard",
+   "title": "Waiting on you",
+   "sub": "Every draft, one list",
+   "cols": [
+    "Draft",
+    "For",
+    "Amount",
+    "Your call"
+   ],
+   "rows": [
+    [
+     "Invoice 0412",
+     "ABC Tiling",
+     "$4,180",
+     "Approved"
+    ],
+    [
+     "Invoice 0413",
+     "ABC Tiling",
+     "$2,640",
+     "Approved"
+    ],
+    [
+     "Invoice 0414",
+     "ABC Builders",
+     "$3,560",
+     "Approved"
+    ],
+    [
+     "Purchase order",
+     "XYZ Supplies",
+     "$1,320",
+     "Hold to Mon"
+    ],
+    [
+     "Quote",
+     "Smith Street",
+     "$9,850",
+     "Approved"
+    ],
+    [
+     "Purchase order",
+     "Hire company",
+     "$480",
+     "Approved"
+    ]
+   ],
+   "highlight": {
+    "row": 3,
+    "note": "Back on your list Monday",
+    "kind": "orange"
+   },
+   "badge": "Nothing goes without your tick",
+   "badgeKind": "orange"
+  }
+ },
+ "SD06": {
+  "h": "One plan, shared know-how",
+  "label": "Skills and dashboards, post 6 of 10",
+  "spec": {
+   "type": "checklist",
+   "app": "list",
+   "title": "Claude rollout plan",
+   "sub": "Drafted by Claude, run by you",
+   "items": [
+    {
+     "text": "Team plan set up, one admin",
+     "who": "Owner"
+    },
+    {
+     "text": "Two people start, one job each",
+     "who": "Office"
+    },
+    {
+     "text": "Quoting and brand pack skills loaded",
+     "who": "Admin"
+    },
+    {
+     "text": "Each person connects their own email",
+     "who": "Everyone"
+    },
+    {
+     "text": "Job files in shared projects",
+     "who": "Office"
+    },
+    {
+     "text": "Approval on for anything that sends or pays",
+     "who": "Admin"
+    },
+    {
+     "text": "Check in after two weeks",
+     "who": "Owner"
+    }
+   ],
+   "done": "Whole office, same way"
+  }
+ },
+ "SD07": {
+  "h": "Claude borrows your keys",
+  "label": "Skills and dashboards, post 7 of 10",
+  "spec": {
+   "type": "chat",
+   "app": "claude",
+   "agent": "Claude",
+   "msgs": [
+    [
+     "You",
+     "Who am I signed in as in each app, and what can you see?",
+     "right"
+    ],
+    [
+     "Claude",
+     "You're Bob in each one. Xero: view only. Outlook: your inbox. Calendar: your jobs.",
+     "left"
+    ],
+    [
+     "Claude",
+     "One to tidy: you can edit the CRM, but your job only needs to read it.",
+     "left"
+    ],
+    [
+     "You",
+     "Good. I'll ask the office to drop that.",
+     "right"
+    ]
+   ],
+   "agentSub": "Signed in as Bob"
+  }
+ },
+ "SD08": {
+  "h": "Give it a pencil, not a pen",
+  "label": "Skills and dashboards, post 8 of 10",
+  "spec": {
+   "type": "table",
+   "app": "console",
+   "title": "Invoicing agent",
+   "sub": "Its tools",
+   "cols": [
+    "Tool",
+    "Can it?"
+   ],
+   "rows": [
+    [
+     "Read Xero",
+     "Yes, view only"
+    ],
+    [
+     "Draft emails",
+     "Yes"
+    ],
+    [
+     "Send emails",
+     "No, a person sends"
+    ],
+    [
+     "Draft invoices",
+     "Yes"
+    ],
+    [
+     "Pay anything",
+     "Never"
+    ],
+    [
+     "Delete records",
+     "No"
+    ]
+   ],
+   "highlight": {
+    "row": 4,
+    "note": "No pay tool, so no way to pay",
+    "kind": "orange"
+   },
+   "badge": "A person checks every draft",
+   "badgeKind": "orange"
+  }
+ },
+ "SD09": {
+  "h": "What actually works",
+  "label": "Skills and dashboards, post 9 of 10",
+  "spec": {
+   "type": "stack",
+   "layers": [
+    {
+     "label": "Good records",
+     "sub": "Jobs, contacts, invoices kept tidy",
+     "icon": "folder"
+    },
+    {
+     "label": "Connectors",
+     "sub": "Claude reads the real thing, live",
+     "icon": "mcp"
+    },
+    {
+     "label": "Skills",
+     "sub": "How you do each job, written once",
+     "icon": "skill"
+    },
+    {
+     "label": "Claude",
+     "sub": "Does it your way",
+     "icon": "claude",
+     "hi": true
+    }
+   ],
+   "caption": "No new box to fill. Use what you have"
+  }
+ },
+ "SD10": {
+  "h": "Join the dots",
+  "label": "Skills and dashboards, post 10 of 10",
+  "spec": {
+   "type": "hub",
+   "centre": {
+    "label": "Job 118",
+    "sub": "Smith Street",
+    "icon": "map"
+   },
+   "spokes": [
+    {
+     "label": "ABC Builders",
+     "icon": "person",
+     "via": "Builder"
+    },
+    {
+     "label": "Sam Rossi",
+     "icon": "person",
+     "via": "Foreman"
+    },
+    {
+     "label": "Bob",
+     "icon": "tool",
+     "via": "Tiled it"
+    },
+    {
+     "label": "Elm Road",
+     "icon": "map",
+     "via": "Next job"
+    },
+    {
+     "label": "XYZ Supplies",
+     "icon": "supplier",
+     "via": "Supplied"
+    },
+    {
+     "label": "ScreedPro",
+     "icon": "truck",
+     "via": "Screed"
+    }
+   ],
+   "caption": "Ask it: which builders should I chase?"
+  }
+ },
+ "WW02": {
+  "h": "Say it, Claude logs it",
+  "label": "Winning work, post 2 of 10",
+  "spec": {
+   "type": "chat",
+   "app": "claude",
+   "agent": "Claude",
+   "agentSub": "Phone dictation · you approve changes",
+   "msgs": [
+    [
+     "You",
+     "Just left ABC Builders. Dave wants a price for 400 m² by Friday.",
+     "right"
+    ],
+    [
+     "Claude",
+     "Here's the CRM note, a Thursday follow-up and a draft email to Dave. Save them?",
+     "left",
+     {
+      "app": "crm",
+      "title": "ABC Builders · Dave",
+      "tag": "Draft",
+      "rows": [
+       [
+        "Note",
+        "Price 400 m² by Friday"
+       ],
+       [
+        "Follow-up",
+        "Thursday"
+       ]
+      ]
+     }
+    ],
+    [
+     "You",
+     "Yes, save them. I'll send Dave's email.",
+     "right"
+    ],
+    [
+     "Claude",
+     "Saved to your CRM. Dave's email is in your drafts for you to send.",
+     "left"
+    ]
+   ]
+  }
+ },
+ "WW03": {
+  "h": "Find them, draft the hello",
+  "label": "Winning work, post 3 of 10",
+  "spec": {
+   "type": "doc",
+   "app": "outlook",
+   "title": "Hello to ABC Tiling",
+   "sub": "Draft 1 of 10",
+   "meta": [
+    [
+     "To",
+     "Sam, ABC Tiling"
+    ],
+    [
+     "Subject",
+     "Been a while, Sam"
+    ]
+   ],
+   "lines": [
+    "Hi Sam,",
+    "It's been about a year since we did the Smith Street bathrooms together. Hope work's been good.",
+    "We've got room in the diary next month if you've got anything coming up.",
+    "Cheers, Bob"
+   ],
+   "tag": "Drafted by Claude",
+   "button": "Check and send",
+   "done": "Sent by you"
+  }
+ },
+ "WW04": {
+  "h": "Claude finds the mess",
+  "label": "Winning work, post 4 of 10",
+  "spec": {
+   "type": "table",
+   "app": "crm",
+   "title": "Contact check",
+   "sub": "CRM vs Xero vs phone",
+   "cols": [
+    "Contact",
+    "Problem",
+    "Proposed fix"
+   ],
+   "rows": [
+    [
+     "ABC Builders",
+     "In CRM twice",
+     "Merge into one"
+    ],
+    [
+     "Sam Rossi",
+     "Old mobile in Xero",
+     "Use CRM number"
+    ],
+    [
+     "Smith Floors",
+     "No email",
+     "Add from invoice"
+    ],
+    [
+     "XYZ Tiling",
+     "Not in CRM",
+     "Add from Xero"
+    ],
+    [
+     "Dave, ABC",
+     "Two spellings",
+     "Use 'Dave Lee'"
+    ],
+    [
+     "Bob, XYZ",
+     "Wrong company",
+     "Move to XYZ"
+    ]
+   ],
+   "highlight": {
+    "row": 0,
+    "note": "14 fixes. You approve them in one go",
+    "kind": "orange"
+   },
+   "footer": "Read only until you say yes"
+  }
+ },
+ "WW05": {
+  "h": "Who you know on every job",
+  "label": "Winning work, post 5 of 10",
+  "spec": {
+   "type": "hub",
+   "centre": {
+    "label": "ABC Builders",
+    "sub": "Builder",
+    "icon": "person"
+   },
+   "spokes": [
+    {
+     "label": "ABC Tiling",
+     "sub": "Tiler on 3 of their jobs",
+     "icon": "tool"
+    },
+    {
+     "label": "Smith St apts",
+     "sub": "Project, quoted 2025",
+     "icon": "map"
+    },
+    {
+     "label": "XYZ Floors",
+     "sub": "Installer on Job 118",
+     "icon": "tool"
+    }
+   ],
+   "caption": "Builders, tilers and projects, linked"
+  }
+ },
+ "WW06": {
+  "h": "Every tender, one register",
+  "label": "Winning work, post 6 of 10",
+  "spec": {
+   "type": "table",
+   "app": "airtable",
+   "title": "Tender register",
+   "sub": "Logged from your emails",
+   "cols": [
+    "Project",
+    "Builder",
+    "Closes"
+   ],
+   "rows": [
+    [
+     "Smith St apartments",
+     "ABC Builders",
+     "Fri 2 pm"
+    ],
+    [
+     "Job 118 townhouses",
+     "XYZ Builders",
+     "Tue 10 am"
+    ],
+    [
+     "Lake St homes",
+     "XYZ Builders",
+     "Thu 5 pm"
+    ],
+    [
+     "Beach Rd offices",
+     "ABC Builders",
+     "Next Mon"
+    ],
+    [
+     "Hill St retail",
+     "Smith Group",
+     "In 3 weeks"
+    ]
+   ],
+   "highlight": {
+    "row": 0,
+    "note": "Closes in 3 days. Reminder sent to you",
+    "kind": "orange"
+   },
+   "footer": "You decide what to price"
+  }
+ },
+ "WW07": {
+  "h": "Ask for the strategy, not the task",
+  "label": "Winning work, post 7 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "The task",
+    "icon": "chat",
+    "items": [
+     "Write my quote for this job."
+    ],
+    "quote": true,
+    "weight": 0.36
+   },
+   "right": {
+    "title": "The strategy",
+    "icon": "brain",
+    "items": [
+     "Option A: standard, $8,400",
+     "Option B: finished 3 days sooner, $9,200",
+     "Option C: staged over two visits, $8,900",
+     "Why each one suits this client"
+    ]
+   },
+   "verdict": "You check the prices, then send it",
+   "verdictKind": "orange"
+  }
+ },
+ "WW08": {
+  "h": "What Claude can set up",
+  "label": "Winning work, post 8 of 10",
+  "spec": {
+   "type": "checklist",
+   "app": "crm",
+   "title": "Your new CRM",
+   "sub": "Set up with Claude, step by step",
+   "items": [
+    {
+     "text": "Contacts and companies",
+     "who": "Claude"
+    },
+    {
+     "text": "Pipeline: enquiry, quote, job, invoice",
+     "who": "Claude"
+    },
+    {
+     "text": "Tags for builders, tilers, homeowners",
+     "who": "Claude"
+    },
+    {
+     "text": "Quote follow-up reminders",
+     "who": "Claude"
+    },
+    {
+     "text": "Your old lists, imported",
+     "who": "Claude"
+    },
+    {
+     "text": "Each change checked",
+     "who": "You"
+    }
+   ],
+   "done": "Ready to run work from"
+  }
+ },
+ "WW09": {
+  "h": "Ask for the strategy, not the post",
+  "label": "Winning work, post 9 of 10",
+  "spec": {
+   "type": "chat",
+   "app": "claude",
+   "agent": "Claude",
+   "agentSub": "Strategy first, posts second",
+   "msgs": [
+    [
+     "You",
+     "What will tilers and builders actually respond to?",
+     "right"
+    ],
+    [
+     "Claude",
+     "Practical tips. A series that answers one question they have, a post a day.",
+     "left"
+    ],
+    [
+     "You",
+     "Like this one?",
+     "right"
+    ],
+    [
+     "Claude",
+     "Exactly like this one: one question, ten posts. Want me to draft the first?",
+     "left"
+    ]
+   ]
+  }
+ },
+ "WW10": {
+  "h": "A skill for your voice",
+  "label": "Winning work, post 10 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "10 sent emails",
+     "sub": "ones you're happy with",
+     "icon": "outlook"
+    }
+   ],
+   "hub": {
+    "label": "Claude",
+    "icon": "claude",
+    "status": [
+     "Reading 10 emails",
+     "Learning your voice",
+     "Skill saved"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Voice skill",
+     "sub": "how you write",
+     "icon": "skill",
+     "result": "Short, plain, signs off 'Cheers, Bob'"
+    },
+    {
+     "label": "Every draft",
+     "sub": "quotes, emails, replies",
+     "icon": "doc",
+     "result": "Sounds like you"
+    }
+   ],
+   "badge": "Claude drafts. You still hit send",
+   "badgeKind": "orange"
+  }
+ },
+ "AA03": {
+  "h": "Know which one you need",
+  "label": "Agents and automation, post 3 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "Scheduled task",
+    "sub": "starts on a clock",
+    "icon": "schedule",
+    "items": [
+     "6 am: today's inbox list",
+     "Friday: debtors report",
+     "1st of month: rego dates"
+    ],
+    "weight": 0.46
+   },
+   "right": {
+    "title": "Agent",
+    "sub": "starts when something happens",
+    "icon": "bolt",
+    "items": [
+     "A supplier invoice lands",
+     "The team messages Pam",
+     "A website enquiry comes in",
+     "A job sheet photo arrives"
+    ]
+   },
+   "verdict": "Only needs a clock? Use a task",
+   "verdictKind": "dark"
+  }
+ },
+ "AA04": {
+  "h": "Running while you're on the tools",
+  "label": "Agents and automation, post 4 of 10",
+  "spec": {
+   "type": "checklist",
+   "app": "schedule",
+   "title": "Scheduled tasks",
+   "sub": "Seven of the ten, this week",
+   "items": [
+    {
+     "text": "Today's inbox list",
+     "who": "6 am daily"
+    },
+    {
+     "text": "Tomorrow's sites and crews",
+     "who": "3 pm daily"
+    },
+    {
+     "text": "Overdue invoices: reminders drafted",
+     "who": "Mon 7 am"
+    },
+    {
+     "text": "Bills due this week",
+     "who": "Mon 7 am"
+    },
+    {
+     "text": "Quotes to follow up",
+     "who": "Tue 8 am"
+    },
+    {
+     "text": "Licence and ticket expiries",
+     "who": "Wed 8 am"
+    },
+    {
+     "text": "Weekly cash update",
+     "who": "Fri 4 pm"
+    }
+   ],
+   "done": "Lists and drafts for you to check"
+  }
+ },
+ "AA05": {
+  "h": "What rings the bell",
+  "label": "Agents and automation, post 5 of 10",
+  "spec": {
+   "type": "n8n",
+   "title": "Wake the agent",
+   "nodes": [
+    {
+     "id": "e",
+     "label": "An email",
+     "sub": "invoice lands",
+     "kind": "trigger",
+     "icon": "mail",
+     "col": 0,
+     "row": 0
+    },
+    {
+     "id": "m",
+     "label": "A message",
+     "sub": "\"Morning Pam\"",
+     "kind": "trigger",
+     "icon": "chat",
+     "col": 0,
+     "row": 1
+    },
+    {
+     "id": "f",
+     "label": "A form",
+     "sub": "web enquiry",
+     "kind": "trigger",
+     "icon": "list",
+     "col": 0,
+     "row": 2
+    },
+    {
+     "id": "ai",
+     "label": "Agent wakes",
+     "sub": "reads the job",
+     "kind": "ai",
+     "col": 1,
+     "row": 1
+    },
+    {
+     "id": "d",
+     "label": "Drafts the work",
+     "icon": "doc",
+     "col": 2,
+     "row": 1
+    },
+    {
+     "id": "y",
+     "label": "Tells you",
+     "sub": "you approve",
+     "icon": "teams",
+     "col": 3,
+     "row": 1
+    }
+   ],
+   "edges": [
+    [
+     "e",
+     "ai"
+    ],
+    [
+     "m",
+     "ai"
+    ],
+    [
+     "f",
+     "ai"
+    ],
+    [
+     "ai",
+     "d"
+    ],
+    [
+     "d",
+     "y"
+    ]
+   ],
+   "result": "n8n rings the bell. You approve"
+  }
+ },
+ "AA06": {
+  "h": "Both have a place",
+  "label": "Agents and automation, post 6 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "Keep Zapier for",
+    "icon": "zapier",
+    "items": [
+     "Form to CRM, same every time",
+     "Fixed steps across your apps",
+     "Zaps that run well already"
+    ],
+    "weight": 0.46
+   },
+   "right": {
+    "title": "Try Claude for",
+    "icon": "claude",
+    "items": [
+     "A messy supplier email",
+     "A photo of a job sheet",
+     "Jobs that need a question back",
+     "A quote request in plain words"
+    ]
+   },
+   "verdict": "If it isn't broken, leave it",
+   "verdictKind": "dark"
+  }
+ },
+ "AA07": {
+  "h": "Connect what you already use",
+  "label": "Agents and automation, post 7 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Your CRM",
+     "sub": "quotes out",
+     "icon": "crm"
+    },
+    {
+     "label": "Xero",
+     "sub": "who owes you",
+     "icon": "xero"
+    }
+   ],
+   "hub": {
+    "label": "Claude",
+    "icon": "claude",
+    "status": [
+     "Reading 2 apps",
+     "Matching clients",
+     "List ready"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Your answer",
+     "sub": "oldest debt first",
+     "icon": "list",
+     "result": "3 clients: quote out and money owed"
+    }
+   ],
+   "badge": "No data lake. Read only, nothing changed",
+   "badgeKind": "dark"
+  }
+ },
+ "AA08": {
+  "h": "Pass the job like a crew does",
+  "label": "Agents and automation, post 8 of 10",
+  "spec": {
+   "type": "table",
+   "app": "crm",
+   "title": "Job 118 · shared record",
+   "sub": "Everyone reads and writes here",
+   "cols": [
+    "Who",
+    "Did",
+    "Next"
+   ],
+   "rows": [
+    [
+     "Web form",
+     "Enquiry: 80 m²",
+     "Agent quotes"
+    ],
+    [
+     "Agent",
+     "Drafted quote",
+     "You check"
+    ],
+    [
+     "You",
+     "Approved, sent",
+     "Follow up"
+    ],
+    [
+     "Scheduled task",
+     "Follow-up drafted",
+     "You send"
+    ]
+   ],
+   "highlight": {
+    "row": 2,
+    "note": "Sends stay with a person",
+    "kind": "orange"
+   },
+   "footer": "Each one notes what it did and what's next"
+  }
+ },
+ "AA09": {
+  "h": "Message it like a colleague",
+  "label": "Agents and automation, post 9 of 10",
+  "spec": {
+   "type": "chat",
+   "app": "teams",
+   "agent": "Pam",
+   "agentSub": "Custom-built: Console, n8n, Azure",
+   "msgs": [
+    [
+     "You",
+     "Pam, raise a purchase order for the sand on this quote.",
+     "right"
+    ],
+    [
+     "Pam",
+     "Drafted in Xero. Want me to send it to the supplier?",
+     "left",
+     {
+      "app": "xero",
+      "title": "PO-0231 · Sand",
+      "tag": "Draft",
+      "rows": [
+       [
+        "Supplier",
+        "ABC Sands"
+       ],
+       [
+        "Total",
+        "$1,240"
+       ]
+      ]
+     }
+    ],
+    [
+     "You",
+     "Not yet, I'll check the price first.",
+     "right"
+    ]
+   ]
+  }
+ },
+ "AA10": {
+  "h": "Write its job, then switch it on",
+  "label": "Agents and automation, post 10 of 10",
+  "spec": {
+   "type": "doc",
+   "app": "console",
+   "title": "Quote agent",
+   "sub": "Claude Console · job description",
+   "lines": [
+    "# Its job",
+    "Reads new web enquiries and drafts a quote.",
+    "# What wakes it up",
+    "A website form, passed on by n8n.",
+    "# Never without you",
+    "- Sending, paying or changing records"
+   ],
+   "tag": "Drafted with Claude",
+   "button": "Start on drafts only",
+   "done": "Live, drafts only"
+  }
+ },
+ "RC02": {
+  "h": "Every crew, one plan",
+  "label": "Running the crew, post 2 of 10",
+  "spec": {
+   "type": "table",
+   "app": "calendar",
+   "title": "Tomorrow's crew plan",
+   "sub": "Tue 10 Nov",
+   "cols": [
+    "Job",
+    "Start",
+    "Crew",
+    "Gear"
+   ],
+   "rows": [
+    [
+     "Yard pickup",
+     "6:30 am",
+     "Jack",
+     "Load the trailer"
+    ],
+    [
+     "Smith Street",
+     "7 am",
+     "Bob, Ali",
+     "Screed booked"
+    ],
+    [
+     "Jones Rd",
+     "8 am",
+     "Jack",
+     "Tile saw, trowels"
+    ],
+    [
+     "Job 118",
+     "1 pm",
+     "Ali",
+     "Laser level"
+    ],
+    [
+     "Job 121 measure",
+     "3 pm",
+     "Bob",
+     "Tape, camera"
+    ]
+   ],
+   "footer": "Texts drafted for Bob, Ali and Jack",
+   "badge": "You check it, then send the texts",
+   "badgeKind": "orange"
+  }
+ },
+ "RC03": {
+  "h": "Say it, it's written up",
+  "label": "Running the crew, post 3 of 10",
+  "spec": {
+   "type": "chat",
+   "app": "claude",
+   "agent": "Claude",
+   "agentSub": "You talk, using phone dictation",
+   "msgs": [
+    [
+     "You",
+     "Smith Street done. 42 square tiled, grout tomorrow. Cracked laundry tile, builder told.",
+     "right"
+    ],
+    [
+     "Claude",
+     "Job record drafted with today's date and your photos. Save it?",
+     "left",
+     {
+      "app": "doc",
+      "title": "Job record: Smith St",
+      "tag": "Draft",
+      "rows": [
+       [
+        "Tiled",
+        "42 m²"
+       ],
+       [
+        "Next",
+        "Grout tomorrow"
+       ],
+       [
+        "Defect",
+        "Cracked laundry tile"
+       ]
+      ]
+     }
+    ],
+    [
+     "You",
+     "Yes, save it.",
+     "right"
+    ],
+    [
+     "Claude",
+     "Saved to the Smith Street job.",
+     "left"
+    ]
+   ]
+  }
+ },
+ "RC04": {
+  "h": "Claude drafts, you sign",
+  "label": "Running the crew, post 4 of 10",
+  "spec": {
+   "type": "doc",
+   "app": "doc",
+   "title": "SWMS: Smith Street",
+   "sub": "Draft from your template",
+   "meta": [
+    [
+     "Site",
+     "12 Smith Street"
+    ],
+    [
+     "Task",
+     "Screed and tile"
+    ]
+   ],
+   "lines": [
+    "# Hazards and controls",
+    "- Pump hose under pressure: exclusion zone",
+    "- Heavy bags: two-person lift, trolleys",
+    "- Dust when cutting tiles: wet cut, P2 masks",
+    "- Pump noise: hearing protection",
+    "# Assumed, please check",
+    "- Slip risk on wet screed near the laundry"
+   ],
+   "tag": "Draft by Claude",
+   "secondary": "Edit",
+   "button": "Review and sign",
+   "done": "Signed by site supervisor"
+  }
+ },
+ "RC05": {
+  "h": "Gaps flagged before the pay run",
+  "label": "Running the crew, post 5 of 10",
+  "spec": {
+   "type": "table",
+   "app": "airtable",
+   "title": "Timesheets vs job records",
+   "sub": "This week",
+   "cols": [
+    "Name",
+    "Timesheet",
+    "Job record",
+    "Check"
+   ],
+   "rows": [
+    [
+     "Bob",
+     "Smith St, 5 days",
+     "Smith St, 5 days",
+     "Matched"
+    ],
+    [
+     "Ali",
+     "Smith St, Wed",
+     "Jones Rd, Wed",
+     "Mismatch"
+    ],
+    [
+     "Tom",
+     "Tue missing",
+     "Jones Rd, Tue",
+     "Missing day"
+    ],
+    [
+     "Jack",
+     "Jones Rd, 5 days",
+     "Jones Rd, 5 days",
+     "Matched"
+    ],
+    [
+     "Lee",
+     "Job 118, Thu",
+     "No job sheet",
+     "No record"
+    ],
+    [
+     "Max",
+     "Jones Rd, 4 days",
+     "Jones Rd, 4 days",
+     "Matched"
+    ]
+   ],
+   "highlight": {
+    "row": 1,
+    "note": "Ali, Wednesday: which site? Ask him",
+    "kind": "orange"
+   },
+   "badge": "Your payroll person approves the pay run",
+   "badgeKind": "orange"
+  }
+ },
+ "RC06": {
+  "h": "Keep it or swap it",
+  "label": "Running the crew, post 6 of 10",
+  "spec": {
+   "type": "compare",
+   "left": {
+    "title": "You might not need it for",
+    "icon": "chat",
+    "items": [
+     "Job notes",
+     "Photos from site",
+     "Simple checklists"
+    ],
+    "weight": 0.4,
+    "quote": true
+   },
+   "right": {
+    "title": "Keep the forms app if",
+    "icon": "forms",
+    "items": [
+     "You need offline sign-off on site",
+     "Your builders want its reports",
+     "It links to your job software",
+     "The crew already use it well"
+    ],
+    "quote": true
+   },
+   "verdict": "Trial one form for a month first",
+   "verdictKind": "dark"
+  }
+ },
+ "RC07": {
+  "h": "Every starter, one list",
+  "label": "Running the crew, post 7 of 10",
+  "spec": {
+   "type": "checklist",
+   "app": "list",
+   "title": "New starter: Monday",
+   "sub": "Copied for each new starter",
+   "items": [
+    {
+     "text": "Boots and PPE sizes ordered",
+     "who": "Office"
+    },
+    {
+     "text": "Tools issued, tool register updated",
+     "who": "Foreman"
+    },
+    {
+     "text": "Site inductions booked",
+     "who": "Office"
+    },
+    {
+     "text": "White card and tickets sighted",
+     "who": "Office"
+    },
+    {
+     "text": "Phone, email and logins set up",
+     "who": "Office"
+    },
+    {
+     "text": "Uniform ordered",
+     "who": "Office"
+    },
+    {
+     "text": "Emergency contact form in",
+     "who": "Starter"
+    }
+   ],
+   "done": "Ready before day one"
+  }
+ },
+ "RC08": {
+  "h": "Every talk on record",
+  "label": "Running the crew, post 8 of 10",
+  "spec": {
+   "type": "flow",
+   "sources": [
+    {
+     "label": "Talk transcript",
+     "sub": "from your phone",
+     "icon": "mic"
+    },
+    {
+     "label": "Who was there",
+     "sub": "Bob, Ali, Jack",
+     "icon": "person"
+    }
+   ],
+   "hub": {
+    "label": "Claude",
+    "icon": "claude",
+    "status": [
+     "Reading transcript",
+     "Writing it up",
+     "Drafted"
+    ]
+   },
+   "targets": [
+    {
+     "label": "Talk notes",
+     "sub": "one page",
+     "icon": "doc",
+     "result": "What was covered"
+    },
+    {
+     "label": "Training log",
+     "icon": "airtable",
+     "result": "3 attended, dated"
+    },
+    {
+     "label": "Quick quiz",
+     "icon": "list",
+     "result": "5 questions"
+    }
+   ],
+   "badge": "You check it before it's saved",
+   "badgeKind": "orange"
+  }
+ },
+ "RC09": {
+  "h": "Tickets in one register",
+  "label": "Running the crew, post 9 of 10",
+  "spec": {
+   "type": "scan",
+   "item": "card",
+   "count": 8,
+   "itemTitle": "EWP ticket",
+   "itemLines": [
+    "Jack Taylor",
+    "No. 1234567",
+    "Expires 12/11/2026"
+   ],
+   "fieldsTitle": "Claude reads it",
+   "fields": [
+    [
+     "Name",
+     "Jack Taylor"
+    ],
+    [
+     "Ticket",
+     "EWP"
+    ],
+    [
+     "Number",
+     "1234567"
+    ],
+    [
+     "Expires",
+     "12 Nov 2026"
+    ]
+   ],
+   "targets": [
+    {
+     "icon": "airtable",
+     "label": "Ticket register",
+     "line": "Jack Taylor: EWP ticket, expires 12 Nov",
+     "tag": "Added"
+    },
+    {
+     "icon": "schedule",
+     "label": "Reminders",
+     "line": "Due in 60 days: Jack, EWP ticket",
+     "tag": "Monthly"
+    }
+   ],
+   "badge": "8 cards, one private register",
+   "badgeKind": "dark"
+  }
+ },
+ "RC10": {
+  "h": "All on one screen",
+  "label": "Running the crew, post 10 of 10",
+  "spec": {
+   "type": "dash",
+   "title": "Morning dashboard",
+   "sub": "Mon 9 Nov · sample figures",
+   "tiles": [
+    {
+     "label": "Jobs on today",
+     "value": 4
+    },
+    {
+     "label": "Crew on site",
+     "value": 7
+    },
+    {
+     "label": "Tools out over a week",
+     "value": 2,
+     "kind": "alert"
+    },
+    {
+     "label": "Tickets expiring",
+     "value": 1,
+     "kind": "alert"
+    }
+   ],
+   "bars": {
+    "title": "Crew on each job",
+    "labels": [
+     "Smith St",
+     "Jones Rd",
+     "Job 118",
+     "Job 121"
+    ],
+    "values": [
+     3,
+     2,
+     1,
+     1
+    ],
+    "fmt": [
+     "3",
+     "2",
+     "1",
+     "1"
+    ]
+   },
+   "alert": {
+    "text": "2 job records missing from Friday",
+    "button": "Draft reminders",
+    "done": "Drafted for you to send"
+   }
+  }
+ }
+}
